@@ -1,0 +1,14 @@
+{
+  "name": "ie104_project",
+  "version": "1.0.0",
+  "description": "Sells professional items",
+  "main": "index.js",
+  "scripts": {
+    "compile": "node-sass public/sass/main.scss public/css/style.css -w"
+  },
+  "author": "Group 7",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^4.14.1"
+  }
+}
