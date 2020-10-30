@@ -18,11 +18,16 @@
      &__icon {
           font-size: 4rem;
           margin-right: 1.4rem;
+          transition: all 0.3s ease-in;
      }
 
      &__heading {
           margin-bottom: 5px;
           font-weight: 700;
+     }
+
+     &__item:hover &__icon {
+          color: $color-primary;
      }
 }
 

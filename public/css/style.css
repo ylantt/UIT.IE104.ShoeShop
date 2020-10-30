@@ -296,10 +296,13 @@ body {
     font-size: 1.4rem; }
   .service__icon {
     font-size: 4rem;
-    margin-right: 1.4rem; }
+    margin-right: 1.4rem;
+    transition: all 0.3s ease-in; }
   .service__heading {
     margin-bottom: 5px;
     font-weight: 700; }
+  .service__item:hover .service__icon {
+    color: #FFBA48; }
 
 .featured-products {
   margin: 15rem 0; }
