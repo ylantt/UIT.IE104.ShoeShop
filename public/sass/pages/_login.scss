@@ -1,0 +1,81 @@
+.login__background{
+    margin: 0rem;
+    padding: 0rem;
+    background-color: lighten($color-primary, 20%) !important;
+}
+
+.login__box{
+    width: 45rem;
+    height: 30rem;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    color: $color-black;
+    padding: 2rem;
+    margin: 0;
+    box-sizing: border-box;
+    border-radius: 0.4rem;
+    background: rgba($color-white, 0.925);
+    
+    h1 {
+        float: center;
+        font-size: 3.75rem;
+        border-bottom: 0.3rem solid lighten($color-primary, 20%);
+        margin-bottom: 0.5rem;
+        padding: 1.8rem 0;
+        color: $color-black;
+    }
+    
+    //Used for forgot password and register 
+    .login__other {
+        line-height: 3.5rem;
+        color: $color-black;
+        cursor: pointer;
+        display: inline-block;
+        &:hover{
+            color: $color-primary;
+        }
+}
+
+.text__box{
+    width: 100%;
+    overflow: hidden;
+    font-size: 2rem;
+    padding: 0.8rem;
+    margin: 0.8rem 0;
+    border-bottom: 0.1rem solid lighten($color-primary, 20%);
+    
+    input {
+        border: none;
+        outline: none;
+        background: none;
+        color: $color-black;
+        font-size: 1.5rem;
+        width: 80%;
+        float: left;
+        margin: 0 0rem;
+    }
+}
+}
+
+.login__btn {
+    width: 100%;
+    background: $color-primary;
+    border: none;
+    color: $color-black;
+    padding: 0.5rem;
+    font-size: 2rem;
+    cursor: pointer;
+    text-align: center;
+    margin: 0.4rem 0.2rem;
+    transition: 0.3s;
+    outline: none;
+    border-radius: 0.5rem;
+    &:hover{
+        background-color: darken($color-primary,20%);
+        color: whitesmoke;
+    }
+
+}
+
