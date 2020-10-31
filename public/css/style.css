@@ -112,6 +112,18 @@ body {
   top: 25%;
   background-color: #FFBA48; }
 
+.section__link {
+  text-align: right;
+  display: block;
+  transition: all 0.3s ease-in-out;
+  padding-bottom: 5px;
+  margin-top: 4rem;
+  text-decoration: underline; }
+  .section__link:hover {
+    letter-spacing: 5px;
+    color: #FFBA48;
+    font-weight: 700; }
+
 .flex-center {
   display: flex;
   justify-content: space-between;

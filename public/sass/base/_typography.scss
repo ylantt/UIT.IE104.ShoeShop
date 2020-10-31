@@ -78,3 +78,19 @@ body {
   top: 25%;
   background-color: $color-primary;
 }
+
+// section link
+.section__link {
+  text-align: right;
+  display: block;
+  transition: all 0.3s ease-in-out;
+  padding-bottom: 5px;
+  margin-top: 4rem;
+  text-decoration: underline;
+
+  &:hover {
+    letter-spacing: 5px;
+    color: $color-primary;
+    font-weight: 700;
+  }
+}
