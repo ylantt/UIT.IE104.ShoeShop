@@ -23,7 +23,7 @@ include "template/nav.php"; ?>
                         </p>
                         <p class="p_reg">
                             <label for="reg_phone" class="reg_lab">Phone</label>
-                            <input type="number" id="reg_phone" required>
+                            <input type="tel" id="reg_phone" required>
                         </p>
                         <p class="p_reg">
                             <label for="reg_address" class="reg_lab">Address</label>
