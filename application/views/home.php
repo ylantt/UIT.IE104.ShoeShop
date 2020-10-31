@@ -4,8 +4,9 @@ require_once("template/nav.php");
 require_once("template/banner.php"); ?>
 
 <div class="home">
-     <div class="container">
-          <div class="featured-products">
+
+     <div class="featured-products">
+          <div class="container">
                <h2 class="heading-h3">
                     <p class="heading-h3--sub">FEATURED SHOP ITEMS</p>
                     <p class="heading-h3--main">FEATURED PRODUCTS</p>
@@ -171,7 +172,40 @@ require_once("template/banner.php"); ?>
                     </div>
                </div>
           </div>
+     </div>
 
+     <div class="event">
+          <div class="container d-flex">
+               <div class="event__info">
+                    <p class="event__title">HOT DEAL THIS YEAR</p>
+                    <p class="event__content">GET AN EXTRA <span class="text-bold">30% OFF</span> YOUR FIRST ORDER</p>
+                    <div class="event__time text-bold">
+                         <div class="event__time--column">
+                              <p class="event__time--num event__time--day">423</p>
+                              <p class="event__time--text">DAY(S)</p>
+                         </div>
+
+                         <div class="event__time--column">
+                              <p class="event__time--num event__time--hour">23</p>
+                              <p class="event__time--text">HOUR(S)</p>
+                         </div>
+
+                         <div class="event__time--column">
+                              <p class="event__time--num event__time--min">23</p>
+                              <p class="event__time--text">MIN</p>
+                         </div>
+
+                         <div class="event__time--column">
+                              <p class="event__time--num event__time--sec">23</p>
+                              <p class="event__time--text">SEC</p>
+                         </div>
+                    </div>
+               </div>
+               <div class="event__image"></div>
+          </div>
+     </div>
+
+     <div class="container">
           <div class="service">
                <div class="service__item">
                     <div class="service__icon">
@@ -234,6 +268,7 @@ require_once("template/banner.php"); ?>
                </div>
           </div>
      </div>
+
 </div>
 <?php
 require_once("template/footer.php");

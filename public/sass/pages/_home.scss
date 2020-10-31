@@ -34,3 +34,70 @@
 .featured-products {
      margin: 15rem 0;
 }
+
+.event {
+     letter-spacing: 5px;
+     line-height: 300%;
+     color: $color-dark-1;
+     margin: 15rem 0;
+     
+     &__title, &__time--num {
+          color: $color-primary;
+     }
+
+     & > .container {
+          justify-content: space-between;
+     }
+
+     &__info {
+          flex: 1;
+          padding: 7rem 0;
+     }
+
+     &__title {
+          font-size: 2rem;
+     }
+
+     
+     &__content {
+          font-size: 3rem;
+          margin: 0 10rem;
+          position: relative;
+
+          &::before {
+               content: "";
+               width: 8rem;
+               height: 3px;
+               background: $color-black;
+               position: absolute;
+               left: -10rem;
+               top: 15%;
+          }
+     }
+
+     &__time {
+          display: flex;
+          justify-content: space-evenly;
+          padding-right: 3rem;
+
+          &--column {
+               text-align: center;
+          }
+
+          &--num {
+               font-size: 5rem;
+               margin-top: 4rem;
+          }
+
+          &--text {
+               font-size: 1.6rem;
+          }
+     }
+
+     &__image {
+          flex: 1;
+          background: url("../images/event-image.jpg");
+          background-position: center right;
+     }
+}
+
