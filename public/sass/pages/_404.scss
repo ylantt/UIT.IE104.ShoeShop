@@ -1,0 +1,67 @@
+.error-404 .page-content .button .svg-icon {
+    vertical-align: -0.5rem;
+    margin-right: 3.5rem;
+}
+.ErrorTitle{font-size: 2.0rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 0;
+    position: relative;
+    padding-left: 4.0rem;
+
+}
+.ErrorTitle::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -0.1rem;
+    display: block;
+    width: 2.0rem;
+    border-bottom: 0.2rem solid;
+}
+.ErrorDetails{
+            padding-top:1.0rem;
+            margin-top:1.0rem;
+            font-size:2.5rem;
+            font-weight: 400;
+            line-height:4.5rem;
+        }
+        .button.large{
+            line-height: 6.0rem;
+            padding: 0 8.0rem;
+}
+        .button{
+            font-size: 1.4rem;
+    font-weight: 500;
+    color: $color-white;
+    text-transform: uppercase;
+    text-align: center;
+    display: inline-block;
+    padding: 0 4.0rem;
+    line-height: 4.0rem;
+    background-color: #161619;
+    cursor: pointer;
+    transition: .4s;
+    text-decoration: none;
+        }
+        .svg-icon {
+    font-size: 2.4rem;
+    font-size: 1.5rem;
+    line-height: 1;
+    display: inline-block;
+        }
+ *::before {
+    box-sizing: inherit;
+}
+*::before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.ErrorDetail{
+    font-size:7.0rem
+    ;margin-top:1.0rem;
+    margin-bottom:1.5rem;
+    font-weight: 500;
+}
