@@ -95,22 +95,20 @@ body {
   .heading-h3::after {
     right: 0; }
 
-.nav__logo {
+.logo {
   text-align: center;
   position: relative; }
-
-.nav__logo-name {
-  font-weight: 700;
-  font-size: 25px; }
-
-.nav__logo-name::before {
-  content: "";
-  width: 30%;
-  height: 2px;
-  position: absolute;
-  left: 0;
-  top: 25%;
-  background-color: #FFBA48; }
+  .logo__name {
+    font-weight: 700;
+    font-size: 25px; }
+    .logo__name::before {
+      content: "";
+      width: 30%;
+      height: 2px;
+      position: absolute;
+      left: 0;
+      top: 25%;
+      background-color: #FFBA48; }
 
 .section__link {
   text-align: right;
@@ -248,6 +246,11 @@ body {
       animation-name: moveInBottom;
       animation-duration: 1s;
       animation-timing-function: ease-in; }
+
+.footer__logo {
+  display: block;
+  text-align: center;
+  width: 138px; }
 
 .nav {
   padding: 3rem 0;

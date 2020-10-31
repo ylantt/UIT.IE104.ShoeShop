@@ -58,25 +58,25 @@ body {
   }
 }
 
-// nav
-.nav__logo {
+// logo
+.logo {
   text-align: center;
   position: relative;
-}
 
-.nav__logo-name {
-  font-weight: 700;
-  font-size: 25px;
-}
-
-.nav__logo-name::before {
-  content: "";
-  width: 30%;
-  height: 2px;
-  position: absolute;
-  left: 0;
-  top: 25%;
-  background-color: $color-primary;
+  &__name {
+    font-weight: 700;
+    font-size: 25px;
+  
+    &::before {
+      content: "";
+      width: 30%;
+      height: 2px;
+      position: absolute;
+      left: 0;
+      top: 25%;
+      background-color: $color-primary;
+    }
+  }
 }
 
 // section link
