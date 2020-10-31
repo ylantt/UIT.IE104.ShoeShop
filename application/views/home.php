@@ -262,7 +262,7 @@ require_once("template/banner.php"); ?>
                               MEMBER DISCOUNT
                          </h4>
                          <p class="service__content">
-                              Onevery order over $120.00
+                              On every order over $120.00
                          </p>
                     </div>
                </div>
