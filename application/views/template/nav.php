@@ -4,7 +4,8 @@ $pages["home"] = "Home";
 $pages["products"] = "Shop";
 $pages["about"] = "About";
 
-$activePage = $_GET['url'];
+isset($_GET['url']) ? $activePage = $_GET['url'] : $activePage = "home";
+
 ?>
 
 <nav class="nav">
@@ -25,7 +26,7 @@ $activePage = $_GET['url'];
           </a>
 
           <ul class="flex-center">
-               <?php if ($_GET['url'] == 'login') : ?>
+               <?php if (isset($_GET['url']) && $_GET['url'] == 'login') : ?>
                     <li><a href="login" class="active">Log in</a></li>
                <?php else : ?>
                     <li><a href="login">Log in</a></li>

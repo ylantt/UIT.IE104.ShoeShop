@@ -22,6 +22,43 @@ body {
   line-height: 150%;
 }
 
+// heading h2
+.heading-h3 {
+  text-align: center;
+  margin-bottom: 6rem;
+  position: relative;
+
+  &--main {
+    font-weight: 700;
+    font-size: 3rem;
+  }
+
+  &--sub {
+    font-weight: 300;
+    font-size: 16px;
+    margin-bottom: 10px;
+    letter-spacing: 3px;
+  }
+
+  &::before, &::after {
+    content: "";
+    width: 30%;
+    height: 2px;
+    position: absolute;
+    top: 50%;
+    background-color: $color-primary;
+  }
+
+  &::before {
+    left: 0;
+  }
+
+  &::after {
+    right: 0;
+  }
+}
+
+// nav
 .nav__logo {
   text-align: center;
   position: relative;

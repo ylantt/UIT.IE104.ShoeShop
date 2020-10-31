@@ -1,0 +1,36 @@
+.service {
+     display: flex;
+     justify-content: space-between;
+     color: $color-dark-1;
+     border-top: 1px solid $color-dark-2;
+
+
+     &__item {
+          display: flex;
+          align-items: center;
+          padding: 6rem 0;
+     }
+
+     &__info {
+          font-size: 1.4rem;
+     }
+
+     &__icon {
+          font-size: 4rem;
+          margin-right: 1.4rem;
+          transition: all 0.3s ease-in;
+     }
+
+     &__heading {
+          margin-bottom: 5px;
+          font-weight: 700;
+     }
+
+     &__item:hover &__icon {
+          color: $color-primary;
+     }
+}
+
+.featured-products {
+     margin: 15rem 0;
+}
