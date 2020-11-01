@@ -6,7 +6,7 @@ include "template/nav.php"; ?>
                 <div class="reg_form">
                         <h2 class="reg_title">Register</h2>
                         <p class="p_reg">
-                            <label for="reg_username" class="reg-lab">Username</label>
+                            <label for="reg_username" class="reg_lab">Username</label>
                             <input type="text" id="reg_username" required>
                         </p>
                         <p class="p_reg">
