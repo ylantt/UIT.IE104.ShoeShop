@@ -64,8 +64,8 @@
      }
 
      &__new, &__sale {
-          width: 6rem;
-          height: 6rem;
+          width: 5rem;
+          height: 5rem;
           border-radius: 50%;
           position: absolute;
           top: 2rem;
@@ -80,7 +80,6 @@
 
      &__new {
           background-color: #2e8b57;
-          // border: 1px solid #2e8b57;
      }
 
      &__sale {
