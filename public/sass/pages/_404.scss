@@ -1,8 +1,9 @@
-.error-404 .page-content .button .svg-icon {
+.error__error-404 .error__page-content .error__button .error__but-icon {
     vertical-align: -0.5rem;
     margin-right: 3.5rem;
 }
-.ErrorTitle{font-size: 2.0rem;
+
+.error__errortitle{font-size: 2.0rem;
     font-weight: 600;
     text-transform: uppercase;
     margin: 0;
@@ -10,7 +11,8 @@
     padding-left: 4.0rem;
 
 }
-.ErrorTitle::before{
+
+.error__errortitle::before{
     content: "";
     position: absolute;
     left: 0;
@@ -20,19 +22,22 @@
     width: 2.0rem;
     border-bottom: 0.2rem solid;
 }
-.ErrorDetails{
-            padding-top:1.0rem;
-            margin-top:1.0rem;
-            font-size:2.5rem;
-            font-weight: 400;
-            line-height:4.5rem;
+
+.error__errordetails{
+    padding-top:1.0rem;
+    margin-top:1.0rem;
+    font-size:2.5rem;
+    font-weight: 400;
+    line-height:4.5rem;
+    margin-bottom:3rem;
         }
-        .button.large{
-            line-height: 6.0rem;
-            padding: 0 8.0rem;
+
+.error__button.large{
+     line-height: 6.0rem;
+    padding: 0 8.0rem;
 }
-        .button{
-            font-size: 1.4rem;
+.error__button{
+    font-size: 1.4rem;
     font-weight: 500;
     color: $color-white;
     text-transform: uppercase;
@@ -40,28 +45,27 @@
     display: inline-block;
     padding: 0 4.0rem;
     line-height: 4.0rem;
-    background-color: #161619;
+    background-color: $color-black;
     cursor: pointer;
     transition: .4s;
     text-decoration: none;
-        }
-        .svg-icon {
+}
+
+.error__but-icon {
     font-size: 2.4rem;
     font-size: 1.5rem;
     line-height: 1;
     display: inline-block;
         }
- *::before {
-    box-sizing: inherit;
-}
-*::before {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
-.ErrorDetail{
-    font-size:7.0rem
-    ;margin-top:1.0rem;
+
+.error__errordetail{
+    font-size:7.0rem;
+    margin-top:1.0rem;
     margin-bottom:1.5rem;
     font-weight: 500;
+    
+}
+.error__body{
+    margin:1rem 0rem 1rem 0rem; 
+    padding: 15rem 0rem 1rem 20rem;
 }

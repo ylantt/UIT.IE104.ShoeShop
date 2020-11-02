@@ -188,143 +188,11 @@ body {
       transform: scaleX(1);
       transform-origin: right; }
 
-.service {
-  display: flex;
-  justify-content: space-between;
-  color: #444;
-  border-top: 1px solid #999; }
-  .service__item {
-    display: flex;
-    align-items: center;
-    padding: 6rem 0; }
-  .service__info {
-    font-size: 1.4rem; }
-  .service__icon {
-    font-size: 4rem;
-    margin-right: 1.4rem;
-    transition: all 0.3s ease-in; }
-  .service__heading {
-    margin-bottom: 5px;
-    font-weight: 700; }
-  .service__item:hover .service__icon {
-    color: #FFBA48; }
-
-.featured-products {
-  margin: 15rem 0; }
-
-.event {
-  letter-spacing: 5px;
-  line-height: 300%;
-  color: #444;
-  margin: 15rem 0; }
-  .event__title, .event__time--num {
-    color: #FFBA48; }
-  .event > .container {
-    justify-content: space-between; }
-  .event__info {
-    flex: 1;
-    padding: 7rem 0; }
-  .event__title {
-    font-size: 2rem; }
-  .event__content {
-    font-size: 3rem;
-    margin: 0 10rem;
-    position: relative; }
-    .event__content::before {
-      content: "";
-      width: 8rem;
-      height: 3px;
-      background: #222;
-      position: absolute;
-      left: -10rem;
-      top: 15%; }
-  .event__time {
-    display: flex;
-    justify-content: space-evenly;
-    padding-right: 3rem; }
-    .event__time--column {
-      text-align: center; }
-    .event__time--num {
-      font-size: 5rem;
-      margin-top: 4rem; }
-    .event__time--text {
-      font-size: 1.6rem; }
-  .event__image {
-    flex: 1;
-    background: url("../images/event-image.jpg");
-    background-position: center right; }
-
-.login__background {
-  margin: 0rem;
-  padding: 0rem;
-  background-color: #ffe0ae !important; }
-
-.login__box {
-  width: 45rem;
-  height: 30rem;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  color: #222;
-  padding: 2rem;
-  margin: 0;
-  box-sizing: border-box;
-  border-radius: 0.4rem;
-  background: rgba(255, 255, 255, 0.925); }
-  .login__box h1 {
-    float: center;
-    font-size: 3.75rem;
-    border-bottom: 0.3rem solid #ffe0ae;
-    margin-bottom: 0.5rem;
-    padding: 1.8rem 0;
-    color: #222; }
-  .login__box .login__other {
-    line-height: 3.5rem;
-    color: #222;
-    cursor: pointer;
-    display: inline-block; }
-    .login__box .login__other:hover {
-      color: #FFBA48; }
-  .login__box .text__box {
-    width: 100%;
-    overflow: hidden;
-    font-size: 2rem;
-    padding: 0.8rem;
-    margin: 0.8rem 0;
-    border-bottom: 0.1rem solid #ffe0ae; }
-    .login__box .text__box input {
-      border: none;
-      outline: none;
-      background: none;
-      color: #222;
-      font-size: 1.5rem;
-      width: 80%;
-      float: left;
-      margin: 0 0rem; }
-
-.login__btn {
-  width: 100%;
-  background: #FFBA48;
-  border: none;
-  color: #222;
-  padding: 0.5rem;
-  font-size: 2rem;
-  cursor: pointer;
-  text-align: center;
-  margin: 0.4rem 0.2rem;
-  transition: 0.3s;
-  outline: none;
-  border-radius: 0.5rem; }
-  .login__btn:hover {
-    background-color: #e18c00;
-    color: whitesmoke; }
-
-.error-404 .page-content .button .svg-icon {
+.error__error-404 .error__page-content .error__button .error__but-icon {
   vertical-align: -0.5rem;
   margin-right: 3.5rem; }
 
-.ErrorTitle {
+.error__errortitle {
   font-size: 2.0rem;
   font-weight: 600;
   text-transform: uppercase;
@@ -332,7 +200,7 @@ body {
   position: relative;
   padding-left: 4.0rem; }
 
-.ErrorTitle::before {
+.error__errortitle::before {
   content: "";
   position: absolute;
   left: 0;
@@ -342,18 +210,19 @@ body {
   width: 2.0rem;
   border-bottom: 0.2rem solid; }
 
-.ErrorDetails {
+.error__errordetails {
   padding-top: 1.0rem;
   margin-top: 1.0rem;
   font-size: 2.5rem;
   font-weight: 400;
-  line-height: 4.5rem; }
+  line-height: 4.5rem;
+  margin-bottom: 3rem; }
 
-.button.large {
+.error__button.large {
   line-height: 6.0rem;
   padding: 0 8.0rem; }
 
-.button {
+.error__button {
   font-size: 1.4rem;
   font-weight: 500;
   color: #fff;
@@ -362,30 +231,26 @@ body {
   display: inline-block;
   padding: 0 4.0rem;
   line-height: 4.0rem;
-  background-color: #161619;
+  background-color: #000;
   cursor: pointer;
   transition: .4s;
   text-decoration: none; }
 
-.svg-icon {
+.error__but-icon {
   font-size: 2.4rem;
   font-size: 1.5rem;
   line-height: 1;
   display: inline-block; }
 
-*::before {
-  box-sizing: inherit; }
-
-*::before {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box; }
-
-.ErrorDetail {
+.error__errordetail {
   font-size: 7.0rem;
   margin-top: 1.0rem;
   margin-bottom: 1.5rem;
   font-weight: 500; }
+
+.error__body {
+  margin: 1rem 0rem 1rem 0rem;
+  padding: 15rem 0rem 1rem 20rem; }
 
 .container_bg {
   background-color: #333333; }
