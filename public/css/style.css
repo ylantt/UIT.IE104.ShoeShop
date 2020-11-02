@@ -396,21 +396,14 @@ body {
     background-position: center right; }
 
 .login__background {
-  margin: 0rem;
-  padding: 0rem;
+  padding: 15rem 0;
   background-color: #ffc166 !important; }
 
 .login__box {
   width: 45rem;
-  height: 30rem;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+  margin: 0 auto;
   color: #222;
   padding: 2rem;
-  margin: 0;
-  box-sizing: border-box;
   border-radius: 0.4rem;
   background: rgba(255, 255, 255, 0.925); }
   .login__box h1 {
