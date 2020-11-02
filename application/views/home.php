@@ -7,9 +7,9 @@ require_once("template/banner.php"); ?>
 
      <div class="featured-products">
           <div class="container">
-               <h2 class="heading-h3">
-                    <p class="heading-h3--sub">FEATURED SHOP ITEMS</p>
-                    <p class="heading-h3--main">FEATURED PRODUCTS</p>
+               <h2 class="heading-h2">
+                    <p class="heading-h2--sub">FEATURED SHOP ITEMS</p>
+                    <p class="heading-h2--main">FEATURED PRODUCTS</p>
                </h2>
 
                <div class="product">
