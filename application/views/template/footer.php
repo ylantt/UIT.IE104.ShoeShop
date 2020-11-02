@@ -19,7 +19,7 @@
                     <p class="footer__heading">INFORMATION</p>
                     <ul class="footer__content">
                          <li><a href="about" class="footer__content--right">About Us</a></li>
-                         <li><a href="term-conditions" class="footer__content--right">Terms & Conditions</a></li>
+                         <li><a href="return-policy" class="footer__content--right">Return Policy</a></li>
                     </ul>
                </div>
 
@@ -28,7 +28,7 @@
                     <ul class="footer__content">
                          <li><a href="account" class="footer__content--right">My Account</a></li>
                          <li><a href="wishlist" class="footer__content--right">Wish list</a></li>
-                         <li><a href="order-history" class="footer__content--right">Order History</a></li>
+                         <li><a href="orders" class="footer__content--right">All Orders</a></li>
                     </ul>
                </div>
           </div>
