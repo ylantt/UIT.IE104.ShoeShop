@@ -157,7 +157,7 @@ body {
     margin-bottom: 4rem; }
 
 .product__item {
-  height: 53.2rem;
+  height: 33.2rem;
   overflow: hidden;
   width: calc(25% - 15px);
   padding: 1.5rem 2rem 0;
@@ -173,7 +173,7 @@ body {
   transform: translateY(0); }
 
 .product__image {
-  height: 37.5rem;
+  height: 17.5rem;
   display: block; }
 
 .product__summary {
