@@ -2,11 +2,12 @@
     font-size: 4rem;
     text-align: center;
     color: $color-black;
-    margin-top: 10rem;
+    margin-top: 5rem;
+    margin-bottom: 2rem; 
 }
 .cart__header{
     text-align: left;
-    padding: 0.75rem;
+    padding: 0.5rem;
     color: $color-black;
     background: $color-primary;
     font-weight: 700;
@@ -15,11 +16,10 @@
 
 .cart__page{
     margin: 0 auto;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
 }
 .cart__table{
-    width: 80rem;
+    max-width: 120rem;
+    width: 100%;
     border-collapse: collapse;
     margin: 0 auto;
     td{
@@ -44,7 +44,9 @@
         width: 10rem;
         height: 10rem;
         margin-left: -0.5rem;
-        margin-right: 2rem;
+    }
+    div{
+        margin-left: 1.5rem;
     }
 }
 
@@ -53,22 +55,25 @@
     justify-content: flex-end;
     margin-top: 4rem;
     table{
+        text-align: right;
         border-top: 0.2rem solid $color-primary;
         width: 100%;
-        max-width: 35rem;
-        margin-right: 37rem;
+        max-width: 40rem;
         line-height: 4rem;
     }
 }
 
 .cart__OrdBtn{
-    width: 20rem;
+    width: 100%;
     margin-top: 2rem;
-    margin-left: 90.5rem;
-    padding: 1rem;
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+
+    font-size: 1.7rem;
     color: $color-black;
     text-align: center;
     font-weight: bold;
+
     transition: 0.3s;
     outline: none;
     border-radius: 0.5rem;
