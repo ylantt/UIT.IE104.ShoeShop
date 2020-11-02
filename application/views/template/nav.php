@@ -20,9 +20,9 @@ isset($_GET['url']) ? $activePage = $_GET['url'] : $activePage = "home";
                <?php endforeach; ?>
           </ul>
 
-          <a href="home" class="nav__logo">
-               <p class="nav__logo-name">N7</p>
-               <p class="nav__logo-tagline">Every step matters.</p>
+          <a href="home" class="logo">
+               <p class="logo__name">N7</p>
+               <p class="logo__tagline">Every step matters.</p>
           </a>
 
           <ul class="flex-center">

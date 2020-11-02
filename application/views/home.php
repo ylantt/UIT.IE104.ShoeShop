@@ -7,9 +7,9 @@ require_once("template/banner.php"); ?>
 
      <div class="featured-products">
           <div class="container">
-               <h2 class="heading-h3">
-                    <p class="heading-h3--sub">FEATURED SHOP ITEMS</p>
-                    <p class="heading-h3--main">FEATURED PRODUCTS</p>
+               <h2 class="heading-h2">
+                    <p class="heading-h2--sub">FEATURED SHOP ITEMS</p>
+                    <p class="heading-h2--main">FEATURED PRODUCTS</p>
                </h2>
 
                <div class="product">
@@ -25,7 +25,7 @@ require_once("template/banner.php"); ?>
                                         <p class="product__price">&dollar;35.00</p>
                                    </div>
                                    <div class="product__action d-flex">
-                                        <span class="product__add">ADD TO CARD</span>
+                                        <span class="product__add">ADD TO CART</span>
                                         <div class="product__action--right">
                                              <span class="product__view"><i class="far fa-eye product__icon"></i></span>
                                              <span class="product__love "><i class="far fa-heart product__icon"></i></span>
@@ -44,7 +44,7 @@ require_once("template/banner.php"); ?>
                                         <p class="product__price">&dollar;35.00</p>
                                    </div>
                                    <div class="product__action d-flex">
-                                        <span class="product__add">ADD TO CARD</span>
+                                        <span class="product__add">ADD TO CART</span>
                                         <div class="product__action--right">
                                              <span class="product__view"><i class="far fa-eye product__icon"></i></span>
                                              <span class="product__love "><i class="far fa-heart product__icon"></i></span>
@@ -63,7 +63,7 @@ require_once("template/banner.php"); ?>
                                         <p class="product__price">&dollar;35.00</p>
                                    </div>
                                    <div class="product__action d-flex">
-                                        <span class="product__add">ADD TO CARD</span>
+                                        <span class="product__add">ADD TO CART</span>
                                         <div class="product__action--right">
                                              <span class="product__view"><i class="far fa-eye product__icon"></i></span>
                                              <span class="product__love "><i class="far fa-heart product__icon"></i></span>
@@ -82,7 +82,7 @@ require_once("template/banner.php"); ?>
                                         <p class="product__price">&dollar;35.00</p>
                                    </div>
                                    <div class="product__action d-flex">
-                                        <span class="product__add">ADD TO CARD</span>
+                                        <span class="product__add">ADD TO CART</span>
                                         <div class="product__action--right">
                                              <span class="product__view"><i class="far fa-eye product__icon"></i></span>
                                              <span class="product__love "><i class="far fa-heart product__icon"></i></span>
@@ -103,7 +103,7 @@ require_once("template/banner.php"); ?>
                                         <p class="product__price">&dollar;35.00</p>
                                    </div>
                                    <div class="product__action d-flex">
-                                        <span class="product__add">ADD TO CARD</span>
+                                        <span class="product__add">ADD TO CART</span>
                                         <div class="product__action--right">
                                              <span class="product__view"><i class="far fa-eye product__icon"></i></span>
                                              <span class="product__love "><i class="far fa-heart product__icon"></i></span>
@@ -122,7 +122,7 @@ require_once("template/banner.php"); ?>
                                         <p class="product__price">&dollar;35.00</p>
                                    </div>
                                    <div class="product__action d-flex">
-                                        <span class="product__add">ADD TO CARD</span>
+                                        <span class="product__add">ADD TO CART</span>
                                         <div class="product__action--right">
                                              <span class="product__view"><i class="far fa-eye product__icon"></i></span>
                                              <span class="product__love "><i class="far fa-heart product__icon"></i></span>
@@ -142,7 +142,7 @@ require_once("template/banner.php"); ?>
                                         <p class="product__price">&dollar;35.00</p>
                                    </div>
                                    <div class="product__action d-flex">
-                                        <span class="product__add">ADD TO CARD</span>
+                                        <span class="product__add">ADD TO CART</span>
                                         <div class="product__action--right">
                                              <span class="product__view"><i class="far fa-eye product__icon"></i></span>
                                              <span class="product__love "><i class="far fa-heart product__icon"></i></span>
@@ -161,7 +161,7 @@ require_once("template/banner.php"); ?>
                                         <p class="product__price">&dollar;35.00</p>
                                    </div>
                                    <div class="product__action d-flex">
-                                        <span class="product__add">ADD TO CARD</span>
+                                        <span class="product__add">ADD TO CART</span>
                                         <div class="product__action--right">
                                              <span class="product__view"><i class="far fa-eye product__icon"></i></span>
                                              <span class="product__love "><i class="far fa-heart product__icon"></i></span>
@@ -171,6 +171,8 @@ require_once("template/banner.php"); ?>
                          </div>
                     </div>
                </div>
+
+               <a href="products" class="section__link">Show All <span>&#8594;</span></a>
           </div>
      </div>
 
@@ -262,7 +264,7 @@ require_once("template/banner.php"); ?>
                               MEMBER DISCOUNT
                          </h4>
                          <p class="service__content">
-                              Onevery order over $120.00
+                              On every order over $120.00
                          </p>
                     </div>
                </div>

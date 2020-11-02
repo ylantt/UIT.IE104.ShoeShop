@@ -10,7 +10,7 @@
 
 body {
   font-family: "function-regular", sans-serif;
-  line-height: 1;
+  line-height: 1.5;
   font-size: $default-font-size;
   color: $color-black;
 }
@@ -23,7 +23,7 @@ body {
 }
 
 // heading h2
-.heading-h3 {
+.heading-h2 {
   text-align: center;
   margin-bottom: 6rem;
   position: relative;
@@ -58,23 +58,39 @@ body {
   }
 }
 
-// nav
-.nav__logo {
+// logo
+.logo {
   text-align: center;
   position: relative;
+
+  &__name {
+    font-weight: 700;
+    font-size: 25px;
+  
+    &::before {
+      content: "";
+      width: 30%;
+      height: 2px;
+      position: absolute;
+      left: 0;
+      top: 25%;
+      background-color: $color-primary;
+    }
+  }
 }
 
-.nav__logo-name {
-  font-weight: 700;
-  font-size: 25px;
-}
+// section link
+.section__link {
+  text-align: right;
+  display: block;
+  transition: all 0.3s ease-in-out;
+  padding-bottom: 5px;
+  margin-top: 4rem;
+  text-decoration: underline;
 
-.nav__logo-name::before {
-  content: "";
-  width: 30%;
-  height: 2px;
-  position: absolute;
-  left: 0;
-  top: 25%;
-  background-color: $color-primary;
+  &:hover {
+    letter-spacing: 5px;
+    color: $color-primary;
+    font-weight: 700;
+  }
 }
