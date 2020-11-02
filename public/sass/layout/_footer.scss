@@ -1,0 +1,53 @@
+.footer {
+  padding: 7rem 0;
+  background-color: $color-black;
+  color: $color-white;
+
+  &__column {
+    flex: 1;
+
+    &:not(:first-child) li::before {
+      content: "\2022"; /* CSS Code/unicode for a bullet */
+      color: $color-primary;
+      display: inline-block; 
+      width: 1em; 
+      margin-left: 0.5rem;
+    }
+  }
+
+  &__logo {
+    display: block;
+    text-align: center;
+    width: 138px;
+    margin: 0 auto;
+  }
+
+  &__info {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__heading {
+    font-weight: 700;
+  }
+
+  &__content {
+    color: $color-dark-3;
+    margin-top: 1rem;
+
+    &--right {
+      margin-left: 1rem;
+      transition: all 0.3s ease-in;
+    }
+
+    & li:hover &--right {
+      margin-left: 2rem;
+      color: $color-white;
+    }
+
+    &--left {
+      color: $color-primary;
+    }
+  }
+}

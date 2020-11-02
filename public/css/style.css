@@ -247,6 +247,42 @@ body {
       animation-duration: 1s;
       animation-timing-function: ease-in; }
 
+.footer {
+  padding: 7rem 0;
+  background-color: #222;
+  color: #fff; }
+  .footer__column {
+    flex: 1; }
+    .footer__column:not(:first-child) li::before {
+      content: "\2022";
+      /* CSS Code/unicode for a bullet */
+      color: #FF9800;
+      display: inline-block;
+      width: 1em;
+      margin-left: 0.5rem; }
+  .footer__logo {
+    display: block;
+    text-align: center;
+    width: 138px;
+    margin: 0 auto; }
+  .footer__info {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: space-between; }
+  .footer__heading {
+    font-weight: 700; }
+  .footer__content {
+    color: #757575;
+    margin-top: 1rem; }
+    .footer__content--right {
+      margin-left: 1rem;
+      transition: all 0.3s ease-in; }
+    .footer__content li:hover .footer__content--right {
+      margin-left: 2rem;
+      color: #fff; }
+    .footer__content--left {
+      color: #FF9800; }
+
 .nav {
   padding: 3rem 0;
   transition: all .2s linear;
