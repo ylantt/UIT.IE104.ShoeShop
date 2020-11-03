@@ -71,28 +71,28 @@ body {
   letter-spacing: 5px;
   line-height: 150%; }
 
-.heading-h2 {
+.heading-h3 {
   text-align: center;
   margin-bottom: 6rem;
   position: relative; }
-  .heading-h2--main {
+  .heading-h3--main {
     font-weight: 700;
     font-size: 3rem; }
-  .heading-h2--sub {
+  .heading-h3--sub {
     font-weight: 300;
     font-size: 16px;
     margin-bottom: 10px;
     letter-spacing: 3px; }
-  .heading-h2::before, .heading-h2::after {
+  .heading-h3::before, .heading-h3::after {
     content: "";
     width: 30%;
     height: 2px;
     position: absolute;
     top: 50%;
     background-color: #FF9800; }
-  .heading-h2::before {
+  .heading-h3::before {
     left: 0; }
-  .heading-h2::after {
+  .heading-h3::after {
     right: 0; }
 
 .logo {

@@ -1,3 +1,37 @@
+.brand {
+     &__list {
+       justify-content: space-between;
+       align-items: center;
+     }
+   
+     &--column img {
+       filter: opacity(30%);
+       transition: all 0.3s ease-in;
+   
+       &:hover {
+         filter: opacity(90%);
+       }
+     }
+   
+     &--column-circle a {
+       display: block;
+       width: 10rem;
+       height: 10rem;
+     }
+   
+     &--column-rec-1 a {
+       display: block;
+       width: 40rem;
+       height: 4rem;
+     }
+   
+     &--column-rec-2 a {
+       display: block;
+       width: 25rem;
+       height: 10rem;
+     }
+}
+
 .service {
      display: flex;
      justify-content: space-between;

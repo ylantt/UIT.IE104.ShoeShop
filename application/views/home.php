@@ -4,13 +4,26 @@ require_once("template/nav.php");
 require_once("template/banner.php"); ?>
 
 <div class="home">
+     <div class="brand">
+          <div class="container">
+               <h3 class="heading-h3">
+                    <p class="heading-h3--main">BRANDS</p>
+               </h3>
+
+               <div class="brand__list d-flex">
+                    <div class="brand--column brand--column-circle"><a href="#"><img src="./public/images/palladium-logo.jpg" alt="Palladium logo"></a></div>
+                    <div class="brand--column brand--column-rec-1"><a href="#"><img src="./public/images/converse-logo.png" alt="Converse logo"></a></div>
+                    <div class="brand--column brand--column-rec-2"><a href="#"><img src="./public/images/vans-logo.png" alt="Vans logo"></a></div>
+               </div>
+          </div>
+     </div>
 
      <div class="featured-products">
           <div class="container">
-               <h2 class="heading-h2">
-                    <p class="heading-h2--sub">FEATURED SHOP ITEMS</p>
-                    <p class="heading-h2--main">FEATURED PRODUCTS</p>
-               </h2>
+               <h3 class="heading-h3">
+                    <p class="heading-h3--sub">FEATURED SHOP ITEMS</p>
+                    <p class="heading-h3--main">FEATURED PRODUCTS</p>
+               </h3>
 
                <div class="product">
                     <div class="row d-flex">
