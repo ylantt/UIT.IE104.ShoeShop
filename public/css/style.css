@@ -329,6 +329,31 @@ body {
       transform: scaleX(1);
       transform-origin: right; }
 
+.brand__list {
+  justify-content: space-between;
+  align-items: center; }
+
+.brand--column img {
+  filter: opacity(30%);
+  transition: all 0.3s ease-in; }
+  .brand--column img:hover {
+    filter: opacity(90%); }
+
+.brand--column-circle a {
+  display: block;
+  width: 10rem;
+  height: 10rem; }
+
+.brand--column-rec-1 a {
+  display: block;
+  width: 40rem;
+  height: 4rem; }
+
+.brand--column-rec-2 a {
+  display: block;
+  width: 25rem;
+  height: 10rem; }
+
 .service {
   display: flex;
   justify-content: space-between;
