@@ -35,8 +35,10 @@ img {
   margin: 0 auto;
 }
 
-.active {
+.active, .text-bold {
   font-weight: 700;
 }
 
-
+.d-flex {
+  display: flex;
+}

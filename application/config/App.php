@@ -50,7 +50,8 @@ class App
     public function handleUrl()
     {
         if (isset($_GET["url"])) { // if url has url
-            return explode("/", filter_var(trim($_GET["url"], "/"))); // return array with elements are separated by /
+            $str = preg_replace('/-/', '', $_GET["url"]); // return - character in URL
+            return explode("/-", filter_var(trim($str, "/"))); // return array with elements are separated by /
         } else {
             return -1;
         }

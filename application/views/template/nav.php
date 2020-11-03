@@ -4,7 +4,8 @@ $pages["home"] = "Home";
 $pages["products"] = "Shop";
 $pages["about"] = "About";
 
-$activePage = $_GET['url'];
+isset($_GET['url']) ? $activePage = $_GET['url'] : $activePage = "home";
+
 ?>
 
 <nav class="nav">
@@ -19,13 +20,13 @@ $activePage = $_GET['url'];
                <?php endforeach; ?>
           </ul>
 
-          <a href="home" class="nav__logo">
-               <p class="nav__logo-name">N7</p>
-               <p class="nav__logo-tagline">Every step matters.</p>
+          <a href="home" class="logo">
+               <p class="logo__name">N7</p>
+               <p class="logo__tagline">Every step matters.</p>
           </a>
 
           <ul class="flex-center">
-               <?php if ($_GET['url'] == 'login') : ?>
+               <?php if (isset($_GET['url']) && $_GET['url'] == 'login') : ?>
                     <li><a href="login" class="active">Log in</a></li>
                <?php else : ?>
                     <li><a href="login">Log in</a></li>
