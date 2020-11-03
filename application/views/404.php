@@ -18,5 +18,3 @@ include "template/nav.php"; ?>
         </div>
     </div>
 </div>
-<?php
-include "template/footer.php";
