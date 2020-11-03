@@ -463,10 +463,12 @@ body {
 
 .cart__header {
   text-align: left;
-  padding: 0.5rem;
   color: #222;
   background: #FF9800;
-  font-weight: 700; }
+  font-weight: 700;
+  padding: 0.75rem;
+  padding-left: 1rem;
+  padding-right: 1rem; }
 
 .cart__page {
   margin: 0 auto; }
@@ -475,41 +477,51 @@ body {
   max-width: 120rem;
   width: 100%;
   border-collapse: collapse;
-  margin: 0 auto; }
+  margin: 0 auto;
+  font-size: 2rem;
+  margin-top: 1rem; }
   .cart__table td {
-    padding: 1rem 0.5rem; }
+    padding-top: 2rem;
+    padding-left: 1rem; }
     .cart__table td input {
       width: 4.5rem;
       height: 3rem;
       padding: 0.5rem; }
     .cart__table td a {
-      color: red;
-      font-size: 1.2rem; }
+      color: red; }
 
 .cart__info {
   display: flex;
   flex-wrap: wrap;
   line-height: 2rem; }
   .cart__info img {
-    width: 10rem;
-    height: 10rem;
-    margin-left: -0.5rem; }
+    width: 13rem;
+    height: 13rem;
+    margin-left: -1rem; }
   .cart__info div {
-    margin-left: 1.5rem; }
+    margin-left: 1.5rem;
+    line-height: 4rem; }
 
 .cart__total {
   display: flex;
   justify-content: flex-end;
-  margin-top: 4rem; }
+  margin-top: 4rem;
+  padding-bottom: 10rem; }
   .cart__total table {
     text-align: right;
     border-top: 0.2rem solid #FF9800;
     width: 100%;
     max-width: 40rem;
-    line-height: 4rem; }
+    line-height: 5rem;
+    font-size: 2rem;
+    padding-top: 1.5rem; }
+
+.cart__bottom {
+  position: relative;
+  margin-bottom: 15rem; }
 
 .cart__OrdBtn {
-  width: 100%;
+  width: 20rem;
   margin-top: 2rem;
   margin-bottom: 2rem;
   padding: 1.5rem;
@@ -522,7 +534,10 @@ body {
   border-radius: 0.5rem;
   background: #FF9800;
   border: none;
-  cursor: pointer; }
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  bottom: 0; }
   .cart__OrdBtn:hover {
     background-color: #995b00;
     color: whitesmoke; }

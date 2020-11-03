@@ -7,11 +7,12 @@
 }
 .cart__header{
     text-align: left;
-    padding: 0.5rem;
     color: $color-black;
     background: $color-primary;
     font-weight: 700;
-
+    padding: 0.75rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
 .cart__page{
@@ -22,17 +23,19 @@
     width: 100%;
     border-collapse: collapse;
     margin: 0 auto;
+    font-size: 2rem;
+    margin-top: 1rem;
     td{
-        padding: 1rem 0.5rem;
+        padding-top: 2rem;
+        padding-left: 1rem;
         input{
             width: 4.5rem;
             height: 3rem;
             padding: 0.5rem;
+            
         }
         a{
             color: red;
-            font-size: 1.2rem;
-            
         }
     }
 }
@@ -41,12 +44,13 @@
     flex-wrap: wrap;
     line-height: 2rem;
     img{
-        width: 10rem;
-        height: 10rem;
-        margin-left: -0.5rem;
+        width: 13rem;
+        height: 13rem;
+        margin-left: -1rem;
     }
     div{
         margin-left: 1.5rem;
+        line-height: 4rem;
     }
 }
 
@@ -54,17 +58,25 @@
     display: flex;
     justify-content: flex-end;
     margin-top: 4rem;
+    padding-bottom: 10rem;
     table{
         text-align: right;
         border-top: 0.2rem solid $color-primary;
         width: 100%;
         max-width: 40rem;
-        line-height: 4rem;
+        line-height: 5rem;
+        font-size: 2rem;
+        padding-top: 1.5rem;
     }
 }
 
+.cart__bottom {
+    position: relative;
+    margin-bottom: 15rem;
+}
+
 .cart__OrdBtn{
-    width: 100%;
+    width: 20rem;
     margin-top: 2rem;
     margin-bottom: 2rem;
     padding: 1.5rem;
@@ -80,6 +92,10 @@
     background: $color-primary;
     border: none;
     cursor: pointer;
+
+    position: absolute;
+    right: 0;
+    bottom: 0;
     &:hover{
         background-color: darken($color-primary,20%);
         color: whitesmoke;

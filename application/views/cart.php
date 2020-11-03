@@ -48,7 +48,7 @@ include "template/nav.php"; ?>
         </div>
     </div>
 
-    <div class ="container">
+    <div class ="container cart__bottom">
         <div class= "cart__total">
             <table>
                 <tr>
