@@ -6,9 +6,9 @@ require_once("template/banner.php"); ?>
 <div class="home">
      <div class="brand">
           <div class="container">
-               <h3 class="heading-h3">
+               <!-- <h3 class="heading-h3">
                     <p class="heading-h3--main">BRANDS</p>
-               </h3>
+               </h3> -->
 
                <div class="brand__list d-flex">
                     <div class="brand--column brand--column-circle"><a href="#"><img src="./public/images/palladium-logo.jpg" alt="Palladium logo"></a></div>

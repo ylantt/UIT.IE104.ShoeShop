@@ -1,4 +1,6 @@
 .brand {
+     margin-top: 10rem;
+     
      &__list {
        justify-content: space-between;
        align-items: center;
@@ -66,7 +68,7 @@
 }
 
 .featured-products {
-     margin: 15rem 0;
+     margin: 10rem 0 15rem;
 }
 
 .event {
