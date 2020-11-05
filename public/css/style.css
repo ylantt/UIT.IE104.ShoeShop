@@ -895,5 +895,90 @@ body {
   outline: none;
   border-radius: 0.5rem; }
   .login__btn:hover {
+.cart__title {
+  font-size: 4rem;
+  text-align: center;
+  color: #222;
+  margin-top: 5rem;
+  margin-bottom: 2rem; }
+
+.cart__header {
+  text-align: left;
+  color: #222;
+  background: #FF9800;
+  font-weight: 700;
+  padding: 0.75rem;
+  padding-left: 1rem;
+  padding-right: 1rem; }
+
+.cart__page {
+  margin: 0 auto; }
+
+.cart__table {
+  max-width: 120rem;
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 auto;
+  font-size: 2rem;
+  margin-top: 1rem; }
+  .cart__table td {
+    padding-top: 2rem;
+    padding-left: 1rem; }
+    .cart__table td input {
+      width: 4.5rem;
+      height: 3rem;
+      padding: 0.5rem; }
+    .cart__table td a {
+      color: red; }
+
+.cart__info {
+  display: flex;
+  flex-wrap: wrap;
+  line-height: 2rem; }
+  .cart__info img {
+    width: 13rem;
+    height: 13rem;
+    margin-left: -1rem; }
+  .cart__info div {
+    margin-left: 1.5rem;
+    line-height: 4rem; }
+
+.cart__total {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 4rem;
+  padding-bottom: 10rem; }
+  .cart__total table {
+    text-align: right;
+    border-top: 0.2rem solid #FF9800;
+    width: 100%;
+    max-width: 40rem;
+    line-height: 5rem;
+    font-size: 2rem;
+    padding-top: 1.5rem; }
+
+.cart__bottom {
+  position: relative;
+  margin-bottom: 15rem; }
+
+.cart__OrdBtn {
+  width: 20rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  font-size: 1.7rem;
+  color: #222;
+  text-align: center;
+  font-weight: bold;
+  transition: 0.3s;
+  outline: none;
+  border-radius: 0.5rem;
+  background: #FF9800;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  bottom: 0; }
+  .cart__OrdBtn:hover {
     background-color: #995b00;
     color: whitesmoke; }
