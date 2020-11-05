@@ -895,6 +895,9 @@ body {
   outline: none;
   border-radius: 0.5rem; }
   .login__btn:hover {
+    background-color: #995b00;
+    color: whitesmoke; }
+
 .cart__title {
   font-size: 4rem;
   text-align: center;
