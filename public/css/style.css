@@ -130,6 +130,9 @@ body {
 .mt-30 {
   margin-top: 3rem; }
 
+.text-center {
+  text-align: center !important; }
+
 .btn {
   padding: 1.5rem 3rem;
   border: 0.2rem solid #222;
@@ -467,8 +470,17 @@ body {
   background: #FF9800;
   font-weight: 700;
   padding: 0.75rem;
-  padding-left: 1rem;
+  padding-left: 3rem;
   padding-right: 1rem; }
+
+.cart__header_center {
+  color: #222;
+  background: #FF9800;
+  font-weight: 700;
+  padding: 0.75rem;
+  padding-left: 3rem;
+  padding-right: 1rem;
+  text-align: center; }
 
 .cart__page {
   margin: 0 auto; }

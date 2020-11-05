@@ -9,8 +9,8 @@ include "template/nav.php"; ?>
             <table class="cart__table">
                 <tr>
                     <th class="cart__header">Product</th>
-                    <th class="cart__header">Quantity</th>
-                    <th class="cart__header">Subtotal</th>
+                    <th class="cart__header text-center">Quantity</th>
+                    <th class="cart__header text-center">Subtotal</th>
                 </tr>
 
                 <tr>
@@ -25,8 +25,8 @@ include "template/nav.php"; ?>
                             </div>
                         </div>
                     </td>
-                    <td><input type="number" value="1" min="1" max="999"/></td>
-                    <td>$216,25</td>
+                    <td class="text-center"><input type="number" value="1" min="1" max="999"/></td>
+                    <td class="text-center">$216,25</td>
                 </tr>
 
                 <tr>
@@ -41,8 +41,8 @@ include "template/nav.php"; ?>
                             </div>
                         </div>
                     </td>
-                    <td><input type="number" value="1" min="1" max="999"/></td>
-                    <td>$220,00</td>
+                    <td class="text-center"><input type="number" value="1" min="1" max="999"/></td>
+                    <td class="text-center">$220,00</td>
                 </tr>
             </table>
         </div>
