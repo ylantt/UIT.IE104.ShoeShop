@@ -4,12 +4,31 @@ require_once("template/nav.php");
 require_once("template/banner.php"); ?>
 
 <div class="home">
+     <div class="section-about">
+          <div class="container d-flex">
+               <div class="section-about--left">
+                    <div class="section-about__image section-about__image--1">
+                         <img src="./public/images/home-about-1.jpeg" alt="Palladium shoe">
+                    </div>
+                    <div class="section-about__image section-about__image--2">
+                         <img src="./public/images/home-about-2.jpg" alt="Converse shoe">
+                    </div>
+                    <div class="section-about__image section-about__image--3">
+                         <img src="./public/images/home-about-3.jpg" alt="Vans shoe">
+                    </div>
+               </div>
+               <div class="section-about--right">
+                    <h3 class="heading-h3 section-about__heading heading-h3--main">
+                         HIGH VALUES
+                    </h3>
+                    <p class="section-about__content"><i class="fas fa-quote-left quote-icon"></i>Our success is not only due to the quality of our products; it's down to attitude, our approach and the way we treat our clients.</p>
+                    <a href="about" class="section__link">Read more <span>&#8594;</span></a>
+               </div>
+          </div>
+     </div>
+
      <div class="brand">
           <div class="container">
-               <!-- <h3 class="heading-h3">
-                    <p class="heading-h3--main">BRANDS</p>
-               </h3> -->
-
                <div class="brand__list d-flex">
                     <div class="brand--column brand--column-circle"><a href="#"><img src="./public/images/palladium-logo.jpg" alt="Palladium logo"></a></div>
                     <div class="brand--column brand--column-rec-1"><a href="#"><img src="./public/images/converse-logo.png" alt="Converse logo"></a></div>
