@@ -77,23 +77,16 @@ body {
   position: relative; }
   .heading-h3--main {
     font-weight: 700;
-    font-size: 3rem; }
+    font-size: 3rem;
+    color: #F57C00; }
   .heading-h3--sub {
     font-weight: 300;
     font-size: 16px;
     margin-bottom: 10px;
     letter-spacing: 3px; }
-  .heading-h3::before, .heading-h3::after {
-    content: "";
-    width: 30%;
-    height: 2px;
-    position: absolute;
-    top: 50%;
-    background-color: #FF9800; }
-  .heading-h3::before {
-    left: 0; }
-  .heading-h3::after {
-    right: 0; }
+  .heading-h3:hover .heading-h3--main {
+    transform: scale(1.1) skewY(2deg) skewX(15deg);
+    text-shadow: 0.5rem 1rem 2rem rgba(255, 224, 178, 0.8); }
 
 .logo {
   text-align: center;
