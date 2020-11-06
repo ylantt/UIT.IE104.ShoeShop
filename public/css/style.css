@@ -79,14 +79,14 @@ body {
     font-weight: 700;
     font-size: 3rem;
     color: #F57C00; }
+    .heading-h3--main:hover {
+      transform: scale(1.1) skewY(2deg) skewX(15deg);
+      text-shadow: 0.5rem 1rem 2rem rgba(255, 224, 178, 0.8); }
   .heading-h3--sub {
     font-weight: 300;
     font-size: 16px;
     margin-bottom: 10px;
     letter-spacing: 3px; }
-  .heading-h3:hover .heading-h3--main {
-    transform: scale(1.1) skewY(2deg) skewX(15deg);
-    text-shadow: 0.5rem 1rem 2rem rgba(255, 224, 178, 0.8); }
 
 .logo {
   text-align: center;
@@ -411,6 +411,43 @@ body {
     background: url("../images/event-image.jpg");
     background-position: center;
     background-repeat: no-repeat; }
+
+.section-about {
+  margin-top: 15rem; }
+  .section-about--left {
+    flex: 2;
+    position: relative; }
+  .section-about--right {
+    flex: 1;
+    height: 50rem; }
+  .section-about__image {
+    width: 30rem;
+    height: 30rem;
+    position: absolute;
+    outline-offset: 3rem;
+    transition: all 0.1s ease-in; }
+    .section-about__image:hover {
+      outline: 1.5rem solid #FF9800;
+      box-shadow: 0 2.5rem 4rem rgba(34, 34, 34, 0.5);
+      z-index: 10;
+      transform: scale(1.05); }
+    .section-about__image--1 {
+      top: 25%;
+      left: 10%; }
+    .section-about__image--2 {
+      width: 45rem;
+      height: 25rem;
+      top: 0%;
+      left: 20%; }
+    .section-about__image--3 {
+      bottom: 0;
+      right: 10%; }
+  .section-about__heading {
+    margin: 15rem 0 3rem; }
+  .section-about .quote-icon {
+    font-size: 3rem;
+    margin-right: 1rem;
+    color: #999; }
 
 .login__background {
   padding: 15rem 0;
