@@ -133,7 +133,8 @@
      &__image {
           flex: 1;
           background: url("../images/event-image.jpg");
-          background-position: center right;
+          background-position: center;
+          background-repeat: no-repeat;
      }
 }
 
