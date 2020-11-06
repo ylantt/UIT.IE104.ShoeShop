@@ -138,3 +138,60 @@
      }
 }
 
+.section-about {
+     margin-top: 15rem;
+   
+     &--left {
+       flex: 2;
+       position: relative;
+     }
+   
+     &--right {
+       flex: 1;
+       height: 50rem;
+     }
+   
+     &__image {
+       width: 30rem;
+       height: 30rem;
+       position: absolute;
+       outline-offset: 3rem;
+       transition: all 0.1s ease-in;
+   
+       &:hover {
+         outline: 1.5rem solid $color-primary;
+         box-shadow: 0 2.5rem 4rem rgba($color-black, 0.5);
+         z-index: 10;
+         transform: scale(1.05);
+       }
+   
+       &--1 {
+         top: 25%;
+         left: 10%;
+       }
+   
+       &--2 {
+         width: 45rem;
+         height: 25rem;
+         top: 0%;
+         left: 20%;
+       }
+   
+       &--3 {
+         bottom: 0;
+         right: 10%;
+       }
+     }
+   
+     &__heading {
+          margin: 15rem 0 3rem;
+     }
+   
+     & .quote-icon {
+          font-size: 3rem;
+          margin-right: 1rem;
+          color: $color-dark-2;
+     }
+}
+
+   
