@@ -543,6 +543,8 @@ body {
   background-color: #222;
   cursor: pointer;
   transition: .4s; }
+  .error__button:hover {
+    letter-spacing: 0.2rem; }
   .error__button--large {
     line-height: 6.0rem;
     padding: 0 8.0rem; }
@@ -736,6 +738,8 @@ body {
   background-color: #222;
   cursor: pointer;
   transition: .4s; }
+  .error__button:hover {
+    letter-spacing: 0.2rem; }
   .error__button--large {
     line-height: 6.0rem;
     padding: 0 8.0rem; }
