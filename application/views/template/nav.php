@@ -1,7 +1,7 @@
 <?php
 $pages = array();
 $pages["home"] = "Home";
-$pages["products"] = "Shop";
+$pages["#"] = "Collection";
 $pages["about"] = "About";
 
 isset($_GET['url']) ? $activePage = $_GET['url'] : $activePage = "home";
@@ -12,11 +12,11 @@ isset($_GET['url']) ? $activePage = $_GET['url'] : $activePage = "home";
      <div class="container flex-center">
           <ul class="flex-center list-pages">
                <?php foreach ($pages as $url => $title) : ?>
-                    <li>
-                         <a <?php if ($url === $activePage) : ?> class="active" <?php endif; ?> href="<?php echo $url; ?>">
+                    <li <?php if ($title === "Collection") : ?> class="disabled-link" <?php elseif ($url === $activePage) : ?> class="active" <?php endif; ?>>
+                         <a href="<?php echo $url; ?>">
                               <?php echo $title; ?>
-                         </a></li>
-
+                         </a>
+                    </li>
                <?php endforeach; ?>
           </ul>
 
