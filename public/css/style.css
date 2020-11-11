@@ -34,6 +34,11 @@ img {
 .d-flex {
   display: flex; }
 
+.disabled-link {
+  cursor: pointer; }
+  .disabled-link a {
+    pointer-events: none; }
+
 .icon {
   width: 2rem; }
 
@@ -304,10 +309,9 @@ body {
     transform-origin: bottom; }
   .nav.hide {
     top: -100px; }
-  .nav .list-pages > li a {
-    position: relative;
-    display: block; }
-    .nav .list-pages > li a::after {
+  .nav .list-pages > li {
+    position: relative; }
+    .nav .list-pages > li::after {
       content: "";
       position: absolute;
       width: 100%;
@@ -318,7 +322,7 @@ body {
       transform: scaleX(0);
       transform-origin: left;
       transition: all 0.2s; }
-    .nav .list-pages > li a:hover::after {
+    .nav .list-pages > li:hover::after {
       transform: scaleX(1);
       transform-origin: right; }
 

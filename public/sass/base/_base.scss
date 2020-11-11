@@ -42,3 +42,11 @@ img {
 .d-flex {
   display: flex;
 }
+
+.disabled-link {
+  cursor: pointer;
+
+  & a {
+    pointer-events: none;
+  }
+}
