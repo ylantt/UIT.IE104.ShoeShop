@@ -22,8 +22,7 @@ include "template/nav.php"; ?>
                     <p class="reg_account">Do you have an Account? <a href="#">Log in</a></p>
                 </div>
             </div>
-            </div>
-           
+        </div>
         <p class="reg_account">Login Form</p>
     </div>
 <?php
