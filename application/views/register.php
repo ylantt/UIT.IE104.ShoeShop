@@ -2,7 +2,7 @@
 include "template/header.php";
 include "template/nav.php"; ?>
     <div class="register">
-        <h2 class="reg_h2">Register</h2>
+        <h2 class="reg__h2">Register</h2>
         <div class="reg__box">
             <div class="reg__boxleft">
             </div>
