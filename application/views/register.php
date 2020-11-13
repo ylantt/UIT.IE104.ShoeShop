@@ -6,7 +6,7 @@ include "template/nav.php"; ?>
         <div class="reg__box">
             <div class="reg__boxleft">
             </div>
-            <div class="reg__boxfight">
+            <div class="reg__boxright">
                 <div  class="reg__form">
                     <form>
                         <p><input type="text" class="reg__input" id="username" placeholder="username"> </p>
@@ -19,7 +19,7 @@ include "template/nav.php"; ?>
                             REGISTER
                         </button>
                     </div>
-                    <p class="reg_account">Do you have an Account? <a href="#">Log in</a></p>
+                    <p class="reg__account">Do you have an Account? <a href="#">Log in</a></p>
                 </div>
             </div>
         </div>
