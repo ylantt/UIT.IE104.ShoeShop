@@ -13,17 +13,14 @@
 .reg__box{
     display: flex;
     background-color:$color-peachpuff;
-    
 }
 .reg__boxleft{
     background-image: url();
     background-size: 100%;
-    width:100%;
-    
+    width:100%;  
 }
 .reg__boxright{
-    width: 100%;
-   
+    width: 100%; 
 }
 .reg__form{
     padding: 3rem;
@@ -35,7 +32,6 @@
 .reg__input{
     background-color:$color-peachpuff;
     width: 100%;
-    
     border: none;
     border-bottom: solid 1px $color-peru ;
     height: 3rem;
