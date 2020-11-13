@@ -23,7 +23,6 @@ include "template/nav.php"; ?>
                 </div>
             </div>
         </div>
-        <p class="reg__account">© Copyright: <a href="#">Công Ty TNHH LTLDH</a></p>
     </div>
 <?php
 include "template/footer.php";
