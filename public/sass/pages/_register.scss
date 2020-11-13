@@ -1,46 +1,55 @@
-.register{
+.reg{
     background-color:$color-oldlace;
     background-size: cover;
-    margin: 4rem auto auto;
+    margin: 10rem auto auto;
     padding: 4rem;
     width: 60%;
-}
-.reg__h2{
-    text-align: center;
-    color: $color-peru;
-    padding-bottom: 1.5rem ;
-}
-.reg__box{
-    display: flex;
-    background-color:$color-peachpuff;
-}
-.reg__boxleft{
-    background-image: url();
-    background-size: 100%;
-    width:100%;  
-}
-.reg__boxright{
-    width: 100%; 
-}
-.reg__form{
-    padding: 3rem;
-}
-.reg__account{
-    margin-top: 1rem;
-    text-align: center;
-}
-.reg__input{
-    background-color:$color-peachpuff;
-    width: 100%;
-    border: none;
-    border-bottom: solid 1px $color-peru ;
-    height: 3rem;
-}
-.reg__button{
-    margin: 2rem 0;
-    background:$color-peru;
-    border: none;
-    font-weight: 600;
-    padding: 1rem 1.5rem;
-    width: 100%;
+
+    &__h2{
+        text-align: center;
+        color: $color-peru;
+        padding-bottom: 1.5rem ;
+    }
+
+    &__box{
+        display: flex;
+        background-color:$color-peachpuff;
+    }
+
+    &__boxleft{
+        background-image: url();
+        background-size: 100%;
+        width:100%;  
+    }
+
+    &__boxright{
+        width: 100%; 
+    }
+
+    &__form{
+        padding: 3rem;
+    }
+    &__account{
+        margin-top: 1rem;
+        text-align: center;
+    }
+
+    &__input{
+        background-color:$color-peachpuff;
+        width: 100%;
+        border: none;
+        border-bottom: solid 1px $color-peru ;
+        height: 3rem;
+        padding: 1rem 3rem;
+    }
+
+    &__button{
+        margin: 2rem 0;
+        background:$color-peru;
+        border: none;
+        font-weight: 600;
+        padding: 1rem 1.5rem;
+        width: 100%;
+        cursor: pointer;
+    }
 }

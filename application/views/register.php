@@ -1,7 +1,7 @@
 <?php
 include "template/header.php";
 include "template/nav.php"; ?>
-    <div class="register">
+    <div class="reg">
         <h2 class="reg__h2">Register</h2>
         <div class="reg__box">
             <div class="reg__boxleft">
@@ -19,7 +19,7 @@ include "template/nav.php"; ?>
                             REGISTER
                         </button>
                     </div>
-                    <p class="reg__account">Do you have an Account? <a href="#"> Log in</a></p>
+                    <p class="reg__account">Do you have an Account? <a href="login"> Log in</a></p>
                 </div>
             </div>
         </div>
