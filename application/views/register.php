@@ -23,7 +23,7 @@ include "template/nav.php"; ?>
                 </div>
             </div>
         </div>
-        <p class="reg_account">Login Form</p>
+        <p class="reg__account">Login Form</p>
     </div>
 <?php
 include "template/footer.php";
