@@ -8,7 +8,7 @@
 .reg__h2{
     text-align: center;
     color: $color-peru;
-    margin-top: 0px ;
+    padding: 15px 0px;
 }
 .reg__box{
     display: flex;
@@ -16,7 +16,7 @@
     box-sizing: border-box;
 }
 .reg__boxleft{
-    background-image: url(/public/images/banner-img.jpg);
+    background-image: url();
     background-size: 100%;
     width:100%;
     box-sizing: border-box;

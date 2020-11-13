@@ -19,11 +19,11 @@ include "template/nav.php"; ?>
                             REGISTER
                         </button>
                     </div>
-                    <p class="reg__account">Do you have an Account? <a href="#">Log in</a></p>
+                    <p class="reg__account">Do you have an Account? <a href="#"> Log in</a></p>
                 </div>
             </div>
         </div>
-        <p class="reg__account">Login Form</p>
+        <p class="reg__account">© Copyright: <a href="#">Công Ty TNHH LTLDH</a></p>
     </div>
 <?php
 include "template/footer.php";
