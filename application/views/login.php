@@ -12,7 +12,7 @@ include "template/nav.php"; ?>
                 <input type="password" placeholder="Password" name="" value=""/>
             </div>
             <input class="login__btn" type="button" name="" value="Sign in"/>
-            <a class ="login__other" herf="#">Don't have an account?</a>
+            <a class ="login__other" herf="register">Don't have an account?</a>
             </br>
             <a class ="login__other" href="#">Forgot password?</a>
         </div>
