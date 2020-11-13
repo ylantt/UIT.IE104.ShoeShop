@@ -8,7 +8,7 @@ include "template/nav.php"; ?>
             </div>
             <div class="reg__boxfight">
                 <div  class="reg__form">
-                    <form action="">
+                    <form>
                         <p><input type="text" class="reg__input" id="username" placeholder="username"> </p>
                         <p><input type="email"class="reg__input" id="email" placeholder="email address"></p>
                         <p><input type="password" class="reg__input"id="password" placeholder="passwword"></p>
