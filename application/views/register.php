@@ -1,47 +1,30 @@
 <?php
 include "template/header.php";
 include "template/nav.php"; ?>
-    <div class="register" align="center">
-            <form action="#" >
-                <div class="reg_form">
-                        <h2 class="reg_title">Register</h2>
-                        <p class="p_reg">
-                            <label for="reg_username" class="reg_lab">Username</label>
-                            <input type="text" id="reg_username" required>
-                        </p>
-                        <p class="p_reg">
-                            <label for="reg_fname" class="reg_lab">First name</label>
-                            <input type="text" id="reg_fname" required>
-                        </p>
-                        <p class="p_reg">
-                            <label for="reg_lname" class="reg_lab">Last name</label>
-                            <input type="text" id="reg_lname" required>
-                        </p>
-                        <p class="p_reg">
-                            <label for="reg_email" class="reg_lab">Email address</label>
-                            <input type="text" id="reg_email" required>
-                        </p>
-                        <p class="p_reg">
-                            <label for="reg_phone" class="reg_lab">Phone</label>
-                            <input type="tel" id="reg_phone" required>
-                        </p>
-                        <p class="p_reg">
-                            <label for="reg_address" class="reg_lab">Address</label>
-                            <input type="text" id="reg_address" required>
-                        </p>
-                        <p class="p_reg">
-                            <label for="reg_pass" class="reg_lab">Password</label>
-                            <input type="password" id="reg_pass" required>
-                        </p>
-                        <p class="p_reg">
-                            <label for="reg_copass" class="reg_lab">Confirm Password</label>
-                            <input type="password" id="reg_copass" required>
-                        </p>
-                </div>
-                    <div class="reg__act">
-                        <button type="submit" class="reg_but">Register</button>
+    <div class="register">
+        <h2 class="reg_h2">Register</h2>
+        <div class="reg__box">
+            <div class="reg__boxleft">
+            </div>
+            <div class="reg__boxfight">
+                <div  class="reg__form">
+                    <form action="">
+                        <p><input type="text" class="reg__input" id="username" placeholder="username"> </p>
+                        <p><input type="email"class="reg__input" id="email" placeholder="email address"></p>
+                        <p><input type="password" class="reg__input"id="password" placeholder="passwword"></p>
+                        <p> <input type="confirm_password" class="reg__input" id="confirm_password" placeholder="confirm passwword"></p>
+                    </form>
+                    <div>
+                        <button class="reg__button" type="submit" id="register">
+                            REGISTER
+                        </button>
                     </div>
-             </form>
-        </div>
+                    <p class="reg_account">Do you have an Account? <a href="#">Log in</a></p>
+                </div>
+            </div>
+            </div>
+           
+        <p class="reg_account">Login Form</p>
+    </div>
 <?php
 include "template/footer.php";
