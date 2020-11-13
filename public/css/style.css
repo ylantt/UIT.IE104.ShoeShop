@@ -60,7 +60,7 @@ body {
   font-family: "function-regular", sans-serif;
   line-height: 1;
   font-size: 1.6rem;
-  color: peru; }
+  color: #000; }
 
 .heading-h1 {
   font-family: "function-bold", sans-serif;
@@ -95,12 +95,12 @@ body {
 
 .btn {
   padding: 1.5rem 3rem;
-  border: 0.2rem solid peru;
+  border: 0.2rem solid #000;
   display: inline-block; }
 
 .cta {
   transition: all 0.1s linear;
-  background-color: peru;
+  background-color: #000;
   color: #fff; }
   .cta__arrow {
     transition: all 0.2s linear; }
@@ -110,7 +110,7 @@ body {
     margin-left: 20px; }
   .cta:active {
     transform: translateY(3px);
-    box-shadow: 2px 2px 2px 2px rgba(205, 133, 63, 0.8); }
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.8); }
 
 .banner {
   background: url("../images/banner-img.jpg");
@@ -152,7 +152,7 @@ body {
   z-index: 1000;
   height: 100px;
   background-color: #fff;
-  box-shadow: 0 1px 25px rgba(205, 133, 63, 0.1); }
+  box-shadow: 0 1px 25px rgba(0, 0, 0, 0.1); }
   .nav li:not(:last-child) {
     margin-right: 3rem; }
   .nav__notification {
@@ -160,7 +160,7 @@ body {
     height: 2rem;
     border-radius: 50%;
     color: #fff;
-    background-color: peru;
+    background-color: #000;
     display: inline-block;
     text-align: center;
     line-height: 2rem;
@@ -206,7 +206,7 @@ body {
   box-sizing: border-box; }
 
 .reg__boxleft {
-  background-image: url(/image/images.jpg);
+  background-image: url(/public/images/banner-img.jpg);
   background-size: 100%;
   width: 100%;
   box-sizing: border-box; }
