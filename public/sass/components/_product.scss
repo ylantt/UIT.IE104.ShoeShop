@@ -41,6 +41,7 @@
           padding: 1.5rem 0;
           transform: translateY(40%);
           transition: all 0.3s cubic-bezier(0.11, 0, 0.5, 0);
+          color: $color-primary-blue;
      }
 
      &__info *, &__action {
@@ -64,8 +65,8 @@
      }
 
      &__new, &__sale {
-          width: 6rem;
-          height: 6rem;
+          width: 5rem;
+          height: 5rem;
           border-radius: 50%;
           position: absolute;
           top: 2rem;
@@ -80,7 +81,6 @@
 
      &__new {
           background-color: #2e8b57;
-          // border: 1px solid #2e8b57;
      }
 
      &__sale {

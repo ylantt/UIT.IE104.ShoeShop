@@ -1,31 +1,25 @@
-.cart{
+.cart {
+    margin-top: 15rem;
+
     &__title{
         font-size: 4rem;
         text-align: center;
-        color: $color-black;
+        color: $color-primary-orange;
+        font-weight: 700;
         margin-top: 5rem;
         margin-bottom: 2rem; 
     }
     &__header{
         text-align: left;
-        color: $color-black;
-        background: $color-primary;
+        color: $color-primary-blue;
+        border-bottom: 2px solid $color-primary-orange;
+        // background: $color-primary-orange;
         font-weight: 700;
         padding: 0.75rem;
-        padding-left: 3rem;
+        padding-left: 1rem;
         padding-right: 1rem;
     }
-
-    &__header_center{
-        color: $color-black;
-        background: $color-primary;
-        font-weight: 700;
-        padding: 0.75rem;
-        padding-left: 3rem;
-        padding-right: 1rem;
-        text-align: center;
     
-    }
     &__page{
         margin: 0 auto;
     }
@@ -54,6 +48,8 @@
         display:flex;
         flex-wrap: wrap;
         line-height: 2rem;
+        align-items: center;
+
         img{
             width: 13rem;
             height: 13rem;
@@ -72,7 +68,7 @@
         padding-bottom: 10rem;
         table{
             text-align: right;
-            border-top: 0.2rem solid $color-primary;
+            border-top: 0.2rem solid $color-primary-orange;
             width: 100%;
             max-width: 40rem;
             line-height: 5rem;
@@ -100,7 +96,7 @@
         transition: 0.3s;
         outline: none;
         border-radius: 0.5rem;
-        background: $color-primary;
+        background: $color-primary-orange;
         border: none;
         cursor: pointer;
     
@@ -108,9 +104,22 @@
         right: 0;
         bottom: 0;
         &:hover{
-            background-color: darken($color-primary,20%);
-            color: whitesmoke;
+            background-color: $color-primary-brown;
+            color: $color-white;
         }
     }
-}
+    
+    &__product-name {
+        color: $color-primary-blue;
+        font-weight: 700;
+    }
+    
+    &__product-price {
+        color: $color-primary-orange;
+    }
 
+    &__total-resut {
+        color: $color-primary-orange;
+        font-weight: 700;
+    }
+}

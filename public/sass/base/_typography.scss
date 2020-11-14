@@ -22,8 +22,13 @@ body {
   line-height: 150%;
 }
 
-// heading h2
 .heading-h2 {
+  color: $color-primary-black;
+  // text-shadow: 2px 2px 2px $color-primary-blue;
+}
+
+// heading h3
+.heading-h3 {
   text-align: center;
   margin-bottom: 6rem;
   position: relative;
@@ -31,6 +36,12 @@ body {
   &--main {
     font-weight: 700;
     font-size: 3rem;
+    color: $color-primary-orange;
+    
+    &:hover {
+      transform: scale(1.1) skewY(2deg) skewX(15deg);
+    text-shadow: 0.5rem 1rem 2rem rgba($color-primary-orange, 0.8);
+    }
   }
 
   &--sub {
@@ -39,33 +50,18 @@ body {
     margin-bottom: 10px;
     letter-spacing: 3px;
   }
-
-  &::before, &::after {
-    content: "";
-    width: 30%;
-    height: 2px;
-    position: absolute;
-    top: 50%;
-    background-color: $color-primary;
-  }
-
-  &::before {
-    left: 0;
-  }
-
-  &::after {
-    right: 0;
-  }
 }
 
 // logo
 .logo {
   text-align: center;
   position: relative;
+  // color: $color-primary-blue-dark-1;
 
   &__name {
     font-weight: 700;
     font-size: 25px;
+    
   
     &::before {
       content: "";
@@ -74,7 +70,7 @@ body {
       position: absolute;
       left: 0;
       top: 25%;
-      background-color: $color-primary;
+      background-color: $color-primary-orange;
     }
   }
 }
@@ -90,7 +86,7 @@ body {
 
   &:hover {
     letter-spacing: 5px;
-    color: $color-primary;
+    color: $color-primary-orange;
     font-weight: 700;
   }
 }
