@@ -1,3 +1,15 @@
 .icon {
      width: 2rem;
 }
+
+.close-icon {
+     position: absolute;
+     right: 3rem;
+     top: 3rem;
+     cursor: pointer;
+}
+
+.icon-trash {
+     color: $color-red;
+     cursor: pointer;
+}

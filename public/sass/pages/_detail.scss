@@ -107,7 +107,7 @@
     padding-bottom: 1rem;
     font-weight: 700;
     font-size: 2rem;
-    color: $color-primary;
+    color: $color-primary-orange;
   }
   &__p {
     display: block;
@@ -124,7 +124,7 @@
     margin-right: 2.5rem;
     text-transform: uppercase;
     padding-bottom: 0.6rem;
-    color: $color-primary;
+    color: $color-primary-orange;
   }
 
   &__items_container {
@@ -146,7 +146,7 @@
         width: 5px;
         height: 5px;
         border-radius: 50%;
-        background: $color-primary;
+        background: $color-primary-orange;
         position: absolute;
         top: 30%;
         left: 0;
@@ -176,7 +176,7 @@
 }
 
 .btn-add-wishlist {
-  background: $color-primary;
+  background: $color-primary-orange;
   display: inline-block;
   padding: 1rem 3rem;
   margin-top: 3rem;
