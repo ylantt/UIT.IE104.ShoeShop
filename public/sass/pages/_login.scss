@@ -1,33 +1,41 @@
-.login__background{
-    padding: 15rem 0;
-    background-color: lighten($color-primary, 20%) !important;
+.login{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: all 0.2s ease-in-out;
+    z-index: 2000;
+}
+
+.login.active {
+    transform: translate(-50%, -50%) scale(1);
 }
 
 .login__box{
     width: 45rem;
     margin: 0 auto;
-    color: $color-black;
-    padding: 2rem;
+    color: #222;
+    padding: 2rem 3rem;
     border-radius: 0.4rem;
-    background: rgba($color-white, 0.925);
+    background: #fff;
     
-    h1 {
-        float: center;
+    h3 {
         font-size: 3.75rem;
-        border-bottom: 0.3rem solid lighten($color-primary, 20%);
         margin-bottom: 0.5rem;
-        padding: 1.8rem 0;
-        color: $color-black;
+        padding: 1rem 0;
+        color: $color-primary-orange;
     }
     
     //Used for forgot password and register 
     .login__other {
         line-height: 3.5rem;
-        color: $color-black;
+        color: $color-primary-blue;
         cursor: pointer;
         display: inline-block;
-        &:hover{
-            color: $color-primary;
+        font-weight: 400;
+
+        & *:hover{
+            font-weight: 700;
         }
 }
 
@@ -37,7 +45,11 @@
     font-size: 2rem;
     padding: 0.8rem;
     margin: 0.8rem 0;
-    border-bottom: 0.1rem solid lighten($color-primary, 20%);
+    border-bottom: 0.2rem solid $color-dark-4;
+
+    &:hover {
+        border-bottom: 0.2rem solid $color-primary-blue;
+    }
     
     input {
         border: none;
@@ -53,21 +65,23 @@
 }
 
 .login__btn {
-    width: 100%;
-    background: $color-primary;
+    background: $color-primary-orange;
     border: none;
     color: $color-black;
+    display: block;
     padding: 0.5rem;
     font-size: 2rem;
     cursor: pointer;
     text-align: center;
-    margin: 0.4rem 0.2rem;
-    transition: 0.3s;
+    margin: 3rem auto;
     outline: none;
-    border-radius: 0.5rem;
+    width: 40%;
+    transition: all 0.2s ease-in;
+    border-radius: 10rem;
+
     &:hover{
-        background-color: darken($color-primary,20%);
-        color: whitesmoke;
+        background-color: $color-primary-brown;
+        color: $color-white;
     }
 
 }

@@ -41,6 +41,7 @@
           padding: 1.5rem 0;
           transform: translateY(40%);
           transition: all 0.3s cubic-bezier(0.11, 0, 0.5, 0);
+          color: $color-primary-blue;
      }
 
      &__info *, &__action {

@@ -1,8 +1,10 @@
 .cta {
   transition: all 0.1s linear;
 
-  background-color: $color-black;
+  background-color: $color-primary-blue;
   color: $color-white;
+  border: none;
+  border-radius: 100px;
 
   &__arrow {
     transition: all 0.2s linear;

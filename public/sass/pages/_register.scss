@@ -1,0 +1,66 @@
+.reg {
+  background-color: #fff;
+  padding: 2rem 3rem;
+  width: 45rem;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: all 0.2s ease-in-out;
+  z-index: 2000;
+
+  &.active {
+    transform: translate(-50%, -50%) scale(1);
+  }
+
+  &__h2 {
+    color: $color-primary-orange;
+    font-size: 3rem;
+  }
+
+  &__form {
+    padding: 3rem;
+  }
+
+  &__account {
+    margin-top: 1rem;
+    color: $color-primary-blue;
+    font-weight: 400;
+
+    &-login:hover {
+      font-weight: 700;
+      cursor: pointer;
+    }
+  }
+
+  &__input {
+    width: 100%;
+    border: none;
+    height: 3rem;
+    padding: 1rem 1rem;
+    margin-top: 0.5rem;
+    font-size: 1.5rem;
+    border-bottom: 0.2rem solid $color-dark-4;
+
+    &:hover {
+      border-bottom: 0.2rem solid $color-primary-blue;
+    }
+  }
+
+  &__button {
+    margin: 2rem auto;
+    display: block;
+    background: $color-primary-orange;
+    border: none;
+    font-weight: 600;
+    padding: 1rem 1.5rem;
+    width: 40%;
+    cursor: pointer;
+    transition: all 0.2s ease-in;
+    border-radius: 10rem;
+    &:hover {
+      background-color: $color-primary-brown;
+      color: $color-white;
+    }
+  }
+}

@@ -34,9 +34,10 @@
           </div>
      </div>
 </div>
-
+<div id="overlay"></div>
 </body>
 <script src="./public/js/scriptEvent.js"></script>
 <script src="./public/js/countDown.js"></script>
+<script src="./public/js/popupModal.js"></script>
 
 </html>

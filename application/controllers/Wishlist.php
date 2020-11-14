@@ -1,5 +1,5 @@
 <?php
-class Whishlist extends Controller
+class Wishlist extends Controller
 {
      public function show()
      {
