@@ -269,6 +269,25 @@ body {
 .pagination a:hover:not(.active) {
   background-color: #fff; }
 
+.breadcrumb {
+  padding: 1.4rem 0;
+  margin-top: 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  border-radius: 0.25rem; }
+  .breadcrumb-item {
+    display: flex;
+    color: #FF7D00; }
+    .breadcrumb-item-active {
+      color: #fff;
+      padding: 0 0.85rem;
+      padding-left: 3rem; }
+  .breadcrumb-items {
+    display: flex;
+    position: relative;
+    text-decoration: none; }
+
 .banner {
   background: url("../images/banner-img.jpg");
   background-repeat: no-repeat;
