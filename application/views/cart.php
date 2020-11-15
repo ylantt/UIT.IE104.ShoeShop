@@ -2,7 +2,7 @@
 include "template/header.php";
 include "template/nav.php"; ?>
 
-<div>
+<div class="cart">
     <div class ="container">
         <h3 class="cart__title">Cart</h3>
         <div class = "cart__page">
@@ -11,6 +11,7 @@ include "template/nav.php"; ?>
                     <th class="cart__header">Product</th>
                     <th class="cart__header">Quantity</th>
                     <th class="cart__header">Subtotal</th>
+                    <th class="cart__header"></th>
                 </tr>
 
                 <tr>
@@ -18,15 +19,14 @@ include "template/nav.php"; ?>
                         <div class="cart__info">
                             <img src="public/images/UtraBoost_Summer.jpg" alt="Ultra boost">
                             <div>
-                                <p>ULTRABOOST SUMMER.RDY - White </p>
-                                <small>Price: $216,25</small>
-                                </br>
-                                <a href="">Remove</a>
+                                <p class="cart__product-name">ULTRABOOST SUMMER.RDY - White </p>
+                                <small>Price: <span class="cart__product-price">$220,00</span></small>
                             </div>
                         </div>
                     </td>
                     <td><input type="number" value="1" min="1" max="999"/></td>
                     <td>$216,25</td>
+                    <td><i class="fas fa-trash-alt icon-trash"></i></td>
                 </tr>
 
                 <tr>
@@ -34,15 +34,14 @@ include "template/nav.php"; ?>
                         <div class="cart__info">
                             <img src="public/images/UtraBoost_Summer.jpg" alt="Ultra boost">
                             <div>
-                                <p>ULTRABOOST SUMMER.RDY </p>
-                                <small>Price: $220,00</small>
-                                </br>
-                                <a href="">Remove</a>
+                                <p class="cart__product-name">ULTRABOOST SUMMER.RDY </p>
+                                <small>Price: <span class="cart__product-price">$220,00</span></small>
                             </div>
                         </div>
                     </td>
                     <td><input type="number" value="1" min="1" max="999"/></td>
                     <td>$220,00</td>
+                    <td><i class="fas fa-trash-alt icon-trash"></i></td>
                 </tr>
             </table>
         </div>
@@ -59,7 +58,7 @@ include "template/nav.php"; ?>
                     <td>Tax</td>
                     <td>$35.00</td>
                 </tr>
-                <tr>
+                <tr class="cart__total-resut">
                     <td>Total</td>
                     <td>$471.25</td>
                 </tr>

@@ -10,6 +10,10 @@
   background-color: $color-white;
   box-shadow: 0 1px 25px rgba($color-black, .1);
 
+  &__button {
+    cursor: pointer;
+  }
+
   & li {
     &:not(:last-child) {
       margin-right: 3rem;
@@ -47,7 +51,7 @@
       height: 2px;
       top: 120%;
       left: 0;
-      background: $color-primary;
+      background: $color-primary-orange;
       transform: scaleX(0);
       transform-origin: left;
       transition: all 0.2s;

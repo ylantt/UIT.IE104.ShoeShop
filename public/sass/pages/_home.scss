@@ -38,7 +38,7 @@
      display: flex;
      justify-content: space-between;
      color: $color-dark-1;
-     border-top: 1px solid $color-dark-2;
+     border-top: 1px solid $color-dark-4;
 
 
      &__item {
@@ -63,7 +63,7 @@
      }
 
      &__item:hover &__icon {
-          color: $color-primary;
+          color: $color-primary-orange;
      }
 }
 
@@ -78,7 +78,7 @@
      margin: 15rem 0;
      
      &__title, &__time--num {
-          color: $color-primary;
+          color: $color-primary-orange;
      }
 
      & > .container {
@@ -99,12 +99,13 @@
           font-size: 3rem;
           margin: 0 10rem;
           position: relative;
+          color: $color-primary-blue;
 
           &::before {
                content: "";
                width: 8rem;
                height: 3px;
-               background: $color-black;
+               background: $color-primary-blue;
                position: absolute;
                left: -10rem;
                top: 15%;
@@ -127,6 +128,7 @@
 
           &--text {
                font-size: 1.6rem;
+               color: $color-primary-blue;
           }
      }
 
@@ -159,7 +161,7 @@
        transition: all 0.1s ease-in;
    
        &:hover {
-         outline: 1.5rem solid $color-primary;
+         outline: 1.5rem solid $color-primary-orange;
          box-shadow: 0 2.5rem 4rem rgba($color-black, 0.5);
          z-index: 10;
          transform: scale(1.05);
@@ -190,7 +192,7 @@
      & .quote-icon {
           font-size: 3rem;
           margin-right: 1rem;
-          color: $color-dark-2;
+          color: $color-dark-4;
      }
 }
 
