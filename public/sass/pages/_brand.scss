@@ -29,7 +29,23 @@
 
           &:hover{
           opacity: 90%;
-          }
+          }  
+      }
+      &__vans{
+        position: relative;
+        display: block;
+        align-items: center;
+        object-fit: fill;
+          width:115rem;
+          height:45rem;
+          padding:0 0rem 0 0rem;
+          margin:5rem 0rem 5rem 0rem;
+          opacity: 30%;
+          transition: all 0.3s ease-in;
+
+          &:hover{
+          opacity: 90%;
+          }  
       }
       &__brandtitle{
         margin: 5rem 30rem 5rem 30rem;

@@ -1189,6 +1189,19 @@ body {
     transition: all 0.3s ease-in; }
     .brandinfo__cv:hover {
       opacity: 90%; }
+  .brandinfo__vans {
+    position: relative;
+    display: block;
+    align-items: center;
+    object-fit: fill;
+    width: 115rem;
+    height: 45rem;
+    padding: 0 0rem 0 0rem;
+    margin: 5rem 0rem 5rem 0rem;
+    opacity: 30%;
+    transition: all 0.3s ease-in; }
+    .brandinfo__vans:hover {
+      opacity: 90%; }
   .brandinfo__brandtitle {
     margin: 5rem 30rem 5rem 30rem;
     border-width: 5rem;
