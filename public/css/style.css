@@ -1176,6 +1176,19 @@ body {
     transition: all 0.3s ease-in; }
     .brandinfo__img:hover {
       opacity: 90%; }
+  .brandinfo__cv {
+    position: relative;
+    display: block;
+    align-items: center;
+    object-fit: fill;
+    width: 120rem;
+    height: 12rem;
+    padding: 0 0rem 0 0rem;
+    margin: 5rem 0rem 5rem 0rem;
+    opacity: 30%;
+    transition: all 0.3s ease-in; }
+    .brandinfo__cv:hover {
+      opacity: 90%; }
   .brandinfo__brandtitle {
     margin: 5rem 30rem 5rem 30rem;
     border-width: 5rem;
@@ -1191,7 +1204,7 @@ body {
     align-items: center;
     display: flex;
     border-radius: 0.2rem;
-    padding: 1.2rem 2.2rem;
+    padding: 1.2rem 7.2rem;
     background-color: #fff; }
     .brandinfo__filter input[type=text] {
       width: 15rem;
