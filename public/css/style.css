@@ -250,6 +250,25 @@ body {
 .product__sale {
   background-color: #e6410f; }
 
+.pagination {
+  width: 40rem;
+  margin-left: 5rem; }
+
+.pagination a {
+  display: block;
+  color: #222;
+  float: left;
+  padding: 0.8rem 1.6rem;
+  text-decoration: none;
+  transition: background-color .3s; }
+
+.pagination a.active {
+  background-color: #FF7D00;
+  color: #fff; }
+
+.pagination a:hover:not(.active) {
+  background-color: #fff; }
+
 .banner {
   background: url("../images/banner-img.jpg");
   background-repeat: no-repeat;
@@ -621,7 +640,7 @@ body {
     border-radius: 0.25rem; }
     .detail__breadcrumb-item {
       display: flex;
-      color: #F57C00; }
+      color: #001524; }
       .detail__breadcrumb-item .active {
         color: #fff;
         padding: 0 0.85rem;
@@ -634,7 +653,7 @@ body {
     width: 50rem;
     margin-left: 8rem; }
     .detail__product-image:hover {
-      box-shadow: 5px 5px 5px 5px #FFE0B2; }
+      box-shadow: 5px 5px 5px 5px #FFCED1; }
   .detail__product-name {
     font-size: 3rem; }
   .detail__row {
@@ -730,7 +749,7 @@ body {
     padding-top: 5rem; }
 
 .btn-add-cart {
-  background: #FFE0B2;
+  background: #FFCED1;
   border-radius: 2.9rem;
   color: #222;
   line-height: 4rem;
@@ -739,19 +758,19 @@ body {
   text-transform: uppercase;
   cursor: pointer; }
   .btn-add-cart:hover {
-    background-color: #FF9800;
+    background-color: #FF7D00;
     color: #fff;
     transition: 0.5s; }
 
 .btn-add-wishlist {
-  background: #FF7D00;
+  background: #FFCED1;
   display: inline-block;
   padding: 1rem 3rem;
   margin-top: 3rem;
   cursor: pointer;
   color: #222; }
   .btn-add-wishlist:hover {
-    background-color: #FF9800;
+    background-color: #FF7D00;
     color: #fff;
     transition: 0.5s; }
 
@@ -816,7 +835,7 @@ body {
     border-radius: 0.25rem; }
     .detail__breadcrumb-item {
       display: flex;
-      color: #F57C00; }
+      color: #001524; }
       .detail__breadcrumb-item .active {
         color: #fff;
         padding: 0 0.85rem;
@@ -829,7 +848,7 @@ body {
     width: 50rem;
     margin-left: 8rem; }
     .detail__product-image:hover {
-      box-shadow: 5px 5px 5px 5px #FFE0B2; }
+      box-shadow: 5px 5px 5px 5px #FFCED1; }
   .detail__product-name {
     font-size: 3rem; }
   .detail__row {
@@ -925,7 +944,7 @@ body {
     padding-top: 5rem; }
 
 .btn-add-cart {
-  background: #FFE0B2;
+  background: #FFCED1;
   border-radius: 2.9rem;
   color: #222;
   line-height: 4rem;
@@ -934,19 +953,19 @@ body {
   text-transform: uppercase;
   cursor: pointer; }
   .btn-add-cart:hover {
-    background-color: #FF9800;
+    background-color: #FF7D00;
     color: #fff;
     transition: 0.5s; }
 
 .btn-add-wishlist {
-  background: #FF7D00;
+  background: #FFCED1;
   display: inline-block;
   padding: 1rem 3rem;
   margin-top: 3rem;
   cursor: pointer;
   color: #222; }
   .btn-add-wishlist:hover {
-    background-color: #FF9800;
+    background-color: #FF7D00;
     color: #fff;
     transition: 0.5s; }
 
@@ -1159,3 +1178,113 @@ body {
     .reg__button:hover {
       background-color: #78290F;
       color: #fff; }
+
+.brandinfo {
+  margin-bottom: 15rem; }
+  .brandinfo__img {
+    position: relative;
+    display: block;
+    align-items: center;
+    width: 55rem;
+    height: 15rem;
+    padding: 0 20rem 0 20rem;
+    margin: 5rem 30rem 5rem 30rem;
+    opacity: 30%;
+    transition: all 0.3s ease-in; }
+    .brandinfo__img:hover {
+      opacity: 90%; }
+  .brandinfo__brandtitle {
+    margin: 5rem 30rem 5rem 30rem;
+    border-width: 5rem;
+    align-items: center; }
+  .brandinfo__paginationcontainer {
+    display: flex;
+    float: right;
+    margin-top: 1rem;
+    padding-top: 5rem;
+    margin-bottom: 10rem; }
+  .brandinfo__filter {
+    margin: 2rem 10rem 2rem 10rem;
+    align-items: center;
+    display: flex;
+    border-radius: 0.2rem;
+    padding: 1.2rem 2.2rem;
+    background-color: #fff; }
+    .brandinfo__filter input[type=text] {
+      width: 15rem;
+      height: 2.7rem;
+      margin-left: 2rem;
+      box-sizing: border-box;
+      border: 0.1rem solid;
+      border-radius: 0.4rem;
+      outline: none;
+      padding: 1.2rem 1.4rem;
+      background-color: #fff; }
+      .brandinfo__filter input[type=text]:hover {
+        background-color: #FFCED1;
+        width: 20rem;
+        transition: width 0.7s ease-in-out; }
+  .brandinfo__filter-label {
+    color: #222;
+    margin-right: 1.6rem;
+    text-transform: uppercase; }
+  .brandinfo__filter-btn {
+    margin-right: 1.2rem;
+    min-width: 12.4rem;
+    height: 3rem;
+    border-radius: .9rem;
+    border-width: 0;
+    padding: 0 1.2rem;
+    outline: none;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 4rem;
+    text-transform: uppercase;
+    background-color: #FFCED1; }
+    .brandinfo__filter-btn:hover {
+      color: #FF7D00;
+      transition: 0.3s; }
+  .brandinfo__filter-selection-container {
+    min-width: 15.4rem;
+    padding: 0 2.2rem;
+    height: 3.4rem;
+    border-radius: .9rem;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    background-color: #FFCED1;
+    align-items: center;
+    padding-left: 2rem;
+    position: relative; }
+    .brandinfo__filter-selection-container:hover .brandinfo__filter-selection-container__option {
+      display: block; }
+    .brandinfo__filter-selection-container__option {
+      display: none;
+      position: absolute;
+      left: 0;
+      right: 0;
+      padding-left: 1.5rem;
+      top: 3.44rem;
+      border-radius: 0rem;
+      border-width: 2rem;
+      background-color: #FFCED1;
+      padding-left: 0.8rem 1.6rem;
+      list-style: none; }
+  .brandinfo__filter-selection {
+    position: relative; }
+    .brandinfo__filter-selection__icon {
+      color: #222;
+      margin: 0 1.6rem 0 0.8rem;
+      position: relative;
+      top: 0.1rem;
+      padding-left: 5rem;
+      padding-right: 0rem; }
+  .brandinfo__select-input {
+    color: #222;
+    text-decoration: none;
+    display: block;
+    padding: 0.4rem 0; }
+    .brandinfo__select-input:hover {
+      color: #FFCED1; }
