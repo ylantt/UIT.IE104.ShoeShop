@@ -1,32 +1,6 @@
 .detail {
   margin-bottom: 15rem;
-
-  &__breadcrumb {
-    padding: 1.4rem 0;
-    margin-top: 3rem;
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-    border-radius: 0.25rem;
-
-    &-item {
-      display: flex;
-      color: $color-primary-black;
-
-      & .active {
-        color: $color-white;
-        padding: 0 0.85rem;
-        padding-left: 3rem;
-      }
-    }
-
-    &-items {
-      display: flex;
-      position: relative;
-      text-decoration: none;
-    }
-  }
-
+  
   &__product-image {
     width: 50rem;
     margin-left: 8rem;
