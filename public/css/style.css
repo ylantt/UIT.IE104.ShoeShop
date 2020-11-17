@@ -598,55 +598,53 @@ body {
     background-color: #78290F;
     color: #fff; }
 
-.error__title {
-  font-size: 2.0rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  position: relative;
-  padding-left: 4.0rem; }
-  .error__title::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 50%;
-    margin-top: -0.1rem;
-    display: block;
-    width: 2.0rem;
-    border-bottom: 0.2rem solid; }
-
-.error__more-detail {
-  padding-top: 1.0rem;
-  margin-top: 1.0rem;
-  font-size: 2.5rem;
-  line-height: 4.5rem;
-  margin-bottom: 3rem; }
-
-.error__button {
-  font-size: 1.4rem;
-  font-weight: 500;
-  color: #fff;
-  text-transform: uppercase;
-  text-align: center;
-  display: inline-block;
-  padding: 0 4.0rem;
-  line-height: 4.0rem;
-  background-color: #222;
-  cursor: pointer;
-  transition: .4s; }
-  .error__button:hover {
-    letter-spacing: 0.2rem; }
-  .error__button--large {
-    line-height: 6.0rem;
-    padding: 0 8.0rem; }
-
-.error__detail {
-  font-size: 7.0rem;
-  margin-top: 1.0rem;
-  margin-bottom: 1.5rem;
-  font-weight: 500; }
-
-.error__body {
-  padding: 15rem 0rem 1rem 20rem; }
+.error {
+  margin-bottom: 15rem; }
+  .error__title {
+    font-size: 2.0rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    position: relative;
+    padding-left: 4.0rem; }
+    .error__title::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 50%;
+      margin-top: -0.1rem;
+      display: block;
+      width: 2.0rem;
+      border-bottom: 0.2rem solid; }
+  .error__more-detail {
+    padding-top: 1.0rem;
+    margin-top: 1.0rem;
+    font-size: 2.5rem;
+    line-height: 4.5rem;
+    margin-bottom: 3rem; }
+  .error__button {
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    display: inline-block;
+    padding: 0 4.0rem;
+    line-height: 4.0rem;
+    background-color: #222;
+    cursor: pointer;
+    transition: .4s; }
+    .error__button:hover {
+      letter-spacing: 0.2rem; }
+    .error__button--large {
+      line-height: 6.0rem;
+      padding: 0 8.0rem; }
+  .error__detail {
+    font-size: 7.0rem;
+    margin-top: 1.0rem;
+    margin-bottom: 1.5rem;
+    font-weight: 500; }
+  .error__body {
+    padding: 15rem 0rem 1rem 20rem; }
 
 .detail {
   margin-bottom: 15rem; }
@@ -775,55 +773,53 @@ body {
     color: #fff;
     transition: 0.5s; }
 
-.error__title {
-  font-size: 2.0rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  position: relative;
-  padding-left: 4.0rem; }
-  .error__title::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 50%;
-    margin-top: -0.1rem;
-    display: block;
-    width: 2.0rem;
-    border-bottom: 0.2rem solid; }
-
-.error__more-detail {
-  padding-top: 1.0rem;
-  margin-top: 1.0rem;
-  font-size: 2.5rem;
-  line-height: 4.5rem;
-  margin-bottom: 3rem; }
-
-.error__button {
-  font-size: 1.4rem;
-  font-weight: 500;
-  color: #fff;
-  text-transform: uppercase;
-  text-align: center;
-  display: inline-block;
-  padding: 0 4.0rem;
-  line-height: 4.0rem;
-  background-color: #222;
-  cursor: pointer;
-  transition: .4s; }
-  .error__button:hover {
-    letter-spacing: 0.2rem; }
-  .error__button--large {
-    line-height: 6.0rem;
-    padding: 0 8.0rem; }
-
-.error__detail {
-  font-size: 7.0rem;
-  margin-top: 1.0rem;
-  margin-bottom: 1.5rem;
-  font-weight: 500; }
-
-.error__body {
-  padding: 15rem 0rem 1rem 20rem; }
+.error {
+  margin-bottom: 15rem; }
+  .error__title {
+    font-size: 2.0rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    position: relative;
+    padding-left: 4.0rem; }
+    .error__title::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 50%;
+      margin-top: -0.1rem;
+      display: block;
+      width: 2.0rem;
+      border-bottom: 0.2rem solid; }
+  .error__more-detail {
+    padding-top: 1.0rem;
+    margin-top: 1.0rem;
+    font-size: 2.5rem;
+    line-height: 4.5rem;
+    margin-bottom: 3rem; }
+  .error__button {
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    display: inline-block;
+    padding: 0 4.0rem;
+    line-height: 4.0rem;
+    background-color: #222;
+    cursor: pointer;
+    transition: .4s; }
+    .error__button:hover {
+      letter-spacing: 0.2rem; }
+    .error__button--large {
+      line-height: 6.0rem;
+      padding: 0 8.0rem; }
+  .error__detail {
+    font-size: 7.0rem;
+    margin-top: 1.0rem;
+    margin-bottom: 1.5rem;
+    font-weight: 500; }
+  .error__body {
+    padding: 15rem 0rem 1rem 20rem; }
 
 .detail {
   margin-bottom: 15rem; }
@@ -1180,11 +1176,7 @@ body {
     position: relative;
     display: block;
     align-items: center;
-    object-fit: fill;
-    width: 120rem;
-    height: 12rem;
-    padding: 0 0rem 0 0rem;
-    margin: 5rem 0rem 5rem 0rem;
+    margin: 10rem 30rem 0 30rem;
     opacity: 30%;
     transition: all 0.3s ease-in; }
     .brandinfo__cv:hover {
@@ -1193,19 +1185,16 @@ body {
     position: relative;
     display: block;
     align-items: center;
-    object-fit: fill;
-    width: 115rem;
-    height: 45rem;
-    padding: 0 0rem 0 0rem;
-    margin: 5rem 0rem 5rem 0rem;
+    margin: 1rem 30rem 0 30rem;
     opacity: 30%;
-    transition: all 0.3s ease-in; }
+    transition: all 0.3s ease-in;
+    padding: 5rem; }
     .brandinfo__vans:hover {
       opacity: 90%; }
   .brandinfo__brandtitle {
     margin: 5rem 30rem 5rem 30rem;
-    border-width: 5rem;
-    align-items: center; }
+    text-align: center;
+    color: #444; }
   .brandinfo__paginationcontainer {
     display: flex;
     float: right;
@@ -1217,7 +1206,7 @@ body {
     align-items: center;
     display: flex;
     border-radius: 0.2rem;
-    padding: 1.2rem 7.2rem;
+    padding: 1.2rem 6.2rem;
     background-color: #fff; }
     .brandinfo__filter input[type=text] {
       width: 15rem;
@@ -1230,7 +1219,6 @@ body {
       padding: 1.2rem 1.4rem;
       background-color: #fff; }
       .brandinfo__filter input[type=text]:hover {
-        background-color: #FFCED1;
         width: 20rem;
         transition: width 0.7s ease-in-out; }
   .brandinfo__filter-label {
@@ -1251,9 +1239,11 @@ body {
     justify-content: center;
     line-height: 4rem;
     text-transform: uppercase;
-    background-color: #FFCED1; }
+    background-color: #FF7D00; }
     .brandinfo__filter-btn:hover {
-      color: #FF7D00;
+      background-color: #FF7D00;
+      opacity: 0.9;
+      color: #fff;
       transition: 0.3s; }
   .brandinfo__filter-selection-container {
     min-width: 15.4rem;
@@ -1263,7 +1253,7 @@ body {
     background-color: #fff;
     display: flex;
     justify-content: space-between;
-    background-color: #FFCED1;
+    background-color: #FF7D00;
     align-items: center;
     padding-left: 2rem;
     position: relative; }
@@ -1278,8 +1268,9 @@ body {
       top: 3.44rem;
       border-radius: 0rem;
       border-width: 2rem;
-      background-color: #FFCED1;
+      background-color: #FF7D00;
       padding-left: 0.8rem 1.6rem;
+      color: #fff;
       list-style: none; }
   .brandinfo__filter-selection {
     position: relative; }
@@ -1297,3 +1288,35 @@ body {
     padding: 0.4rem 0; }
     .brandinfo__select-input:hover {
       color: #FFCED1; }
+
+.policy {
+  margin-bottom: 15rem; }
+  .policy__content {
+    margin: 5rem 10rem; }
+  .policy__title-container {
+    border: 1px solid #e5e5e5;
+    padding: 2rem 8rem; }
+  .policy__info {
+    border-bottom: 1px solid #e5e5e5;
+    padding-bottom: 1rem;
+    font-weight: 700;
+    font-size: 2rem;
+    color: #FF7D00; }
+  .policy__info-content {
+    padding-top: 2rem;
+    padding-left: 2rem; }
+    .policy__info-content > p {
+      padding-top: 2rem; }
+    .policy__info-content li {
+      padding-left: 1.5rem;
+      margin-left: 2rem;
+      position: relative; }
+      .policy__info-content li::before {
+        content: "";
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+        background: #FF7D00;
+        position: absolute;
+        top: 30%;
+        left: 0; }
