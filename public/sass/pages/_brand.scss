@@ -11,6 +11,14 @@
           opacity: 90%;
           }
       }
+      &__img-cv{ 
+        margin-top:10rem;
+          opacity: 30%;
+          transition: all 0.3s ease-in;
+          &:hover{
+          opacity: 90%;
+          }
+      }
       &__brandtitle{
         margin: 5rem 30rem 5rem 30rem;
         border-width: 5rem;

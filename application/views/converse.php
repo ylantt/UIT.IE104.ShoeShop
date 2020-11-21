@@ -23,7 +23,7 @@ include "template/nav.php"; ?>
             </nav>
         </div>
         <div class="brandinfo_container">
-            <div class="brandinfo__cv">
+            <div class="brandinfo__img-cv">
             <img src="./public/images/converse-logo.png">
             </div>
             <div class="brandinfo__brandtitle">
