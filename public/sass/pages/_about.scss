@@ -1,0 +1,45 @@
+.about{
+    margin-bottom: 15rem;
+    &__gallery-container{
+        align-items: center;
+        display:flex;
+        margin: 1rem;
+    }
+    &__gallery{
+        margin: 2rem;
+        float: left;
+        width: 38rem;
+        &__gallery:hover{
+            border: 0.1rem solid #777;
+        }
+        & img{
+            width:100%;
+            height:auto;
+            &:hover{
+              transition: 0.5s;
+              transform: scale(1.05);
+            }
+    }
+
+    }
+    &__desc{
+        padding: 4rem 3rem;
+        text-align:justify;
+          & li {
+            padding-left: 1.5rem;
+            margin-left: 2rem;
+            position: relative;
+      
+            &::before {
+              content: "";
+              width: 5px;
+              height: 5px;
+              border-radius: 50%;
+              background: $color-primary-orange;
+              position: absolute;
+              top: 30%;
+              left: 0;
+            }
+          }
+    }
+}
