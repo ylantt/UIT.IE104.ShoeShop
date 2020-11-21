@@ -1,51 +1,15 @@
 .brandinfo{
     margin-bottom: 15rem;
-      &__img{
-        position: relative;
-        display: block;
-        align-items: center;
-          width: 55rem;
-          height:15rem;
-          padding:0 20rem 0 20rem;
-          margin:5rem 30rem 5rem 30rem;
+      &__img-palla{
+        margin-left:45rem;
+        margin-top: 10rem; 
+        height: 30rem;
+        width: 30rem; 
           opacity: 30%;
           transition: all 0.3s ease-in;
-
           &:hover{
           opacity: 90%;
           }
-      }
-      &__cv{
-        position: relative;
-        display: block;
-        align-items: center;
-        object-fit: fill;
-          width:120rem;
-          height:12rem;
-          padding:0 0rem 0 0rem;
-          margin:5rem 0rem 5rem 0rem;
-          opacity: 30%;
-          transition: all 0.3s ease-in;
-
-          &:hover{
-          opacity: 90%;
-          }  
-      }
-      &__vans{
-        position: relative;
-        display: block;
-        align-items: center;
-        object-fit: fill;
-          width:115rem;
-          height:45rem;
-          padding:0 0rem 0 0rem;
-          margin:5rem 0rem 5rem 0rem;
-          opacity: 30%;
-          transition: all 0.3s ease-in;
-
-          &:hover{
-          opacity: 90%;
-          }  
       }
       &__brandtitle{
         margin: 5rem 30rem 5rem 30rem;

@@ -23,7 +23,7 @@ include "template/nav.php"; ?>
             </nav>
         </div>
         <div class="brandinfo_container">
-            <div class="brandinfo__img">
+            <div class="brandinfo__img-palla">
             <img src="./public/images/palladium-logo.jpg">
             </div>
             <div class="brandinfo__brandtitle">

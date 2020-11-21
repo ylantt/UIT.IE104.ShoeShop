@@ -1164,43 +1164,14 @@ body {
 
 .brandinfo {
   margin-bottom: 15rem; }
-  .brandinfo__img {
-    position: relative;
-    display: block;
-    align-items: center;
-    width: 55rem;
-    height: 15rem;
-    padding: 0 20rem 0 20rem;
-    margin: 5rem 30rem 5rem 30rem;
+  .brandinfo__img-palla {
+    margin-left: 45rem;
+    margin-top: 10rem;
+    height: 30rem;
+    width: 30rem;
     opacity: 30%;
     transition: all 0.3s ease-in; }
-    .brandinfo__img:hover {
-      opacity: 90%; }
-  .brandinfo__cv {
-    position: relative;
-    display: block;
-    align-items: center;
-    object-fit: fill;
-    width: 120rem;
-    height: 12rem;
-    padding: 0 0rem 0 0rem;
-    margin: 5rem 0rem 5rem 0rem;
-    opacity: 30%;
-    transition: all 0.3s ease-in; }
-    .brandinfo__cv:hover {
-      opacity: 90%; }
-  .brandinfo__vans {
-    position: relative;
-    display: block;
-    align-items: center;
-    object-fit: fill;
-    width: 115rem;
-    height: 45rem;
-    padding: 0 0rem 0 0rem;
-    margin: 5rem 0rem 5rem 0rem;
-    opacity: 30%;
-    transition: all 0.3s ease-in; }
-    .brandinfo__vans:hover {
+    .brandinfo__img-palla:hover {
       opacity: 90%; }
   .brandinfo__brandtitle {
     margin: 5rem 30rem 5rem 30rem;
