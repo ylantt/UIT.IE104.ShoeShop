@@ -23,7 +23,7 @@ include "template/nav.php"; ?>
             </nav>
         </div>
         <div class="brandinfo_container">
-            <div class="brandinfo__vans">
+            <div class="brandinfo__img-vans">
             <img src="./public/images/vans-logo.png">
             </div>
             <div class="brandinfo__brandtitle">
