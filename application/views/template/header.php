@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-     <base href="http://ie104project.test/home">
+     <base href="/home">
 
      <meta charset="UTF-8">
 
