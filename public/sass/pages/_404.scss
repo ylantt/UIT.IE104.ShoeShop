@@ -38,6 +38,9 @@
         background-color: $color-black;
         cursor: pointer;
         transition: .4s;
+        &:hover{
+            letter-spacing: 0.2rem;
+        }
     
         &--large {
             line-height: 6.0rem;

@@ -6,12 +6,12 @@ include "template/nav.php"; ?>
     <div class="container">
         <div class="detail__container">
             <nav>
-                <ul class="detail__breadcrumb">
-                    <li class="detail__breadcrumb-items">
+                <ul class="breadcrumb">
+                    <li class="breadcrumb-items">
                         <a href="home">Home</a>
                     </li>
                     <span>&ThickSpace;&#62;&ThickSpace;</span>
-                    <li class="detail__breadcrumb-item active">
+                    <li class="breadcrumb-item active">
                         Product Details
                     </li>
                 </ul>
