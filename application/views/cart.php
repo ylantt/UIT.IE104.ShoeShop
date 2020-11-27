@@ -13,7 +13,6 @@ include "template/nav.php"; ?>
                     <th class="cart__header">Subtotal</th>
                     <th class="cart__header"></th>
                 </tr>
-
                 <tr>
                     <td>
                         <div class="cart__info">
