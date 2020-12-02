@@ -39,7 +39,7 @@ isset($_GET['url']) ? $activePage = $_GET['url'] : $activePage = "home";
 </nav>
 
 <div class="login modal" id="login">
-     <form class="login__box" method="POST" action="#">
+     <form class="login__box" method="POST" action="Login">
           <div class="close-icon icon" data-close-button>
                <i class="fas fa-times"></i>
           </div>
