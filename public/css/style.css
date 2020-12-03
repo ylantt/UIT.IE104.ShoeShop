@@ -160,6 +160,9 @@ body {
 .mt-30 {
   margin-top: 3rem; }
 
+.text-center {
+  text-align: center !important; }
+
 .btn {
   padding: 1.5rem 3rem;
   border: 0.2rem solid #222;
@@ -639,6 +642,26 @@ body {
     line-height: 6.0rem;
     padding: 0 8.0rem; }
 
+.cart__header {
+  text-align: left;
+  color: #222;
+  background: #FF9800;
+  font-weight: 700;
+  padding: 0.75rem;
+  padding-left: 3rem;
+  padding-right: 1rem; }
+
+.cart__header_center {
+  color: #222;
+  background: #FF9800;
+  font-weight: 700;
+  padding: 0.75rem;
+  padding-left: 3rem;
+  padding-right: 1rem;
+  text-align: center; }
+
+.cart__page {
+  margin: 0 auto; }
 .error__detail {
   font-size: 7.0rem;
   margin-top: 1.0rem;
