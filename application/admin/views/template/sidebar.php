@@ -3,7 +3,6 @@ $arr = ["home" => "Dashboard", "category" => "Categories", "product" => "Product
 
 $url = substr($_GET['url'], 6);
 $active = $url ? $url : "home";
-$adminFol = "admin/";
 ?>
 
 <div class="list-group sidebar bg-dark h-100">
@@ -13,7 +12,7 @@ $adminFol = "admin/";
                <a class="list-group-item list-group-item-action text-light bg-dark <?php 
                if ($active == $key) 
                {echo "active";} 
-               ?>" href="<?php echo $adminFol . $key ?>"><?php echo $value; ?></a>
+               ?>" href="<?php echo $key ?>"><?php echo $value; ?></a>
      <?php
      endforeach;
      ?>

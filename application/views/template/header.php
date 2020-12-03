@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-     <!--.--base href="/home"--!-->
+     <base href="<?php echo "http://" . $_SERVER['SERVER_NAME']; ?>">
 
      <meta charset="UTF-8">
 
