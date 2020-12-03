@@ -2,6 +2,8 @@
 <html lang="en">
 
 <head>
+     <base href="<?php echo "http://" . $_SERVER['SERVER_NAME']; ?>">
+
      <meta charset="UTF-8">
 
      <meta name="viewport" content="width=device-width, initial-scale=1.0">

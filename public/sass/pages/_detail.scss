@@ -1,34 +1,12 @@
 .detail {
   margin-bottom: 15rem;
-
-  &__breadcrumb {
-    padding: 1.4rem 0;
-    margin-top: 3rem;
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-    border-radius: 0.25rem;
-
-    &-item {
-      display: flex;
-
-      & .active {
-        color: $color-white;
-        padding: 0 0.85rem;
-        padding-left: 3rem;
-      }
-    }
-
-    &-items {
-      display: flex;
-      position: relative;
-      text-decoration: none;
-    }
-  }
-
+  
   &__product-image {
-    width: 47rem;
+    width: 50rem;
     margin-left: 8rem;
+    &:hover{
+    box-shadow: 5px 5px 5px 5px $color-primary-pink;
+    }
   }
 
   &__product-name {
@@ -165,20 +143,33 @@
 }
 
 .btn-add-cart {
-  background: $color-black;
+  background: $color-primary-pink;
   border-radius: 2.9rem;
-  color: $color-white;
+  color: $color-black;
   line-height: 4rem;
   margin-left: 1.5rem;
   padding: 0 4.1rem;
   text-transform: uppercase;
   cursor: pointer;
+  &:hover{
+    background-color: $color-primary-orange;
+    color:$color-white;
+    transition: 0.5s;
+  }
+  
 }
 
 .btn-add-wishlist {
-  background: $color-primary-orange;
+  background: $color-primary-pink;
   display: inline-block;
   padding: 1rem 3rem;
   margin-top: 3rem;
   cursor: pointer;
+  color: $color-black;
+  &:hover{
+    background-color: $color-primary-orange;
+    color:$color-white;
+    transition:0.5s;
+  }
 }
+
