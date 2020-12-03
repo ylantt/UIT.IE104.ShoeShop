@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-     <base href="/home">
+     <!--<base href="/home">-->
 
      <meta charset="UTF-8">
 
