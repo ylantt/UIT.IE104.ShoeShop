@@ -5,13 +5,11 @@
                <div class="col"><a class="btn btn-primary" href="product/add">Add</a></div>
                <div class="dropdown">
                     <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                         Sort By:
+                         Filter:
                     </a>
                     <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                         <a class="dropdown-item" href="#">ID</a>
-                         <a class="dropdown-item" href="#">Price</a>
-                         <a class="dropdown-item" href="#">In Stock</a>
-                         <a class="dropdown-item" href="#">Sales</a>
+                         <a class="dropdown-item" href="#">Admin</a>
+                         <a class="dropdown-item" href="#">User</a>
                     </div>
                </div>
                <div class="col">
@@ -46,8 +44,8 @@
                <td>Phan Hoàng Dung</td>
                <td>District 1, Ho Chi Minh</td>
                <td>0945738643</td>
-               <td>User</td>
-               <td><a href="product/edit" class="btn btn-success">Edit</a>
+               <td class="text-primary">User</td>
+               <td>
                     <button type="button" class="btn btn-danger">Delete</button>
                </td>
           </tr>
@@ -60,8 +58,8 @@
                <td>Phan Hoàng Dung</td>
                <td>District 1, Ho Chi Minh</td>
                <td>0945738643</td>
-               <td>User</td>
-               <td><a href="product/edit" class="btn btn-success">Edit</a>
+               <td class="text-primary">User</td>
+               <td>
                     <button type="button" class="btn btn-danger">Delete</button>
                </td>
           </tr>
@@ -75,8 +73,8 @@
                <td>Phan Hoàng Dung</td>
                <td>District 1, Ho Chi Minh</td>
                <td>0945738643</td>
-               <td>User</td>
-               <td><a href="product/edit" class="btn btn-success">Edit</a>
+               <td class="text-primary">User</td>
+               <td>
                     <button type="button" class="btn btn-danger">Delete</button>
                </td>
           </tr>
@@ -90,8 +88,8 @@
                <td>Phan Hoàng Dung</td>
                <td>District 1, Ho Chi Minh</td>
                <td>0945738643</td>
-               <td>User</td>
-               <td><a href="product/edit" class="btn btn-success">Edit</a>
+               <td class="text-primary">User</td>
+               <td>
                     <button type="button" class="btn btn-danger">Delete</button>
                </td>
           </tr>
@@ -104,8 +102,8 @@
                <td>Phan Hoàng Dung</td>
                <td>District 1, Ho Chi Minh</td>
                <td>0945738643</td>
-               <td>Admin</td>
-               <td><a href="product/edit" class="btn btn-success">Edit</a>
+               <td class="text-success">Admin</td>
+               <td>
                     <button type="button" class="btn btn-danger">Delete</button>
                </td>
           </tr>
@@ -133,26 +131,3 @@
           </li>
      </ul>
 </nav>
-
-
-
-<div class="modal fade" id="productDetail" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-     <div class="modal-dialog modal-dialog-centered" role="document">
-          <div class="modal-content">
-               <div class="modal-header">
-                    <h5 class="modal-title text-primary" id="exampleModalLongTitle">Product <span>1</span> detail</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                         <span aria-hidden="true">&times;</span>
-                    </button>
-               </div>
-               <div class="modal-body">
-                    <p><span class="text-success font-weight-bold">Name: </span><span>namemmmmm mmmmmmm</span></p>
-                    <p><span class="text-success font-weight-bold">Description: </span><span>namem mmmm mmmmmmm namemmmmmmmm mmmm namemm mmmmmmmm mm nam emmmmmmm mmmmmnam emmmm mmmmm mm mnamemmm mmmm m mmmmnamemmm mmmmmmmmm namemmmm mmm mmmmm namemmm mmmm mmmmm name mmmm mmm mmmmm namemm mmmm mmmmmm namemm mmmmmmm mmmnamemm mmmm mmmmm mnamemm mmmmmm mmmmnamem mmmmmm m mmmm namemmmmmmmm mmmm</span></p>
-                    <p><span class="text-success font-weight-bold">Short description: </span><span>namemmm mmmmmmmmm namemmmmm mm mmmmm namem mmmmmmmm mmm namemm mmmmm mmmm mnamemm mmm mmmmm mmnamem mmmm mmmmmmm nam emmmm mmm mmmmm na memmmmmm mmmmmm</span></p>
-               </div>
-               <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-               </div>
-          </div>
-     </div>
-</div>
