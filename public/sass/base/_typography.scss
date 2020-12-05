@@ -37,10 +37,10 @@ body {
     font-weight: 700;
     font-size: 3rem;
     color: $color-primary-orange;
-    
+
     &:hover {
       transform: scale(1.1) skewY(2deg) skewX(15deg);
-    text-shadow: 0.5rem 1rem 2rem rgba($color-primary-orange, 0.8);
+      text-shadow: 0.5rem 1rem 2rem rgba($color-primary-orange, 0.8);
     }
   }
 
@@ -49,6 +49,30 @@ body {
     font-size: 16px;
     margin-bottom: 10px;
     letter-spacing: 3px;
+  }
+}
+
+.heading-h4 {
+  font-size: 3.75rem;
+  margin-bottom: 0.5rem;
+  padding: 1rem 0;
+  color: $color-primary-orange;
+}
+
+.result-data {
+  padding: 1rem 1.5rem;
+  visibility: hidden;
+
+  &__error {
+    background-color: #ffaaaa;
+    border-left: 5px solid #ff0000;
+    color: #cf0000;
+  }
+
+  &__success {
+    background-color: #6df86d;
+    border-left: 5px solid #129112;
+    color: #098309;
   }
 }
 
@@ -61,8 +85,7 @@ body {
   &__name {
     font-weight: 700;
     font-size: 25px;
-    
-  
+
     &::before {
       content: "";
       width: 30%;

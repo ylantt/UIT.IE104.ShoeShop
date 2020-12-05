@@ -12,16 +12,14 @@ class Database
     // connect to DB
     public function __construct()
     {
-        $this->conn = mysqli_connect($this->servername, $this->username, $this->password);
+        $this->conn = mysqli_connect($this->servername, $this->username, $this->password, $this->dbname);
 
-        // if(!$this->conn){
-        //     $this->error ="Connection fail".$this->conn->connect_error;
-        //    return false;
-        //   }
+        if(!$this->conn){
+            die("Connection failed: " . mysqli_connect_error());
+          }
 
         mysqli_select_db($this->conn, $this->dbname);
         // mysqli_query($this->con, "SET NAMES 'utf8'");  
-
     }
 
     // Select or Read data
