@@ -1185,6 +1185,64 @@ body {
       background-color: #78290F;
       color: #fff; }
 
+.wishlist {
+  margin-top: 15rem; }
+  .wishlist__title {
+    font-size: 4rem;
+    text-align: center;
+    color: #FF7D00;
+    font-weight: 700;
+    margin-top: 5rem;
+    margin-bottom: 2rem; }
+  .wishlist__page {
+    margin: 0  auto 3rem; }
+  .wishlist__header {
+    text-align: left;
+    color: #15616D;
+    border-bottom: 2px solid #FF7D00;
+    font-weight: 700;
+    padding: 0.75rem; }
+  .wishlist__table {
+    max-width: 120rem;
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+    font-size: 2rem; }
+    .wishlist__table tr {
+      border-bottom: 2px solid #FF7D00; }
+    .wishlist__table td {
+      padding: 2rem 0 0 1rem; }
+      .wishlist__table td input {
+        width: 5.5rem;
+        height: 3rem;
+        padding: 0.5rem; }
+      .wishlist__table td button {
+        border: none; }
+  .wishlist__info {
+    display: flex;
+    flex-wrap: wrap;
+    line-height: 2rem;
+    align-items: center; }
+    .wishlist__info img {
+      width: 13rem;
+      height: 13rem;
+      margin-left: -1rem; }
+    .wishlist__info div {
+      margin-left: 1.5rem;
+      line-height: 4rem; }
+  .wishlist__addcart {
+    background-color: #FFCED1;
+    padding: 0.5rem;
+    font-weight: bold;
+    color: #15616D; }
+  .wishlist__product-name {
+    color: #15616D;
+    font-weight: 700; }
+  .wishlist__product-price {
+    color: #FF7D00; }
+  .wishlist .fa, .wishlist .fas {
+    font-weight: 900;
+    font-size: large; }
 .brandinfo {
   margin-bottom: 15rem; }
   .brandinfo__img-palla {

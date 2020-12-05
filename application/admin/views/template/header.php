@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-     <base href="<?php echo "http://" . $_SERVER['SERVER_NAME'] . "/admin/"; ?>">
+     <base href="<?php echo "http://" . $_SERVER['SERVER_NAME'] . ":8080/ie104/admin/"; ?>">
 
      <meta charset="UTF-8">
 
