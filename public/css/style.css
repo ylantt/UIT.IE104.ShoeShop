@@ -841,10 +841,8 @@ body {
     font-weight: 700; }
 
 .text__box {
-  width: 100%;
   overflow: hidden;
   font-size: 2rem;
-  padding: 0.8rem;
   margin: 0.8rem 0;
   border-bottom: 0.2rem solid #BDBDBD; }
   .text__box:hover {
@@ -856,6 +854,9 @@ body {
     color: #222;
     font-size: 1.5rem;
     width: 100%;
+    height: 100%;
+    padding: 0.8rem;
+    display: block;
     float: left;
     margin: 0 0rem; }
 
