@@ -2,7 +2,7 @@
      <h1 class="text-primary">Products</h1>
      <form>
           <div class="form-inline pt-2">
-               <div class="col"><a class="btn btn-primary" href="./admin/product/add">Add</a></div>
+               <div class="col"><a class="btn btn-primary" href="product/add">Add</a></div>
                <div class="dropdown">
                     <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                          Sort By:
@@ -38,71 +38,72 @@
           </tr>
      </thead>
      <tbody>
-          <tr data-toggle="modal" data-target="#productDetail">
-               <th scope="row">1</th>
-               <td style="width: 20px;"><img src="../public/admin/images/giay-nike-chinh-hang.jpg" alt="productImage" class="img-fluid"></td>
-               <td>Made by Vans, for Winter</td>
-               <td>1000 &dollar;</td>
-               <td>Clothes</td>
-               <td>73</td>
-               <td class="text-primary">True</td>
-               <td>50%</td>
-               <td><a href="./admin/product/edit" class="btn btn-success">Edit</a>
+          <tr>
+               <th scope="row" data-toggle="modal" data-target="#productDetail">5</th>
+               <td style="width: 20px;" data-toggle="modal" data-target="#productDetail"><img src="../public/admin/images/giay-nike-chinh-hang.jpg" alt="productImage" class="img-fluid"></td>
+               <td data-toggle="modal" data-target="#productDetail">Made by Vans, for Winter</td>
+               <td data-toggle="modal" data-target="#productDetail">1000 &dollar;</td>
+               <td data-toggle="modal" data-target="#productDetail">Clothes</td>
+               <td data-toggle="modal" data-target="#productDetail">70</td>
+               <td class="text-danger" data-toggle="modal" data-target="#productDetail">False</td>
+               <td data-toggle="modal" data-target="#productDetail">50%</td>
+               <td><a href="product/edit" class="btn btn-success">Edit</a>
                     <button type="button" class="btn btn-danger">Delete</button>
                </td>
           </tr>
 
-          <tr data-toggle="modal" data-target="#productDetail">
-               <th scope="row">2</th>
-               <td style="width: 20px;"><img src="../public/admin/images/giay-nike-chinh-hang.jpg" alt="productImage" class="img-fluid"></td>
-               <td>Made by Vans, for Winter</td>
-               <td>1000 &dollar;</td>
-               <td>Clothes</td>
-               <td>100</td>
-               <td class="text-primary">True</td>
-               <td>50%</td>
-               <td><a href="./admin/product/edit" class="btn btn-success">Edit</a>
-                    <button type="button" class="btn btn-danger">Delete</button>
-               </td>
-
-          <tr data-toggle="modal" data-target="#productDetail">
-               <th scope="row">3</th>
-               <td style="width: 20px;"><img src="../public/admin/images/giay-nike-chinh-hang.jpg" alt="productImage" class="img-fluid"></td>
-               <td>Made by Vans, for Winter</td>
-               <td>1000 &dollar;</td>
-               <td>Clothes</td>
-               <td>200</td>
-               <td class="text-primary">True</td>
-               <td>50%</td>
-               <td><a href="./admin/product/edit" class="btn btn-success">Edit</a>
+          <tr>
+               <th scope="row" data-toggle="modal" data-target="#productDetail">5</th>
+               <td style="width: 20px;" data-toggle="modal" data-target="#productDetail"><img src="../public/admin/images/giay-nike-chinh-hang.jpg" alt="productImage" class="img-fluid"></td>
+               <td data-toggle="modal" data-target="#productDetail">Made by Vans, for Winter</td>
+               <td data-toggle="modal" data-target="#productDetail">1000 &dollar;</td>
+               <td data-toggle="modal" data-target="#productDetail">Clothes</td>
+               <td data-toggle="modal" data-target="#productDetail">70</td>
+               <td class="text-danger" data-toggle="modal" data-target="#productDetail">False</td>
+               <td data-toggle="modal" data-target="#productDetail">50%</td>
+               <td><a href="product/edit" class="btn btn-success">Edit</a>
                     <button type="button" class="btn btn-danger">Delete</button>
                </td>
           </tr>
 
-          <tr data-toggle="modal" data-target="#productDetail">
-               <th scope="row">4</th>
-               <td style="width: 20px;"><img src="../public/admin/images/giay-nike-chinh-hang.jpg" alt="productImage" class="img-fluid"></td>
-               <td>Made by Vans, for Winter</td>
-               <td>1000 &dollar;</td>
-               <td>Clothes</td>
-               <td>50</td>
-               <td class="text-primary">True</td>
-               <td>50%</td>
-               <td><a href="./admin/product/edit" class="btn btn-success">Edit</a>
+          <tr>
+               <th scope="row" data-toggle="modal" data-target="#productDetail">5</th>
+               <td style="width: 20px;" data-toggle="modal" data-target="#productDetail"><img src="../public/admin/images/giay-nike-chinh-hang.jpg" alt="productImage" class="img-fluid"></td>
+               <td data-toggle="modal" data-target="#productDetail">Made by Vans, for Winter</td>
+               <td data-toggle="modal" data-target="#productDetail">1000 &dollar;</td>
+               <td data-toggle="modal" data-target="#productDetail">Clothes</td>
+               <td data-toggle="modal" data-target="#productDetail">70</td>
+               <td class="text-danger" data-toggle="modal" data-target="#productDetail">False</td>
+               <td data-toggle="modal" data-target="#productDetail">50%</td>
+               <td><a href="product/edit" class="btn btn-success">Edit</a>
                     <button type="button" class="btn btn-danger">Delete</button>
                </td>
           </tr>
 
-          <tr data-toggle="modal" data-target="#productDetail">
-               <th scope="row">5</th>
-               <td style="width: 20px;"><img src="../public/admin/images/giay-nike-chinh-hang.jpg" alt="productImage" class="img-fluid"></td>
-               <td>Made by Vans, for Winter</td>
-               <td>1000 &dollar;</td>
-               <td>Clothes</td>
-               <td>70</td>
-               <td class="text-danger">False</td>
-               <td>50%</td>
-               <td><a href="./admin/product/edit" class="btn btn-success">Edit</a>
+          <tr>
+               <th scope="row" data-toggle="modal" data-target="#productDetail">5</th>
+               <td style="width: 20px;" data-toggle="modal" data-target="#productDetail"><img src="../public/admin/images/giay-nike-chinh-hang.jpg" alt="productImage" class="img-fluid"></td>
+               <td data-toggle="modal" data-target="#productDetail">Made by Vans, for Winter</td>
+               <td data-toggle="modal" data-target="#productDetail">1000 &dollar;</td>
+               <td data-toggle="modal" data-target="#productDetail">Clothes</td>
+               <td data-toggle="modal" data-target="#productDetail">70</td>
+               <td class="text-danger" data-toggle="modal" data-target="#productDetail">False</td>
+               <td data-toggle="modal" data-target="#productDetail">50%</td>
+               <td><a href="product/edit" class="btn btn-success">Edit</a>
+                    <button type="button" class="btn btn-danger">Delete</button>
+               </td>
+          </tr>
+
+          <tr>
+               <th scope="row" data-toggle="modal" data-target="#productDetail">5</th>
+               <td style="width: 20px;" data-toggle="modal" data-target="#productDetail"><img src="../public/admin/images/giay-nike-chinh-hang.jpg" alt="productImage" class="img-fluid"></td>
+               <td data-toggle="modal" data-target="#productDetail">Made by Vans, for Winter</td>
+               <td data-toggle="modal" data-target="#productDetail">1000 &dollar;</td>
+               <td data-toggle="modal" data-target="#productDetail">Clothes</td>
+               <td data-toggle="modal" data-target="#productDetail">70</td>
+               <td class="text-danger" data-toggle="modal" data-target="#productDetail">False</td>
+               <td data-toggle="modal" data-target="#productDetail">50%</td>
+               <td><a href="product/edit" class="btn btn-success">Edit</a>
                     <button type="button" class="btn btn-danger">Delete</button>
                </td>
           </tr>
