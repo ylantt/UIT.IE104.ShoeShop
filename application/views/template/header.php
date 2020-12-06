@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-     <base href="<?php echo "http://localhost:8080/ie104/"; ?>">
+     <base href="<?php echo "http://localhost:80/ie104/"; ?>">
 
      <meta charset="UTF-8">
 
