@@ -39,5 +39,6 @@
 <script src="./public/js/scriptEvent.js"></script>
 <script src="./public/js/countDown.js"></script>
 <script src="./public/js/popupModal.js"></script>
+<script src="./public/js/submit-form.js"></script>
 
 </html>
