@@ -2,7 +2,7 @@
      <h1 class="text-primary">Users</h1>
      <form>
           <div class="form-inline pt-2">
-               <div class="col"><a class="btn btn-primary" href="user/add">Add</a></div>
+               <div class="col"><a class="btn btn-primary" href="./admin/user/add">Add</a></div>
                <div class="dropdown">
                     <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                          Filter:

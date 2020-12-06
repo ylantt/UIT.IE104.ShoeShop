@@ -12,7 +12,7 @@ $active = $url ? $url : "home";
                <a class="list-group-item list-group-item-action text-light bg-dark <?php 
                if ($active == $key) 
                {echo "active";} 
-               ?>" href="<?php echo "/admin/" . $key ?>"><?php echo $value; ?></a>
+               ?>" href="<?php echo "./admin/" . $key ?>"><?php echo $value; ?></a>
      <?php
      endforeach;
      ?>
