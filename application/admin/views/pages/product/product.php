@@ -2,7 +2,7 @@
      <h1 class="text-primary">Products</h1>
      <form>
           <div class="form-inline pt-2">
-               <div class="col"><a class="btn btn-primary" href="product/add">Add</a></div>
+               <div class="col"><a class="btn btn-primary" href="./admin/product/add">Add</a></div>
                <div class="dropdown">
                     <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                          Sort By:
@@ -47,7 +47,7 @@
                <td>73</td>
                <td class="text-primary">True</td>
                <td>50%</td>
-               <td><a href="product/edit" class="btn btn-success">Edit</a>
+               <td><a href="./admin/product/edit" class="btn btn-success">Edit</a>
                     <button type="button" class="btn btn-danger">Delete</button>
                </td>
           </tr>
@@ -61,7 +61,7 @@
                <td>100</td>
                <td class="text-primary">True</td>
                <td>50%</td>
-               <td><a href="product/edit" class="btn btn-success">Edit</a>
+               <td><a href="./admin/product/edit" class="btn btn-success">Edit</a>
                     <button type="button" class="btn btn-danger">Delete</button>
                </td>
 
@@ -74,7 +74,7 @@
                <td>200</td>
                <td class="text-primary">True</td>
                <td>50%</td>
-               <td><a href="product/edit" class="btn btn-success">Edit</a>
+               <td><a href="./admin/product/edit" class="btn btn-success">Edit</a>
                     <button type="button" class="btn btn-danger">Delete</button>
                </td>
           </tr>
@@ -88,7 +88,7 @@
                <td>50</td>
                <td class="text-primary">True</td>
                <td>50%</td>
-               <td><a href="product/edit" class="btn btn-success">Edit</a>
+               <td><a href="./admin/product/edit" class="btn btn-success">Edit</a>
                     <button type="button" class="btn btn-danger">Delete</button>
                </td>
           </tr>
@@ -102,7 +102,7 @@
                <td>70</td>
                <td class="text-danger">False</td>
                <td>50%</td>
-               <td><a href="product/edit" class="btn btn-success">Edit</a>
+               <td><a href="./admin/product/edit" class="btn btn-success">Edit</a>
                     <button type="button" class="btn btn-danger">Delete</button>
                </td>
           </tr>
