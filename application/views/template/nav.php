@@ -31,9 +31,17 @@ isset($_GET['url']) ? $activePage = $_GET['url'] : $activePage = "home";
                <li><a href="wishlist" class="flex-center"><img src="./public/icon/like.svg" alt="Wish list" class="icon"><span class="nav__notification">0</span></a></li>
 
                <li><a href="cart" class="flex-center"><img src="./public/icon/shopping-bags.svg" alt="Cart" class="icon"><span class="nav__notification">0</span></a></li>
+
+               <?php if (isset($_SESSION["userID"])): ?>
+               <li>
+                    <a href="/account" class="nav__button nav__account"><?php echo $_SESSION["userName"]; ?></a>
+                    <a href="/login/logout" class="nav__log-out">Log out</a>
+               </li>
+               <?php else: ?>
                <li>
                     <p data-modal-target="#login" class="nav__button">Sign in</p>
                </li>
+                    <?php endif; ?>
           </ul>
      </div>
 </nav>
@@ -47,7 +55,7 @@ isset($_GET['url']) ? $activePage = $_GET['url'] : $activePage = "home";
                     <i class="fas fa-times"></i>
                </div>
                <div class="text__box">
-                    <input type="text" placeholder="Username" name="username" />
+                    <input type="text" placeholder="Username/Email" name="name" />
                </div>
                <div class="text__box">
                     <input type="password" placeholder="Password" name="password" />
@@ -74,8 +82,7 @@ isset($_GET['url']) ? $activePage = $_GET['url'] : $activePage = "home";
                     <p class="text__box"><input type="text" name="username" placeholder="Username"> </p>
                     <p class="text__box"><input type="email" name="email" placeholder="Email address"></p>
                     <p class="text__box"><input type="password" name="password" placeholder="Passwword"></p>
-                    <p class="text__box"> <input type="text" name="pwdrepeat" placeholder="Confirm passwword"></p>
-                    <input name="location" value="<?php echo isset($_GET["url"]) ? $_GET["url"] : "home" ?>">
+                    <p class="text__box"> <input type="password" name="pwdrepeat" placeholder="Confirm passwword"></p>
                     <div>
                          <input class="btn-submit" type="submit" name="submit" value="Sign up" id="reg-btn" />
                     </div>

@@ -1,6 +1,4 @@
 <?php
-// require_once "../includes/functions.inc.php";
-
 class Register extends Controller
 {
      public function __construct()

@@ -19,7 +19,7 @@ class User extends Database
           if ($row = mysqli_fetch_assoc($resultData)) {
                return $row; // return all the data from the db if user exists
           } else {
-               return false;
+               return false; // if user not exist
           }
 
           mysqli_stmt_close($stmt);
