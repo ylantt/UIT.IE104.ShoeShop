@@ -2,8 +2,6 @@
 <html lang="en">
 
 <head>
-     <base href="<?php echo "http://localhost:80/ie104/"; ?>">
-
      <meta charset="UTF-8">
 
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
