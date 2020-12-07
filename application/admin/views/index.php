@@ -1,4 +1,7 @@
-<?php require_once "./application/admin/views/template/header.php" ?>
+<?php 
+require_once "./application/admin/views/template/permission.php"; 
+require_once "./application/admin/views/template/header.php" 
+?>
 <div class="d-flex h-100">
      <div class="col-2 pl-0 h-100 w-25 fixed-top">
           <?php require_once "./application/admin/views/template/sidebar.php" ?>

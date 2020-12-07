@@ -36,6 +36,7 @@ class Login extends Controller
                          session_start();
                          $_SESSION["userID"] = $status["UserID"];
                          $_SESSION["userName"] = $status["Username"];
+                         $_SESSION["Role"] = $status["UserRole"];
                     }
                }
           } else {
