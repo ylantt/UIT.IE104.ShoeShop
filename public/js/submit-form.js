@@ -80,7 +80,7 @@ function isUserExistsSignUp(functionType) {
           errorNoti
         );
       } else if (xmlHttp.responseText === "usernametaken") {
-        throwError("Username already taken!", "result-data__error", errorNoti);
+        throwError("User already exists!", "result-data__error", errorNoti);
       } else {
         // username is not taken
         errorNoti.style.visibility = "hidden";
