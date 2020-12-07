@@ -36,7 +36,7 @@
           </tr>
      </thead>
      <tbody>
-          <tr data-toggle="modal" data-target="#userDetail">
+          <tr>
                <th scope="row">1</th>
                <td style="width: 20px;"><img src="../public/admin/images/giay-nike-chinh-hang.jpg" alt="userImage" class="img-fluid"></td>
                <td>dunghocgioi</td>
@@ -50,7 +50,7 @@
                </td>
           </tr>
 
-          <tr data-toggle="modal" data-target="#userDetail">
+          <tr>
                <th scope="row">2</th>
                <td style="width: 20px;"><img src="../public/admin/images/giay-nike-chinh-hang.jpg" alt="userImage" class="img-fluid"></td>
                <td>dunghocgioi</td>
@@ -65,7 +65,7 @@
           </tr>
 
 
-          <tr data-toggle="modal" data-target="#userDetail">
+          <tr>
                <th scope="row">3</th>
                <td style="width: 20px;"><img src="../public/admin/images/giay-nike-chinh-hang.jpg" alt="userImage" class="img-fluid"></td>
                <td>dunghocgioi</td>
@@ -80,7 +80,7 @@
           </tr>
 
 
-          <tr data-toggle="modal" data-target="#userDetail">
+          <tr>
                <th scope="row">4</th>
                <td style="width: 20px;"><img src="../public/admin/images/giay-nike-chinh-hang.jpg" alt="userImage" class="img-fluid"></td>
                <td>dunghocgioi</td>
@@ -94,7 +94,7 @@
                </td>
           </tr>
 
-          <tr data-toggle="modal" data-target="#userDetail">
+          <tr>
                <th scope="row">5</th>
                <td style="width: 20px;"><img src="../public/admin/images/giay-nike-chinh-hang.jpg" alt="userImage" class="img-fluid"></td>
                <td>dunghocgioi</td>
