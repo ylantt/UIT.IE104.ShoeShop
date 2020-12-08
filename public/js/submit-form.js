@@ -3,25 +3,26 @@ document.getElementById("reg-btn").addEventListener("click", function (e) {
 
   var arrInfoSignup = getDataSignUp();
 
-  var email = arrInfoSignup["email"].value;
-  var password = arrInfoSignup["password"].value;
-  var pwdRepeat = arrInfoSignup["pwdRepeat"].value;
-  var email = arrInfoSignup["email"].value;
-  var username = arrInfoSignup["username"].value;
+  var email = arrInfoSignup["email"];
+  var password = arrInfoSignup["password"];
+  var pwdRepeat = arrInfoSignup["pwdRepeat"];
+  var email = arrInfoSignup["email"];
+  var username = arrInfoSignup["username"];
   var errorNoti = arrInfoSignup["errorNoti"];
 
-  if (isEmptyInput(username, email, password, pwdRepeat) !== false) {
+  if (isEmptyInput(username.value, email.value, password.value, pwdRepeat.value) !== false) {
     throwError("Fill in all fields!", "result-data__error", errorNoti);
-  } else if (isInvalidUsername(username) !== false) {
+  } else if (isInvalidUsername(username.value) !== false) {
     throwError("Choose a proper username!", "result-data__error", errorNoti);
-  } else if (isInvalidEmail(email) !== false) {
+  } else if (isInvalidEmail(email.value) !== false) {
     throwError("Choose a proper email!", "result-data__error", errorNoti);
-  } else if (isPwdNotMatch(password, pwdRepeat) !== false) {
+  } else if (isPwdNotMatch(password.value, pwdRepeat.value) !== false) {
     throwError("Password doesn't match!", "result-data__error", errorNoti);
   } else {
     var xmlHttp = new XMLHttpRequest();
     xmlHttp.open("POST", "Register/insertUser", true);
 
+   
     xmlHttp.onreadystatechange = function () {
       if (xmlHttp.readyState == 4 && xmlHttp.status == 200) {
         if (xmlHttp.responseText === "error") {
@@ -177,6 +178,8 @@ function getDataSignUp() {
 }
 
 function throwError(str, type, errorNoti) {
+  errorNoti.classList.remove("result-data__error");
+  errorNoti.classList.remove("result-data__success");
   errorNoti.classList.add(type);
   errorNoti.style.visibility = "visible";
   errorNoti.textContent = str;
@@ -220,6 +223,6 @@ function isPwdNotMatch(password, pwdRepeat) {
 
 function clearInput() {
   for (var input in arguments) {
-    arguments[input] = "";
+    arguments[input].value = "";
   }
 }
