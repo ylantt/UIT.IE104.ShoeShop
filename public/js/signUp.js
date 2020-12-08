@@ -10,7 +10,14 @@ document.getElementById("reg-btn").addEventListener("click", function (e) {
   var username = arrInfoSignup["username"];
   var errorNoti = arrInfoSignup["errorNoti"];
 
-  if (isEmptyInput(username.value, email.value, password.value, pwdRepeat.value) !== false) {
+  if (
+    isEmptyInput(
+      username.value,
+      email.value,
+      password.value,
+      pwdRepeat.value
+    ) !== false
+  ) {
     throwError("Fill in all fields!", "result-data__error", errorNoti);
   } else if (isInvalidUsername(username.value) !== false) {
     throwError("Choose a proper username!", "result-data__error", errorNoti);
@@ -22,7 +29,6 @@ document.getElementById("reg-btn").addEventListener("click", function (e) {
     var xmlHttp = new XMLHttpRequest();
     xmlHttp.open("POST", "Register/insertUser", true);
 
-   
     xmlHttp.onreadystatechange = function () {
       if (xmlHttp.readyState == 4 && xmlHttp.status == 200) {
         if (xmlHttp.responseText === "error") {
@@ -49,18 +55,6 @@ document.getElementById("reg-btn").addEventListener("click", function (e) {
   }
 });
 
-document
-  .querySelector('.reg input[name="username"]')
-  .addEventListener("keyup", function () {
-    return isUserExistsSignUp(getDataSignUp);
-  });
-
-document
-  .querySelector('.reg input[name="email"]')
-  .addEventListener("keyup", function () {
-    return isUserExistsSignUp(getDataSignUp);
-  });
-
 function isUserExistsSignUp(functionType) {
   var arrInfo = functionType();
   var errorNoti = arrInfo["errorNoti"];
@@ -83,7 +77,6 @@ function isUserExistsSignUp(functionType) {
       } else if (xmlHttp.responseText === "usernametaken") {
         throwError("User already exists!", "result-data__error", errorNoti);
       } else {
-        // username is not taken
         errorNoti.style.visibility = "hidden";
       }
     }
@@ -95,71 +88,17 @@ function isUserExistsSignUp(functionType) {
   xmlHttp.send(JSON.stringify(data));
 }
 
-function isUserExistsLogin(functionType) {
-  var arrInfo = functionType();
+document
+  .querySelector('.reg input[name="username"]')
+  .addEventListener("keyup", function () {
+    return isUserExistsSignUp(getDataSignUp);
+  });
 
-  var errorNoti = arrInfo["errorNoti"];
-  var password = arrInfo["password"].value;
-  var name = arrInfo["name"].value;
-
-  var xmlHttp = new XMLHttpRequest();
-
-  xmlHttp.open("POST", "Login/checkUserExists", true);
-
-  xmlHttp.onreadystatechange = function () {
-    if (xmlHttp.readyState == 4 && xmlHttp.status == 200) {
-      if (xmlHttp.responseText === "error") {
-        throwError(
-          "Something when wrong, try again!",
-          "result-data__error",
-          errorNoti
-        );
-      } else if (xmlHttp.responseText === "wronglogin") {
-        throwError(
-          "Invalid Username or Password!",
-          "result-data__error",
-          errorNoti
-        );
-      } else {
-        var currentLocation = document.querySelector("input[name='location']").value;
-        location.replace("/" + currentLocation);
-      }
-    }
-  };
-
-  xmlHttp.setRequestHeader("Content-Type", "application/json");
-
-  var data = { name: name, password: password };
-  xmlHttp.send(JSON.stringify(data));
-}
-
-document.getElementById("login-btn").addEventListener("click", function (e) {
-  e.preventDefault();
-
-  var arrInfoSignIn = getDataSignIn();
-
-  var name = arrInfoSignIn["name"].value;
-  var password = arrInfoSignIn["password"].value;
-  var errorNoti = arrInfoSignIn["errorNoti"];
-
-  if (isEmptyInput(name, password) !== false) {
-    throwError("Fill in all fields!", "result-data__error", errorNoti);
-  } else {
-    isUserExistsLogin(getDataSignIn);
-  }
-});
-
-function getDataSignIn() {
-  var name = document.querySelector('.login input[name="name"]');
-  var password = document.querySelector('.login input[name="password"]');
-  var errorNoti = document.querySelector(".login .result-data");
-
-  return {
-    name: name,
-    password: password,
-    errorNoti: errorNoti,
-  };
-}
+document
+  .querySelector('.reg input[name="email"]')
+  .addEventListener("keyup", function () {
+    return isUserExistsSignUp(getDataSignUp);
+  });
 
 function getDataSignUp() {
   var email = document.querySelector('.reg input[name="email"]');
@@ -175,54 +114,4 @@ function getDataSignUp() {
     username: username,
     errorNoti: errorNoti,
   };
-}
-
-function throwError(str, type, errorNoti) {
-  errorNoti.classList.remove("result-data__error");
-  errorNoti.classList.remove("result-data__success");
-  errorNoti.classList.add(type);
-  errorNoti.style.visibility = "visible";
-  errorNoti.textContent = str;
-}
-
-function isEmptyInput() {
-  for (var input in arguments) {
-    if (!arguments[input]) {
-      return true;
-    }
-  }
-
-  return false;
-}
-
-function isInvalidUsername(username) {
-  var regex = /^[a-zA-Z0-0]*$/;
-  if (!regex.test(username)) {
-    return true;
-  }
-
-  return false;
-}
-
-function isInvalidEmail(email) {
-  var regex = /^\S+@\S+\.\S+$/;
-  if (!regex.test(email)) {
-    return true;
-  }
-
-  return false;
-}
-
-function isPwdNotMatch(password, pwdRepeat) {
-  if (password !== pwdRepeat) {
-    return true;
-  }
-
-  return false;
-}
-
-function clearInput() {
-  for (var input in arguments) {
-    arguments[input].value = "";
-  }
 }
