@@ -9,8 +9,18 @@ class Product extends AdminController
 
     public function show()
     {
+        $rowProduct = $this->product->getProduct();
+        $rowCate = $this->cate->getCate();
+        $cateNameList = array();
+        foreach ($rowCate as $row) {
+            $cateNameList[$row["CategoryID"]] = $row["CategoryName"];
+        }
+
+        $quanInStock = $this->product->getNumProduct();
         $this->view("index", [
             "page" => "product/product",
+            "info" => $rowProduct,
+            "cate" => $cateNameList
         ]);
     }
 
