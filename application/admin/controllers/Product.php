@@ -16,7 +16,6 @@ class Product extends AdminController
             $cateNameList[$row["CategoryID"]] = $row["CategoryName"];
         }
 
-        $quanInStock = $this->product->getNumProduct();
         $this->view("index", [
             "page" => "product/product",
             "info" => $rowProduct,
