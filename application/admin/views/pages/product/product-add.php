@@ -116,6 +116,19 @@ if (isset($data["status"])) {
         </div>
       </div>
     </div>
+
+    <div class="form-group row">
+      <div class="col-sm-2">
+        <label for="quantity">Quantity:</label>
+      </div>
+      <div class="col-sm-2">
+        <input type="number" class="form-control" id="quantity" name="quantity" required>
+        <div class="invalid-feedback">
+          Please fill in this field!
+        </div>
+      </div>
+    </div>
+    
     <button class="btn btn-success pt-2 md-2 mb-5 submit" type="submit" name="submit">Add</button>
   </form>
 </div>

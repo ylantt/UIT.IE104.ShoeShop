@@ -44,7 +44,7 @@ class Product extends AdminController
     public function insertData()
     {
         if (isset($_POST["submit"])) {
-            if (isset($_POST["productName"]) && isset($_FILES["productImg"]) && isset($_POST["productDesc"]) && isset($_POST["productShortDesc"]) && isset($_POST["productPrice"]) && isset($_POST["productCate"]) && isset($_POST["pIsNew"]) && isset($_POST["pSaleOff"])) {
+            if (isset($_POST["productName"]) && isset($_FILES["productImg"]) && isset($_POST["productDesc"]) && isset($_POST["productShortDesc"]) && isset($_POST["productPrice"]) && isset($_POST["productCate"]) && isset($_POST["pIsNew"]) && isset($_POST["pSaleOff"]) && isset($_POST["quantity"])) {
                 $productName = $_POST["productName"];
                 $productDesc = $_POST["productDesc"];
                 $productShortDesc = $_POST["productShortDesc"];
@@ -52,6 +52,7 @@ class Product extends AdminController
                 $productCate = $_POST["productCate"];
                 $pIsNew = $_POST["pIsNew"];
                 $pSaleOff = $_POST["pSaleOff"];
+                $quantity = $_POST["quantity"];
 
                 $file = $_FILES["productImg"];
                 $fileName = $file["name"];
@@ -80,7 +81,7 @@ class Product extends AdminController
                                 $this->add("producttaken");
                                 exit();
                             } else if ($statusCheckExists === false) {
-                                $statusInsert = $this->product->insertproduct($productName, $imageFullName, $productShortDesc, $productDesc, $productPrice, $productCate, $pIsNew, $pSaleOff);
+                                $statusInsert = $this->product->insertproduct($productName, $imageFullName, $productShortDesc, $productDesc, $productPrice, $productCate, $pIsNew, $pSaleOff, $quantity);
                                 
                                 move_uploaded_file($fileTempName, $fileDestination);
 
