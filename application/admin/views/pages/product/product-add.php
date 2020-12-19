@@ -95,11 +95,11 @@ if (isset($data["status"])) {
       </div>
       <div class="col-sm-2">
         <div class="form-check">
-          <input class="form-check-input" type="radio" name="pIsNew" id="true" value="1">
+          <input class="form-check-input" type="radio" name="pIsNew" id="true" value="true">
           <label class="form-check-label" for="true">True</label>
         </div>
         <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="pIsNew" id="false" value="0" checked>
+          <input class="form-check-input" type="radio" name="pIsNew" id="false" value="false" checked>
           <label class="form-check-label" for="false">False</label>
         </div>
       </div>
