@@ -1102,10 +1102,14 @@ body {
   .about__desc {
     padding: 4rem 3rem;
     text-align: justify; }
+    .about__desc p {
+      font-size: 2rem;
+      font-weight: 600; }
     .about__desc li {
       padding-left: 1.5rem;
       margin-left: 2rem;
-      position: relative; }
+      position: relative;
+      font-size: 2rem; }
       .about__desc li::before {
         content: "";
         width: 5px;
@@ -1115,6 +1119,40 @@ body {
         position: absolute;
         top: 30%;
         left: 0; }
+  .about__about-team {
+    margin: 20rem 20rem;
+    padding: 5rem 5rem; }
+  .about__about-team-title {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 5rem; }
+  .about__about-team-para {
+    display: flex;
+    align-items: center;
+    margin: 2rem 0rem;
+    line-height: 3rem;
+    font-weight: 500;
+    font-size: 2rem; }
+    .about__about-team-para img {
+      box-shadow: 0.5rem 0.5rem #FF7D00;
+      width: 50rem;
+      height: 50rem; }
+    .about__about-team-para p {
+      margin-left: 5rem;
+      color: #757575; }
+  .about__about-smallteam {
+    margin: 20rem 5rem;
+    padding: 5rem 5rem; }
+  .about__about-team-smalltitle {
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 2rem;
+    margin: 0 5rem 5rem 5rem;
+    border-bottom: solid 0.2rem #FF7D00; }
+  .about__about-team-smallertitle {
+    font-weight: 600;
+    font-size: 3rem;
+    margin: 0 5rem 2rem 5rem; }
 
 .orders {
   margin-bottom: 15rem; }
