@@ -625,10 +625,11 @@ body {
 .detail {
   margin-bottom: 15rem; }
   .detail__product-image {
-    width: 50rem;
-    margin-left: 8rem; }
+    width: 80rem;
+    margin-left: 8rem;
+    transition: all 0.3s linear; }
     .detail__product-image:hover {
-      box-shadow: 5px 5px 5px 5px #FFCED1; }
+      box-shadow: 0px 5px 5px 5px #FF7D00; }
   .detail__product-name {
     font-size: 3rem; }
   .detail__row {
@@ -636,12 +637,15 @@ body {
     height: 47rem;
     margin: 3rem 0 8rem; }
   .detail__productdetails {
-    margin-left: 10rem; }
+    margin-left: 10rem;
+    margin-right: 8rem; }
   .detail__price {
     display: block;
     margin-bottom: 3rem;
     margin-top: 3rem;
-    font-size: 2rem; }
+    font-size: 4rem;
+    font-weight: 700;
+    color: #15616D; }
   .detail__stock {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -724,29 +728,28 @@ body {
     padding-top: 5rem; }
 
 .btn-add-cart {
-  background: #FFCED1;
+  background: #FF7D00;
   border-radius: 2.9rem;
-  color: #222;
+  color: #fff;
   line-height: 4rem;
   margin-left: 1.5rem;
   padding: 0 4.1rem;
   text-transform: uppercase;
   cursor: pointer; }
   .btn-add-cart:hover {
-    background-color: #FF7D00;
+    background-color: #78290F;
     color: #fff;
     transition: 0.5s; }
 
 .btn-add-wishlist {
-  background: #FFCED1;
+  background: #15616D;
+  color: #fff;
   display: inline-block;
   padding: 1rem 3rem;
   margin-top: 3rem;
-  cursor: pointer;
-  color: #222; }
+  cursor: pointer; }
   .btn-add-wishlist:hover {
-    background-color: #FF7D00;
-    color: #fff;
+    background-color: #78290F;
     transition: 0.5s; }
 
 .cart {
