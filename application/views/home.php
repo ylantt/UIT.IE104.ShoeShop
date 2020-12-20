@@ -31,9 +31,9 @@ require_once("template/banner.php");
      <div class="brand">
           <div class="container">
                <div class="brand__list d-flex">
-                    <div class="brand--column brand--column-circle"><a href="#"><img src="./public/images/palladium-logo.jpg" alt="Palladium logo"></a></div>
-                    <div class="brand--column brand--column-rec-1"><a href="#"><img src="./public/images/converse-logo.png" alt="Converse logo"></a></div>
-                    <div class="brand--column brand--column-rec-2"><a href="#"><img src="./public/images/vans-logo.png" alt="Vans logo"></a></div>
+                    <div class="brand--column brand--column-circle"><a href="palladium"><img src="./public/images/palladium-logo.jpg" alt="Palladium logo"></a></div>
+                    <div class="brand--column brand--column-rec-1"><a href="converse"><img src="./public/images/converse-logo.png" alt="Converse logo"></a></div>
+                    <div class="brand--column brand--column-rec-2"><a href="vans"><img src="./public/images/vans-logo.png" alt="Vans logo"></a></div>
                </div>
           </div>
      </div>
