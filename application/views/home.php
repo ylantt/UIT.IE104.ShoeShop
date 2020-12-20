@@ -67,7 +67,7 @@ require_once("template/banner.php");
                                         <div class="product__action d-flex">
                                              <span class="product__add">ADD TO CART</span>
                                              <div class="product__action--right">
-                                                  <span class="product__view"><i class="far fa-eye product__icon"></i></span>
+                                                  <a href="detail/show/<?= $row["ProductID"] ?>" class="product__view"><i class="far fa-eye product__icon"></i></a>
                                                   <span class="product__love "><i class="far fa-heart product__icon"></i></span>
                                              </div>
                                         </div>

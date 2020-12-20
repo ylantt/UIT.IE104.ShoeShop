@@ -20,16 +20,19 @@ include "template/nav.php"; ?>
         <div class="detail__container">
             <div class="detail__row">
                 <div class="detail__product-image">
-                    <img src="public/images/giay-nike-chinh-hang.jpg">
+                    <img src="/public/uploads/<?= $data["info"]["ProductImage"]; ?>" alt="item-image">
                 </div>
                 <div class="detail__productdetails">
-                    <h3 class="detail__product-name">Nike Shoes </h3>
-                    <span class="detail__price">$1200.00</span>
+                    <h3 class="detail__product-name"><?= $data["info"]["ProductName"] ?></h3>
+                    <span class="detail__price">&dollar;<?= $data["info"]["Price"] ?></span>
                     <span class="detail__stock">
-                        <b>In stock</b>
+                        <?php if ($data["info"]["QuanInStock"] != 0) : ?>
+                            <b>In stock: <?= $data["info"]["QuanInStock"] ?></b>
+                        <?php else : ?>
+                            <b>Out of stock</b>
+                        <?php endif; ?>
                         <span>
-                            <span>SKU </span>
-                            24-MB01
+                            SKU PR_<?= $data["info"]["ProductID"] ?>
                         </span>
                     </span>
                     <div class="detail__qty-add-cart">
@@ -40,7 +43,7 @@ include "template/nav.php"; ?>
                     <div class="detail__buttons">
                         <div class="btn-add-wishlist" href="wishlist">Add to wish list</div>
                     </div>
-                    <p class="detail__final">This is a productive product create by Luon Vuituoi. This product is suitable for anyone as long as they have money. This not too expendsive but only 1000$
+                    <p class="detail__final"><?= $data["info"]["ShortDesc"] ?>
                     </p>
 
                 </div>
@@ -53,16 +56,7 @@ include "template/nav.php"; ?>
                     <div class="detail__content">
                         <div class="detail__items">
                             <div class="detail__items_container">
-                                <p>Convenience is next to nothing when your day is crammed with action. So whether you're heading to class, gym, or the unbeaten path, make sure you've got your Strive Shoulder Pack stuffed with all your essentials, and extras as well.
-                                </p>
-                                <ul>
-                                    <li>
-                                        Zippered main compartment.</li>
-                                    <li>Front zippered pocket.</li>
-                                    <li>Waterproof chair</li>
-                                    <li>CManual functional</li>
-                                    <li>Atheletics Design</li>
-                                </ul>
+                                <?= $data["info"]["ProductDesc"] ?>
                             </div>
                         </div>
                     </div>
