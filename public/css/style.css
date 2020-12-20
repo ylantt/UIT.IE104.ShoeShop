@@ -1181,3 +1181,53 @@ body {
       text-align: left;
       background-color: #15616D;
       color: #fff; }
+
+.account__text {
+  font-size: 3rem;
+  color: #FF7D00;
+  padding-bottom: 1rem; }
+
+.flex_container {
+  display: flex;
+  padding: 2rem 3rem;
+  margin: 10rem 0rem; }
+
+.left_flex_container {
+  flex: 5; }
+  .left_flex_container img {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 85%;
+    height: auto; }
+
+.right_flex_container {
+  flex: 5; }
+
+.account__SaveBtn {
+  background-color: #ffb166;
+  border: none;
+  border-radius: 0.5rem;
+  margin-top: 2rem;
+  padding: 0.8rem;
+  transition: all 0.3s linear;
+  font-size: 16px; }
+  .account__SaveBtn:hover {
+    background-color: #cc6400;
+    color: #fff;
+    cursor: pointer; }
+
+.info_container_style {
+  margin-top: 3rem; }
+
+.text_info_style {
+  width: 50rem;
+  height: 3rem;
+  margin: 1rem 0rem;
+  padding: 0.2rem; }
+
+.address_info_style {
+  width: 50rem;
+  height: 3rem;
+  padding: 0.3rem 0.5rem;
+  margin: 1rem 0rem; }
