@@ -1123,7 +1123,8 @@ body {
 
 .flex_container {
   display: flex;
-  padding: 2rem 3rem; }
+  padding: 2rem 3rem;
+  margin: 10rem 0rem; }
 
 .left_flex_container {
   flex: 5; }
@@ -1140,19 +1141,21 @@ body {
 .account__SaveBtn {
   background-color: #ffb166;
   border: none;
-  border-radius: 0.1rem;
-  margin-top: 0.5rem;
-  padding: 0.8rem; }
+  border-radius: 0.5rem;
+  margin-top: 2rem;
+  padding: 0.8rem;
+  transition: all 0.3s linear;
+  font-size: 16px; }
   .account__SaveBtn:hover {
     background-color: #cc6400;
     color: #fff;
     cursor: pointer; }
 
 .info_container_style {
-  padding-top: 1rem; }
+  margin-top: 3rem; }
 
 .text_info_style {
-  width: 20rem;
+  width: 50rem;
   height: 3rem;
   margin: 1rem 0rem;
   padding: 0.2rem; }

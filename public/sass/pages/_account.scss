@@ -6,6 +6,7 @@
 .flex_container{
     display: flex;
     padding: 2rem 3rem;
+    margin: 10rem 0rem;
 }
 
 .left_flex_container{
@@ -26,9 +27,11 @@
 .account__SaveBtn{
     background-color: lighten($color-primary-orange,20%);
     border: none;
-    border-radius: 0.1rem;
-    margin-top: 0.5rem;
+    border-radius: 0.5rem;
+    margin-top: 2rem;
     padding: 0.8rem;
+    transition: all 0.3s linear;
+    font-size: 16px;
     &:hover{
         background-color: darken($color-primary-orange, 10%);
         color: $color-white;
@@ -37,11 +40,11 @@
 }
 
 .info_container_style{
-    padding-top: 1rem;
+    margin-top: 3rem;
 }
 
 .text_info_style{
-    width: 20rem;
+    width: 50rem;
     height: 3rem;
     margin: 1rem 0rem;
     padding: 0.2rem;
