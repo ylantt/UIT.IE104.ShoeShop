@@ -1,3 +1,14 @@
+<?php
+// require_once("./application/views/template/modal-delete.php");
+
+if (isset($data["status"])) {
+     if ($data["status"] === "success") {
+          echo '<div class="text-white p-3 bg-success">Thêm danh mục sản phẩm thành công!</div>';
+     } else if ($data["status"] === "stmtfailed" || $data["status"] === "noinput") {
+          echo '<div class="text-white p-3 bg-danger">Có lỗi xảy ra, vui lòng thử lại!</div>';
+     }
+} ?>
+
 <div class="d-flex justify-content-between">
      <h1 class="text-primary">Products</h1>
      <form>
@@ -31,82 +42,29 @@
                <th scope="col">Name</th>
                <th scope="col">Price</th>
                <th scope="col">Category</th>
-               <th scope="col">In Stock</th>
+               <th scope="col">Quantity In Stock</th>
                <th scope="col">IsNew</th>
                <th scope="col">Sales</th>
                <th scopr="côl">Action</th>
           </tr>
      </thead>
      <tbody>
-          <tr>
-               <th scope="row" data-toggle="modal" data-target="#productDetail">5</th>
-               <td style="width: 20px;" data-toggle="modal" data-target="#productDetail"><img src="../public/admin/images/giay-nike-chinh-hang.jpg" alt="productImage" class="img-fluid"></td>
-               <td data-toggle="modal" data-target="#productDetail">Made by Vans, for Winter</td>
-               <td data-toggle="modal" data-target="#productDetail">1000 &dollar;</td>
-               <td data-toggle="modal" data-target="#productDetail">Clothes</td>
-               <td data-toggle="modal" data-target="#productDetail">70</td>
-               <td class="text-danger" data-toggle="modal" data-target="#productDetail">False</td>
-               <td data-toggle="modal" data-target="#productDetail">50%</td>
-               <td><a href="product/edit" class="btn btn-success">Edit</a>
-                    <button type="button" class="btn btn-danger">Delete</button>
-               </td>
-          </tr>
-
-          <tr>
-               <th scope="row" data-toggle="modal" data-target="#productDetail">5</th>
-               <td style="width: 20px;" data-toggle="modal" data-target="#productDetail"><img src="../public/admin/images/giay-nike-chinh-hang.jpg" alt="productImage" class="img-fluid"></td>
-               <td data-toggle="modal" data-target="#productDetail">Made by Vans, for Winter</td>
-               <td data-toggle="modal" data-target="#productDetail">1000 &dollar;</td>
-               <td data-toggle="modal" data-target="#productDetail">Clothes</td>
-               <td data-toggle="modal" data-target="#productDetail">70</td>
-               <td class="text-danger" data-toggle="modal" data-target="#productDetail">False</td>
-               <td data-toggle="modal" data-target="#productDetail">50%</td>
-               <td><a href="product/edit" class="btn btn-success">Edit</a>
-                    <button type="button" class="btn btn-danger">Delete</button>
-               </td>
-          </tr>
-
-          <tr>
-               <th scope="row" data-toggle="modal" data-target="#productDetail">5</th>
-               <td style="width: 20px;" data-toggle="modal" data-target="#productDetail"><img src="../public/admin/images/giay-nike-chinh-hang.jpg" alt="productImage" class="img-fluid"></td>
-               <td data-toggle="modal" data-target="#productDetail">Made by Vans, for Winter</td>
-               <td data-toggle="modal" data-target="#productDetail">1000 &dollar;</td>
-               <td data-toggle="modal" data-target="#productDetail">Clothes</td>
-               <td data-toggle="modal" data-target="#productDetail">70</td>
-               <td class="text-danger" data-toggle="modal" data-target="#productDetail">False</td>
-               <td data-toggle="modal" data-target="#productDetail">50%</td>
-               <td><a href="product/edit" class="btn btn-success">Edit</a>
-                    <button type="button" class="btn btn-danger">Delete</button>
-               </td>
-          </tr>
-
-          <tr>
-               <th scope="row" data-toggle="modal" data-target="#productDetail">5</th>
-               <td style="width: 20px;" data-toggle="modal" data-target="#productDetail"><img src="../public/admin/images/giay-nike-chinh-hang.jpg" alt="productImage" class="img-fluid"></td>
-               <td data-toggle="modal" data-target="#productDetail">Made by Vans, for Winter</td>
-               <td data-toggle="modal" data-target="#productDetail">1000 &dollar;</td>
-               <td data-toggle="modal" data-target="#productDetail">Clothes</td>
-               <td data-toggle="modal" data-target="#productDetail">70</td>
-               <td class="text-danger" data-toggle="modal" data-target="#productDetail">False</td>
-               <td data-toggle="modal" data-target="#productDetail">50%</td>
-               <td><a href="product/edit" class="btn btn-success">Edit</a>
-                    <button type="button" class="btn btn-danger">Delete</button>
-               </td>
-          </tr>
-
-          <tr>
-               <th scope="row" data-toggle="modal" data-target="#productDetail">5</th>
-               <td style="width: 20px;" data-toggle="modal" data-target="#productDetail"><img src="../public/admin/images/giay-nike-chinh-hang.jpg" alt="productImage" class="img-fluid"></td>
-               <td data-toggle="modal" data-target="#productDetail">Made by Vans, for Winter</td>
-               <td data-toggle="modal" data-target="#productDetail">1000 &dollar;</td>
-               <td data-toggle="modal" data-target="#productDetail">Clothes</td>
-               <td data-toggle="modal" data-target="#productDetail">70</td>
-               <td class="text-danger" data-toggle="modal" data-target="#productDetail">False</td>
-               <td data-toggle="modal" data-target="#productDetail">50%</td>
-               <td><a href="product/edit" class="btn btn-success">Edit</a>
-                    <button type="button" class="btn btn-danger">Delete</button>
-               </td>
-          </tr>
+          <?php
+          foreach ($data["info"] as $row) : ?>
+               <tr>
+                    <th scope="row" data-toggle="modal" class="align-middle" data-target="#productDetail"><?= $row["ProductID"] ?></th>
+                    <td style="width: 150px;" data-toggle="modal" data-target="#productDetail"><img src="/public/uploads/<?= $row["ProductImage"]; ?>" alt="productImage" class="img-fluid"></td>
+                    <td data-toggle="modal" class="align-middle" data-target="#productDetail"><?= $row["ProductName"] ?></td>
+                    <td data-toggle="modal" class="align-middle" data-target="#productDetail"><?= $row["Price"] ?> &dollar;</td>
+                    <td data-toggle="modal" class="align-middle" data-target="#productDetail"><?= $data["cate"][$row["CategoryID"]] ?></td>
+                    <td class="align-middle text-center" data-toggle="modal" data-target="#productDetail"><?= $row["QuanInStock"] ?></td>
+                    <td class="text-danger align-middle" data-toggle="modal" data-target="#productDetail"><?= $row["IsNew"] ?></td>
+                    <td data-toggle="modal" class="align-middle" data-target="#productDetail"><?= $row["PercentSaleOff"] ?> %</td>
+                    <td class="align-middle"><a href="product/edit" class="btn btn-success">Edit</a>
+                         <button type="button" class="btn btn-danger">Delete</button>
+                    </td>
+               </tr>
+          <?php endforeach; ?>
      </tbody>
 </table>
 
