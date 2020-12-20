@@ -113,7 +113,6 @@ body {
 
 .heading-h3 {
   text-align: center;
-  margin-bottom: 6rem;
   position: relative; }
   .heading-h3--main {
     font-weight: 700;
@@ -224,12 +223,14 @@ body {
 .row {
   align-items: stretch;
   justify-content: space-between;
-  width: 100%; }
+  width: 100%;
+  flex-wrap: wrap; }
   .row:not(:last-child) {
     margin-bottom: 4rem; }
 
 .product__item {
-  height: 33.2rem;
+  margin-top: 100px;
+  height: 40.2rem;
   overflow: hidden;
   width: calc(25% - 15px);
   padding: 1.5rem 2rem 0;
@@ -246,7 +247,8 @@ body {
 
 .product__image {
   height: 17.5rem;
-  display: block; }
+  display: block;
+  margin-top: 7rem; }
 
 .product__summary {
   padding: 1.5rem 0;
@@ -840,48 +842,6 @@ body {
     color: #FF7D00;
     font-weight: 700; }
 
-.text__box {
-  overflow: hidden;
-  font-size: 2rem;
-  margin: 0.8rem 0;
-  border-bottom: 0.2rem solid #BDBDBD; }
-  .text__box:hover {
-    border-bottom: 0.2rem solid #15616D; }
-  .text__box input {
-    border: none;
-    outline: none;
-    background: none;
-    color: #222;
-    font-size: 1.5rem;
-    width: 100%;
-    height: 100%;
-    padding: 0.8rem;
-    display: block;
-    float: left;
-    margin: 0 0rem; }
-
-.modal {
-  background-color: #fff;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(0);
-  transition: all 0.2s ease-in-out;
-  z-index: 2000;
-  width: 45rem; }
-  .modal__content {
-    margin: 0 5rem 3rem 5rem; }
-  .modal__account {
-    font-weight: 400;
-    color: #15616D; }
-  .modal__link {
-    font-weight: 700;
-    text-decoration: underline;
-    cursor: pointer; }
-
-.modal.active {
-  transform: translate(-50%, -50%) scale(1); }
-
 .wishlist {
   margin-top: 15rem; }
   .wishlist__title {
@@ -940,6 +900,49 @@ body {
   .wishlist .fa, .wishlist .fas {
     font-weight: 900;
     font-size: large; }
+
+.text__box {
+  overflow: hidden;
+  font-size: 2rem;
+  margin: 0.8rem 0;
+  border-bottom: 0.2rem solid #BDBDBD; }
+  .text__box:hover {
+    border-bottom: 0.2rem solid #15616D; }
+  .text__box input {
+    border: none;
+    outline: none;
+    background: none;
+    color: #222;
+    font-size: 1.5rem;
+    width: 100%;
+    height: 100%;
+    padding: 0.8rem;
+    display: block;
+    float: left;
+    margin: 0 0rem; }
+
+.modal {
+  background-color: #fff;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: all 0.2s ease-in-out;
+  z-index: 2000;
+  width: 45rem; }
+  .modal__content {
+    margin: 0 5rem 3rem 5rem; }
+  .modal__account {
+    font-weight: 400;
+    color: #15616D; }
+  .modal__link {
+    font-weight: 700;
+    text-decoration: underline;
+    cursor: pointer; }
+
+.modal.active {
+  transform: translate(-50%, -50%) scale(1); }
+
 .brandinfo {
   margin-bottom: 15rem; }
   .brandinfo__img-palla {

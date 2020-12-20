@@ -8,11 +8,11 @@ class ProductDB extends Database
           return $this->isExists($sql, "ss", [$productName, $productCate]);
      }
 
-     function insertProduct($productName, $productImage, $shortDesc, $productDesc, $price, $categoryID, $isNew, $percentSaleOff)
+     function insertProduct($productName, $productImage, $shortDesc, $productDesc, $price, $categoryID, $isNew, $percentSaleOff, $quantity)
      {
-          $sql = "INSERT INTO product (ProductName, ProductImage, ShortDesc, ProductDesc, Price, CategoryID, IsNew, PercentSaleOff) VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
+          $sql = "INSERT INTO product (ProductName, ProductImage, ShortDesc, ProductDesc, Price, CategoryID, IsNew, PercentSaleOff, QuanInStock) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)";
 
-          return $this->insert($sql, "ssssssss", [$productName, $productImage, $shortDesc, $productDesc, $price, $categoryID, $isNew, $percentSaleOff]);
+          return $this->insert($sql, "sssssssss", [$productName, $productImage, $shortDesc, $productDesc, $price, $categoryID, $isNew, $percentSaleOff, $quantity]);
      }
 
      function getProduct($id = NULL)

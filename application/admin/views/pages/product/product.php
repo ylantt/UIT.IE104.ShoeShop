@@ -42,7 +42,7 @@ if (isset($data["status"])) {
                <th scope="col">Name</th>
                <th scope="col">Price</th>
                <th scope="col">Category</th>
-               <!-- <th scope="col">Quantity In Stock</th> -->
+               <th scope="col">Quantity In Stock</th>
                <th scope="col">IsNew</th>
                <th scope="col">Sales</th>
                <th scopr="côl">Action</th>
@@ -57,7 +57,7 @@ if (isset($data["status"])) {
                     <td data-toggle="modal" class="align-middle" data-target="#productDetail"><?= $row["ProductName"] ?></td>
                     <td data-toggle="modal" class="align-middle" data-target="#productDetail"><?= $row["Price"] ?> &dollar;</td>
                     <td data-toggle="modal" class="align-middle" data-target="#productDetail"><?= $data["cate"][$row["CategoryID"]] ?></td>
-                    <!-- <td data-toggle="modal" data-target="#productDetail"><?= $data["quanInStock"] ?></td> -->
+                    <td class="align-middle text-center" data-toggle="modal" data-target="#productDetail"><?= $row["QuanInStock"] ?></td>
                     <td class="text-danger align-middle" data-toggle="modal" data-target="#productDetail"><?= $row["IsNew"] ?></td>
                     <td data-toggle="modal" class="align-middle" data-target="#productDetail"><?= $row["PercentSaleOff"] ?> %</td>
                     <td class="align-middle"><a href="product/edit" class="btn btn-success">Edit</a>
