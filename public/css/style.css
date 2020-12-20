@@ -1088,13 +1088,12 @@ body {
   .about__gallery-container {
     align-items: center;
     display: flex;
-    margin: 1rem; }
+    margin: 1rem;
+    margin-bottom: 10rem; }
   .about__gallery {
     margin: 2rem;
     float: left;
     width: 38rem; }
-    .about__gallery__gallery:hover {
-      border: 0.1rem solid #777; }
     .about__gallery img {
       width: 100%;
       height: auto; }
@@ -1104,10 +1103,14 @@ body {
   .about__desc {
     padding: 4rem 3rem;
     text-align: justify; }
+    .about__desc p {
+      font-size: 2rem;
+      font-weight: 600; }
     .about__desc li {
       padding-left: 1.5rem;
       margin-left: 2rem;
-      position: relative; }
+      position: relative;
+      font-size: 2rem; }
       .about__desc li::before {
         content: "";
         width: 5px;
@@ -1117,3 +1120,64 @@ body {
         position: absolute;
         top: 30%;
         left: 0; }
+  .about__about-team {
+    margin: 3rem 20rem 5rem;
+    padding: 5rem 5rem; }
+  .about__about-team-title {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 5rem; }
+  .about__about-team-para {
+    display: flex;
+    align-items: center;
+    margin: 2rem 0rem;
+    line-height: 3rem;
+    font-weight: 500;
+    font-size: 2rem; }
+    .about__about-team-para img {
+      box-shadow: 0.5rem 0.5rem #FF7D00;
+      width: 50rem;
+      height: 50rem; }
+    .about__about-team-para p {
+      margin-left: 5rem;
+      color: #757575; }
+  .about__about-smallteam {
+    margin: 0rem 5rem 5rem;
+    padding: 5rem 5rem; }
+  .about__about-team-smalltitle {
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 2rem;
+    margin: 0 5rem 5rem 5rem;
+    border-bottom: solid 0.2rem #FF7D00; }
+  .about__about-team-smallertitle {
+    font-weight: 600;
+    font-size: 3rem;
+    margin: 0 5rem 2rem 5rem; }
+
+.orders {
+  margin-bottom: 15rem; }
+  .orders__title-container {
+    margin: 2rem 10rem;
+    text-align: center;
+    text-transform: capitalize;
+    color: #FF7D00;
+    font-weight: 700;
+    font-size: 4rem; }
+  .orders__table-container {
+    margin: 5rem 10rem 15rem; }
+  .orders__customers {
+    border-collapse: collapse;
+    width: 100%; }
+    .orders__customers td, .orders__customers th {
+      padding: 8px; }
+    .orders__customers tr:nth-child(even) {
+      background-color: #fff; }
+    .orders__customers tr:hover {
+      background-color: #BDBDBD; }
+    .orders__customers th {
+      padding-top: 1.2rem;
+      padding-bottom: 1.2rem;
+      text-align: left;
+      background-color: #15616D;
+      color: #fff; }
