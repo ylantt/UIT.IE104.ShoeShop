@@ -14,5 +14,4 @@ require_once "./application/admin/views/template/header.php"
           </div>
      </div>
 </div>
-<!-- </div> -->
 <?php require_once "./application/admin/views/template/footer.php" ?>
