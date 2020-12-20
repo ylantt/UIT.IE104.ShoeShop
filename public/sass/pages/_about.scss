@@ -11,6 +11,7 @@
     float: left;
     width: 38rem;
     & img {
+      position: relative;
       width: 100%;
       height: auto;
       &:hover {
@@ -27,15 +28,15 @@
       font-weight: 600;
     }
     & li {
-      padding-left: 1.5rem;
+      padding-left: 1rem;
       margin-left: 2rem;
       position: relative;
       font-size: 2rem;
 
       &::before {
         content: "";
-        width: 5px;
-        height: 5px;
+        width: 0.5rem;
+        height: 0.5rem;
         border-radius: 50%;
         background: $color-primary-orange;
         position: absolute;

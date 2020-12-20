@@ -67,12 +67,11 @@ include "template/nav.php"; ?>
                 </a>
                 <div class="about__desc">
                     <p>
-                        Trương Ý Lan
+                        Lan Thi Truong Y
                     </p>
                     <ul>
-                        <li>MSSV</li>
-                        <li>SDT</li>
-                        <li>E-mail</li>
+                        <li>18520978</li>
+                        <li>PHP is the best</li>
                     </ul>
                 </div>
             </div>
@@ -81,11 +80,10 @@ include "template/nav.php"; ?>
                     <img src="public/images/dat.jpg" alt="Dat" width="600" height="400">
                 </a>
                 <div class="about__desc">
-                    <p>Hoàng Tiến Đạt</p>
+                    <p>Dat Hoang Tien</p>
                     <ul>
-                        <li>MSSV</li>
-                        <li>SDT</li>
-                        <li>E-mail</li>
+                        <li>18520566</li>
+                        <li>Mainly comedy</li>
                     </ul>
                 </div>
             </div>
@@ -95,12 +93,11 @@ include "template/nav.php"; ?>
                 </a>
                 <div class="about__desc">
                     <p>
-                        Nguyễn Ngọc Hân
+                        Han Ngoc Nguyen
                     </p>
                     <ul>
-                        <li>MSSV</li>
-                        <li>SDT</li>
-                        <li>E-mail</li>
+                        <li>18520709</li>
+                        <li>Grammar Nazi</li>
                     </ul>
                 </div>
             </div>
@@ -110,12 +107,11 @@ include "template/nav.php"; ?>
                 </a>
                 <div class="about__desc">
                     <p>
-                        Phan Hoàng Dung
+                        Dung Phan Hoang
                     </p>
                     <ul>
-                        <li>MSSV</li>
-                        <li>SDT</li>
-                        <li>Email</li>
+                        <li>18520027</li>
+                        <li>Something funny</li>
                     </ul>
                 </div>
             </div>

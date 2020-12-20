@@ -1093,6 +1093,7 @@ body {
     float: left;
     width: 38rem; }
     .about__gallery img {
+      position: relative;
       width: 100%;
       height: auto; }
       .about__gallery img:hover {
@@ -1105,14 +1106,14 @@ body {
       font-size: 2rem;
       font-weight: 600; }
     .about__desc li {
-      padding-left: 1.5rem;
+      padding-left: 1rem;
       margin-left: 2rem;
       position: relative;
       font-size: 2rem; }
       .about__desc li::before {
         content: "";
-        width: 5px;
-        height: 5px;
+        width: 0.5rem;
+        height: 0.5rem;
         border-radius: 50%;
         background: #FF7D00;
         position: absolute;
