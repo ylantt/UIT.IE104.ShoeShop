@@ -843,7 +843,7 @@ body {
     font-weight: 700; }
 
 .wishlist {
-  margin-top: 15rem; }
+  margin: 15rem 0; }
   .wishlist__title {
     font-size: 4rem;
     text-align: center;
