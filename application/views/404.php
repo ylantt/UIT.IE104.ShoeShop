@@ -18,3 +18,7 @@ include "template/nav.php"; ?>
         </div>
     </div>
 </div>
+</body>
+<?php
+include "template/script-line.php";?>
+</html>

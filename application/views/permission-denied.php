@@ -19,5 +19,13 @@ if (isset($_SESSION['userID']) == false) :
             </div>
         </div>
     </div>
-<?php endif;
-exit();
+
+    </body>
+    <?php
+    include "template/script-line.php"; ?>
+
+    </html>
+<?php
+    exit();
+endif;
+?>

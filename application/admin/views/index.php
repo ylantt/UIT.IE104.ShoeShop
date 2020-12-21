@@ -1,5 +1,5 @@
 <?php 
-require_once "./application/admin/views/template/permission.php"; 
+require_once "./application/views/permission-denied.php"; 
 require_once "./application/admin/views/template/header.php" 
 ?>
 <div class="d-flex h-100">
