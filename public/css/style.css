@@ -467,10 +467,11 @@ body {
     height: 10rem; }
 
 .service {
-  display: flex;
-  justify-content: space-between;
   color: #444;
   border-top: 1px solid #BDBDBD; }
+  .service .container {
+    display: flex;
+    justify-content: space-between; }
   .service__item {
     display: flex;
     align-items: center;
@@ -488,13 +489,13 @@ body {
     color: #FF7D00; }
 
 .featured-products {
-  margin: 10rem 0 15rem; }
+  margin: 15rem 0; }
 
 .event {
   letter-spacing: 5px;
   line-height: 300%;
   color: #444;
-  margin: 15rem 0; }
+  margin: 10rem 0; }
   .event__title, .event__time--num {
     color: #FF7D00; }
   .event > .container {
@@ -550,7 +551,7 @@ body {
     outline-offset: 3rem;
     transition: all 0.1s ease-in; }
     .section-about__image:hover {
-      outline: 1.5rem solid #FF7D00;
+      outline: 1rem solid #FF7D00;
       box-shadow: 0 2.5rem 4rem rgba(34, 34, 34, 0.5);
       z-index: 10;
       transform: scale(1.05); }
