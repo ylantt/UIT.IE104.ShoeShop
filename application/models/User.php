@@ -1,7 +1,8 @@
 <?php
 class User extends Database
 {
-     public function checkUserExists($username, $email) {
+     public function checkUserExists($username, $email)
+     {
           $sql = "SELECT * FROM user WHERE Username = ? OR Email = ?;";
           $stmt = mysqli_stmt_init($this->conn);
 
@@ -25,7 +26,8 @@ class User extends Database
           mysqli_stmt_close($stmt);
      }
 
-     function insertUser($username, $email, $password) {
+     function insertUser($username, $email, $password)
+     {
           $sql = "INSERT INTO user (Username, Email, UserPwd, UserRole) VALUES (?, ?, ?, 0)";
           $stmt = mysqli_stmt_init($this->conn);
 
@@ -40,5 +42,21 @@ class User extends Database
 
           mysqli_stmt_close($stmt);
           return true;
+     }
+
+     function getUser($id = NULL)
+     {
+          if ($id) {
+               $sql = "SELECT * FROM user WHERE UserID = ?;";
+               return $this->get($sql, "s", [$id]); // for edit
+          } else {
+               $sql = "SELECT * FROM user;";
+               return $this->get($sql, "s", NULL); // for show
+          }
+     }
+
+     function updateUser($id, $FullName, $PhoneNum, $Email, $AddrInfo) {
+          $sql = "UPDATE user SET FullName = ?, Phone = ?, Email = ?, Address = ? WHERE UserID = ?";
+          return $this->update($sql, "sssss", [$FullName, $PhoneNum, $Email, $AddrInfo, $id]);
      }
 }

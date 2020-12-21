@@ -34,7 +34,7 @@ isset($_GET['url']) ? $activePage = $_GET['url'] : $activePage = "home";
 
                <?php if (isset($_SESSION["userID"])): ?>
                <li>
-                    <a href="/account" class="nav__button nav__account"><?php echo $_SESSION["userName"]; ?></a>
+                    <a href="/account/show/<?php echo $_SESSION["userID"]; ?>" class="nav__button nav__account"><?php echo $_SESSION["userName"]; ?></a>
                     <a href="/login/logout" class="nav__log-out">Log out</a>
                </li>
                <?php else: ?>
