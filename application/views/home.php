@@ -8,14 +8,14 @@ require_once("template/banner.php");
      <div class="section-about">
           <div class="container d-flex">
                <div class="section-about--left">
-                    <div class="section-about__image section-about__image--1">
-                         <img src="./public/images/home-about-1.jpeg" alt="Palladium shoe">
-                    </div>
                     <div class="section-about__image section-about__image--2">
-                         <img src="./public/images/home-about-2.jpg" alt="Converse shoe">
+                         <img src="/public/images/home-about-converse.jpeg" alt="Converse shoe">
+                    </div>
+                    <div class="section-about__image section-about__image--1">
+                         <img src="./public/images/home-about-palladium.jpg" alt="Palladium shoe">
                     </div>
                     <div class="section-about__image section-about__image--3">
-                         <img src="./public/images/home-about-3.jpg" alt="Vans shoe">
+                         <img src="./public/images/home-about-vans.jpg" alt="Vans shoe">
                     </div>
                </div>
                <div class="section-about--right">
@@ -174,5 +174,7 @@ require_once("template/banner.php");
           </div>
      </div>
 </div>
+
+<script src="./public/js/countDown.js"></script>
 <?php
 require_once("template/footer.php");

@@ -159,31 +159,27 @@
     width: 30rem;
     height: 30rem;
     position: absolute;
-    outline-offset: 3rem;
-    transition: all 0.1s ease-in;
+    transition: all 0.3s ease-in;
 
     &:hover {
-      outline: 1rem solid $color-primary-orange;
-      box-shadow: 0 2.5rem 4rem rgba($color-black, 0.5);
+      box-shadow: 0 2.5rem 4rem $color-primary-orange;
       z-index: 10;
       transform: scale(1.05);
     }
 
     &--1 {
-      top: 25%;
-      left: 10%;
+      top: 45%;
+      left: 3%;
     }
 
     &--2 {
-      width: 45rem;
-      height: 25rem;
       top: 0%;
       left: 20%;
     }
 
     &--3 {
       bottom: 0;
-      right: 10%;
+      right: 15%;
     }
   }
 
