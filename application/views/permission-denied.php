@@ -8,11 +8,11 @@ include "template/nav.php"; ?>
             <p class="error__detail">You are not an administrator!</p>
             <p class="error__more-detail">
                 The page you're looking for is denied. <br>
-                Try again or use go back button below.
+                Try again or go back to the homepage.
             </p>
             <p>
                 <a href="home" class="error__button error__button--large">
-                    &LeftArrow; Go back
+                    &LeftArrow; Back to Homepage
                 </a>
             </p>
         </div>
