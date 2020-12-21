@@ -33,10 +33,11 @@ class Product extends AdminController
         ]);
     }
 
-    public function edit()
+    public function edit($id)
     {
         $this->view("index", [
-            "page" => "product/product-edit"
+            "page" => "product/product-edit",
+            "id" => $id,
         ]);
     }
 

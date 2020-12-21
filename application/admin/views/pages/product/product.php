@@ -60,7 +60,7 @@ if (isset($data["status"])) {
                     <td class="align-middle text-center" data-toggle="modal" data-target="#productDetail"><?= $row["QuanInStock"] ?></td>
                     <td class="text-danger align-middle" data-toggle="modal" data-target="#productDetail"><?= $row["IsNew"] ?></td>
                     <td data-toggle="modal" class="align-middle" data-target="#productDetail"><?= $row["PercentSaleOff"] ?> %</td>
-                    <td class="align-middle"><a href="product/edit" class="btn btn-success">Edit</a>
+                    <td class="align-middle"><a href="product/edit/<?= $row["ProductID"] ?>" class="btn btn-success">Edit</a>
                          <button type="button" class="btn btn-danger">Delete</button>
                     </td>
                </tr>

@@ -1,6 +1,6 @@
 <div class="d-flex justify-content-between  pt-3">
   <h1 class="text-primary text-uppercase">
-    Edit product
+    Edit product <?= $data["id"] ?>
   </h1>
 </div>
 <hr>
