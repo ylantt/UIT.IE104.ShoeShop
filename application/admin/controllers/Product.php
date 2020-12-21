@@ -7,7 +7,7 @@ class Product extends AdminController
         $this->product = $this->model("productdb");
     }
 
-    public function show()
+    public function show($status = NULL)
     {
         $rowProduct = $this->product->getProduct();
         $rowCate = $this->cate->getCate();
@@ -19,7 +19,8 @@ class Product extends AdminController
         $this->view("index", [
             "page" => "product/product",
             "info" => $rowProduct,
-            "cate" => $cateNameList
+            "cate" => $cateNameList,
+            "status" => $status
         ]);
     }
 
@@ -111,6 +112,17 @@ class Product extends AdminController
             } else {
                 $this->add("noinput");
             }
+        }
+    }
+
+    function deleteDB($id) {
+        $statusDelete = $this->product->deleteProduct($id);
+        if ($statusDelete === true) {
+            $this->show("success");
+            exit();
+        } else {
+            $this->show("stmtfailed");
+            exit();
         }
     }
 }

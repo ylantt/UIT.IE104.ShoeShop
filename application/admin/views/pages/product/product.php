@@ -1,13 +1,12 @@
 <?php
 // require_once("./application/views/template/modal-delete.php");
-
 if (isset($data["status"])) {
      if ($data["status"] === "success") {
-          echo '<div class="text-white p-3 bg-success">Thêm danh mục sản phẩm thành công!</div>';
+         echo '<div class="text-white p-3 bg-success">Xóa sản phẩm thành công!</div>';
      } else if ($data["status"] === "stmtfailed" || $data["status"] === "noinput") {
-          echo '<div class="text-white p-3 bg-danger">Có lỗi xảy ra, vui lòng thử lại!</div>';
+         echo '<div class="text-white p-3 bg-danger">Có lỗi xảy ra, vui lòng thử lại!</div>';
      }
-} ?>
+ }  ?>
 
 <div class="d-flex justify-content-between">
      <h1 class="text-primary">Products</h1>
@@ -61,37 +60,47 @@ if (isset($data["status"])) {
                     <td class="text-danger align-middle" data-toggle="modal" data-target="#productDetail"><?= $row["IsNew"] ?></td>
                     <td data-toggle="modal" class="align-middle" data-target="#productDetail"><?= $row["PercentSaleOff"] ?> %</td>
                     <td class="align-middle"><a href="product/edit/<?= $row["ProductID"] ?>" class="btn btn-success">Edit</a>
-                         <button type="button" class="btn btn-danger">Delete</button>
+                         <button type="button" class="btn btn-danger deleteBtn" data-toggle="modal" data-target="#exampleModal" data-id="<?php echo $row['ProductID'] ?>" data-link="product/">Delete</button>
                     </td>
                </tr>
           <?php endforeach; ?>
      </tbody>
 </table>
 
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+     <div class="modal-dialog" role="document">
+          <div class="modal-content">
+               <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Xác nhận xóa</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                         <span aria-hidden="true">&times;</span>
+                    </button>
+               </div>
+               <div class="modal-body">
+                    Chắc chắn xóa Sản phẩm <span id="idTeam"></span>?
+               </div>
+               <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <a type="submit" class="btn btn-danger" id="deleteBtnHref">Xóa</a>
+               </div>
+          </div>
+     </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 
-<nav aria-label="Page navigation example" class="float-right">
-     <ul class="pagination">
-          <li class="page-item">
-               <a class="page-link" href="#" aria-label="Previous">
-                    <span aria-hidden="true">&laquo;</span>
-                    <span class="sr-only">Previous</span>
-               </a>
-          </li>
-          <li class="page-item"><a class="page-link" href="#">1</a></li>
-          <li class="page-item"><a class="page-link" href="#">2</a></li>
-          <li class="page-item"><a class="page-link" href="#">3</a></li>
-          <li class="page-item">
-               <a class="page-link" href="#" aria-label="Next">
-                    <span aria-hidden="true">&raquo;</span>
-                    <span class="sr-only">Next</span>
-               </a>
-          </li>
-     </ul>
-</nav>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+<script>
+     $(document).on("click", ".deleteBtn", function() {
+          var id = $(this).data("id");
+          // alert(id);
+          var link = $(this).data("link");
+          $("#exampleModal #deleteBtnHref").attr("href", link + "/deletedb/" + id);
+          $("#exampleModal #idTeam").text(id);
+     });
+</script>
 
 
-
-<div class="modal fade" id="productDetail" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+<!-- <div class="modal fade" id="productDetail" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
      <div class="modal-dialog modal-dialog-centered" role="document">
           <div class="modal-content">
                <div class="modal-header">
@@ -110,4 +119,4 @@ if (isset($data["status"])) {
                </div>
           </div>
      </div>
-</div>
+</div> -->
