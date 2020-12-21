@@ -1,6 +1,7 @@
 <?php
-include "template/header.php";
-include "template/nav.php"; ?>
+if (isset($_SESSION['userID']) == false) :
+    include "template/header.php";
+    include "template/nav.php"; ?>
 <div class="container">
     <div class=".error">
         <div class="error__body">
@@ -18,4 +19,6 @@ include "template/nav.php"; ?>
         </div>
     </div>
 </div>
-<?php exit(); ?>
+<?php 
+exit();
+endif;
