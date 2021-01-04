@@ -2,7 +2,11 @@
 --- The website is built for "Internet and Web Technology" subject at University of Information Technology, VNU ---
 
 ## 1. More information
-To have database and Vietnamese document which was written by our team about this project, access to [Wiki page](https://github.com/ylan2000/ie104/wiki/More-information-(ie104-project))  
+To have database, access to [Wiki page](https://github.com/ylan2000/ie104/wiki/More-information-(ie104-project))  
+### Usecase Diagram
+![Use case Diagram](https://user-images.githubusercontent.com/53938599/103502329-77a64600-4e83-11eb-94a1-6b0c1063a73e.png)
+
+The Use case Diagrame was build by Vietnamese language, the grey blocks are the function that we have not done yet!
 
 ## 2. Create Virtual host 
 > “Before software can be reusable it first has to be usable.” – Ralph Johnson
