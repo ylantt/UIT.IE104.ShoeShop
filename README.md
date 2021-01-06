@@ -2,7 +2,7 @@
 --- The website is built for "Internet and Web Technology" subject at University of Information Technology, VNU ---
 
 ## 1. More information
-To have database, access to [Wiki page](https://github.com/ylan2000/ie104/wiki/More-information-(ie104-project))  
+To have database, access to [Wiki page](https://github.com/ylan2000/ie104/wiki/Database-ie104-project)  
 ### Usecase Diagram
 ![Use case Diagram](https://user-images.githubusercontent.com/53938599/103502329-77a64600-4e83-11eb-94a1-6b0c1063a73e.png)
 
